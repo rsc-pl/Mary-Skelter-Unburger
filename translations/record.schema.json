@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mary Skelter Fidelity Working Story Record",
+  "type": "object",
+  "required": [
+    "id",
+    "game",
+    "scope",
+    "review_status",
+    "fields"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "game": {
+      "enum": [
+        "MS2",
+        "MSF"
+      ]
+    },
+    "scope": {
+      "const": "story"
+    },
+    "review_status": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "JP",
+          "LOCALIZED",
+          "EN",
+          "target_dataset",
+          "localized_record_key",
+          "mapping_status"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string"
+          },
+          "JP": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "LOCALIZED": {
+            "type": "string"
+          },
+          "EN": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "target_dataset": {
+            "type": "string"
+          },
+          "localized_record_key": {
+            "type": "string"
+          },
+          "jp_record_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mapping_status": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

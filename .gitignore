@@ -1,0 +1,14 @@
+# Machine-local configuration, caches, reports, and generated output
+.local/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor / OS noise
+.idea/
+.vscode/
+.DS_Store
+*~

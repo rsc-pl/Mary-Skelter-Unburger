@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mary Skelter raw technical text record",
+  "description": "One text field extracted from a Mary Skelter 2 / Mary Skelter Finale resource. Technical provenance only: no translation, no semantic alignment. 'text' is the editable field; 'raw_hex' is the ground truth of the source bytes.",
+  "type": "object",
+  "required": [
+    "record_key",
+    "source_dataset",
+    "game",
+    "platform",
+    "source_file",
+    "source_file_sha256",
+    "format_chain",
+    "record_index",
+    "field_index",
+    "field_role",
+    "encoding",
+    "text",
+    "raw_hex",
+    "control_metadata",
+    "repack_metadata"
+  ],
+  "properties": {
+    "record_key": {
+      "type": "string",
+      "description": "Stable structural key: <dataset>/a<archive>/g<gdat_index>/<container_key>/<table_key>/r<record>/f<field>"
+    },
+    "schema_version": {"type": "integer"},
+    "source_dataset": {
+      "type": "string",
+      "description": "MS2_PC_LOCALIZED | MS2_SWITCH_JP | MSF_PC_JP | MSF_PC_LOCALIZED | MSF_PC_KO | MSF_PC_SYSTEM"
+    },
+    "game": {"type": "string", "enum": ["MS2", "MSF"]},
+    "platform": {"type": "string", "enum": ["PC", "Switch"]},
+    "language": {
+      "type": ["string", "null"],
+      "description": "Mechanically determined: ja | en | ko | zh, or null when the resource carries no language evidence"
+    },
+    "source_file": {"type": "string"},
+    "source_file_sha256": {"type": "string"},
+    "archive_number": {"type": ["integer", "null"]},
+    "gdat_index": {"type": ["integer", "null"]},
+    "format_chain": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "e.g. [\"GDAT\",\"BILZ\",\"CL3\",\"STCM2\",\"GBNL\"]"
+    },
+    "cl3_inner_index": {"type": ["integer", "null"]},
+    "cl3_inner_name": {"type": ["string", "null"]},
+    "container_key": {"type": ["string", "null"]},
+    "table_key": {"type": ["string", "null"]},
+    "record_index": {"type": "integer"},
+    "field_index": {"type": "integer"},
+    "field_role": {
+      "type": "string",
+      "description": "gnl_str | gnl_fixstr | stcm_string | enc_string | bin_string"
+    },
+    "encoding": {"type": "string", "description": "utf-8 | cp932"},
+    "text": {
+      "type": "string",
+      "description": "Decoded text (editable). Decoded with surrogateescape so it round-trips exactly."
+    },
+    "raw_hex": {
+      "type": "string",
+      "description": "Original encoded bytes of the field, without the NUL terminator. Ground truth for no-op validation."
+    },
+    "control_metadata": {
+      "type": "object",
+      "description": "Format-level control data needed to interpret the field (endian, message size, descriptor count, flags, ...)."
+    },
+    "repack_metadata": {
+      "type": "object",
+      "description": "Everything the rebuild needs: blob_type (gnl | enc_row | bin_string), blob_offset / row / string_index, struct_offset, table_offset, field_kind."
+    },
+    "decode_errors": {"type": "integer"}
+  },
+  "additionalProperties": true
+}
