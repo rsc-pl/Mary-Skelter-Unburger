@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "platform": "windows-amd64",
+  "archive_sha256": "1c32ecfd297f195258aa576321b1cfa1ae820b2476e5228c4a85ab2670f675df",
+  "pieces": [
+    {
+      "file": "windows-amd64.part001",
+      "sha256": "1c32ecfd297f195258aa576321b1cfa1ae820b2476e5228c4a85ab2670f675df",
+      "size": 71246685
+    }
+  ]
+}

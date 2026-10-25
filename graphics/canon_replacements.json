@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "character_labels": {
+    "MS2": {
+      "OTSUU": "TSUU",
+      "LITTLE MERMAID": "NINGYOHIME",
+      "RED RIDING HOOD": "AKAZUKIN",
+      "THUMBELINA": "OYAYUBIHIME",
+      "SNOW WHITE": "SHIRAYUKIHIME",
+      "SLEEPING BEAUTY": "NEMURIHIME",
+      "KAGUYA": "KAGUYAHIME"
+    },
+    "MSF": {
+      "OTSUU": "TSUU",
+      "LITTLE MERMAID": "NINGYOHIME",
+      "RED RIDING HOOD": "AKAZUKIN",
+      "THUMBELINA": "OYAYUBIHIME",
+      "SNOW WHITE": "SHIRAYUKIHIME",
+      "SLEEPING BEAUTY": "NEMURIHIME",
+      "KAGUYA": "KAGUYAHIME",
+      "PYRE": "SHIRA"
+    }
+  },
+  "job_labels": {
+    "DESTROYER": "DESTROY",
+    "SCIENTIST": "SCIENCE",
+    "ITEM MEISTER": "ITEM TOOLER",
+    "MIMIC": "MIMICRY",
+    "LOGIC": "LOGICALIST",
+    "BLOOD CHEMIST": "BLACHEMIST",
+    "SAKURA MAIDEN": "SAKURA MIKO",
+    "LEECH": "BLOOD",
+    "WEAVER": "TANZAKU"
+  },
+  "kessiki_skill_labels": {
+    "RABBIT HOLE": "WONDER HOLE",
+    "HAIR FLAIR": "HAIR!",
+    "MARY REVERSER": "MARY GUN REVERSER"
+  },
+  "notes": {
+    "scope": "Baked graphical labels use the same canonical names and terms as the text patch.",
+    "otsuu_context": "OTSUU here refers to the playable つう character.",
+    "pyre_context": "Finale PYRE character labels for シラ map to SHIRA."
+  },
+  "dlc_job_labels": {
+    "T-HEALER2": "T-HEALER 2",
+    "G-ASSASSIN2": "G-ASSASSIN 2",
+    "JO-SINGER2": "JO-SINGER 2",
+    "修羅セーター": "SHURA SWEATER",
+    "妖艶魔術師": "BEWITCHING MAGICIAN",
+    "濡れバスコープ": "WET BASCOPE"
+  }
+}

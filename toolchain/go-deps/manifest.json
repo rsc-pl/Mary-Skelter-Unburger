@@ -1,0 +1,3296 @@
+{
+  "schema": 1,
+  "archive_sha256": "0801f24507407e15445ec3ada60e5736e21db1fe4fc2347a7d5a48317f9a7927",
+  "files": [
+    {
+      "name": "bcn/.gitattributes",
+      "size": 163,
+      "sha256": "9fcbfd68d0c765bdeb9962fc47bc88f54c24d17cd1dbf7e3e935714521d94627"
+    },
+    {
+      "name": "bcn/.github/workflows/ci.yaml",
+      "size": 301,
+      "sha256": "b3631aba60b4b8da622221dbe445bf4e130311609e2b195410e3185f7cf36d41"
+    },
+    {
+      "name": "bcn/.github/workflows/release.yaml",
+      "size": 869,
+      "sha256": "64edf98ae58e3e5bdc07c72c25612dafe0aeacb16a850abb11d0f2971ef53c1a"
+    },
+    {
+      "name": "bcn/.gitignore",
+      "size": 2538,
+      "sha256": "8086b96d3b67577802fa9f375c6b9db7bc4a59721a17d060dd504d3a903750d9"
+    },
+    {
+      "name": "bcn/.golangci.yml",
+      "size": 1046,
+      "sha256": "c5933df0169ad724e4442f150eca57b62ebfcf38e4264596dc6038943da1394e"
+    },
+    {
+      "name": "bcn/CHANGELOG.md",
+      "size": 8208,
+      "sha256": "c5138670c6db28b049c2b43fbe2dba7fc81bc2808dbc38b3032fc1b3f55c8229"
+    },
+    {
+      "name": "bcn/LICENSE",
+      "size": 1085,
+      "sha256": "be579aa52ce3a62170b7938ad568245316c5e899566773a1822d4ba065c5b6ec"
+    },
+    {
+      "name": "bcn/Makefile",
+      "size": 5213,
+      "sha256": "af10526eb3cd929b5882c8dcc9cbd72cfb4114c2969b829f2edcbe215b0457d2"
+    },
+    {
+      "name": "bcn/README.md",
+      "size": 6753,
+      "sha256": "2d31dfc2ace7e6ab6f54d59dc3d0f45335719a6655bb7a32389f5d989975a76d"
+    },
+    {
+      "name": "bcn/bc1.go",
+      "size": 11453,
+      "sha256": "f22277c12b241c2d82b8e0638b775df0d5002418f1e0c67243b1a22586461338"
+    },
+    {
+      "name": "bcn/bc123_test.go",
+      "size": 5736,
+      "sha256": "6dea2e4624eb0a44d9f0acd562cfc9bc3864bcccc89b235ea779f54d7eaffdbb"
+    },
+    {
+      "name": "bcn/bc2.go",
+      "size": 2366,
+      "sha256": "f0b2c877f940c2f2be8b9e4fe35ead5bbe26afbe210528cff69ed9e4c75ce39a"
+    },
+    {
+      "name": "bcn/bc3.go",
+      "size": 3839,
+      "sha256": "4fc3590a66bfc31d4b6b8dda0367719b04e537d39ad180e9a519eb0b62fa6c61"
+    },
+    {
+      "name": "bcn/bc45.go",
+      "size": 13044,
+      "sha256": "09e8da55073b0a30a9d438a386baa99ad80c949bc6e8686b3fb648ef45f4b7ba"
+    },
+    {
+      "name": "bcn/bc45_test.go",
+      "size": 4024,
+      "sha256": "e12dfb8b16669c80da3abe5b103a6845a833c232b0cc6ab60f68937ee6f63dcb"
+    },
+    {
+      "name": "bcn/bc6h.go",
+      "size": 16409,
+      "sha256": "e600f4afcb926f95d3d59c3572ebec2c800bc2ca1acada3240fe00c64f5458ed"
+    },
+    {
+      "name": "bcn/bc6h_encode.go",
+      "size": 22257,
+      "sha256": "001c76491dceeb2e68ba4852725e88c43c72d02f7b56ac436a3b4d2647690bd9"
+    },
+    {
+      "name": "bcn/bc6h_pack.go",
+      "size": 12812,
+      "sha256": "ddc0b18b95a300cb4e9c08721f01697c7bc65740791358012829bfc8fc34fa19"
+    },
+    {
+      "name": "bcn/bc6h_tables.go",
+      "size": 3323,
+      "sha256": "6376d94c12ec795eacc87ed9f949e562b104f5190809cb8a76468f1febe4b2a8"
+    },
+    {
+      "name": "bcn/bc6h_test.go",
+      "size": 14323,
+      "sha256": "a4ef3682ccb78565d9857643f5ed30f202196fc3057f9a01707f59504504e3a1"
+    },
+    {
+      "name": "bcn/bc7.go",
+      "size": 5801,
+      "sha256": "7ca0835684806bc7d7d46c2c9ff8e1702fd5d7d1ffafc3ab6c2883b8082b3658"
+    },
+    {
+      "name": "bcn/bc7_common.go",
+      "size": 4701,
+      "sha256": "38ab70835cfb7ea87bf582b4ff72c19685b889d8637a188f7c5eee0a8c29c76e"
+    },
+    {
+      "name": "bcn/bc7_encode.go",
+      "size": 2682,
+      "sha256": "a19e73a7ca4adbc81539a280151efcfaa23b91ebd57901623fa968a7b9fa191f"
+    },
+    {
+      "name": "bcn/bc7_encode_test.go",
+      "size": 14117,
+      "sha256": "5d4fc40bd2f877fc5bb829cb54aab21044d060b730a03e73948ae7564c122a8f"
+    },
+    {
+      "name": "bcn/bc7_mode02.go",
+      "size": 13748,
+      "sha256": "312ad9d37cdf73a682040844958d5524c7f44a094500be67d09ca71e0bd7a6e5"
+    },
+    {
+      "name": "bcn/bc7_mode1.go",
+      "size": 7920,
+      "sha256": "115d58ae99afb90569fa299cb0e1b8b677ec34c405f7c6a9bf668b0b65ecdc56"
+    },
+    {
+      "name": "bcn/bc7_mode3.go",
+      "size": 5118,
+      "sha256": "f3b5f1c033debc15884a726f978cad9bd5f32ed77d4b26e6f4bea99c941b5d41"
+    },
+    {
+      "name": "bcn/bc7_mode4.go",
+      "size": 12946,
+      "sha256": "dc2f36eb5ffa2da22ad877893202eda397595f35e8c43a87b46f8d2cbfdf15a6"
+    },
+    {
+      "name": "bcn/bc7_mode5.go",
+      "size": 10048,
+      "sha256": "6ae323a2913b23ca49aabfccbae0efed4458648c5865e6a1953c65fff5f8391a"
+    },
+    {
+      "name": "bcn/bc7_mode6.go",
+      "size": 5601,
+      "sha256": "69100016f2343e460e859f8db92b2271d595bfd94fa495bbdf806b4fad5069c8"
+    },
+    {
+      "name": "bcn/bc7_mode7.go",
+      "size": 8840,
+      "sha256": "6810fab263570224413faaaf832631ef9446c8d26ff8cd3bc0f584a85eb71cde"
+    },
+    {
+      "name": "bcn/bc7_subset2.go",
+      "size": 4698,
+      "sha256": "3084519823a2aaa15728328272609a84d1c156b7415e7032adb6ed8c4c89f4e7"
+    },
+    {
+      "name": "bcn/bc7_test.go",
+      "size": 5398,
+      "sha256": "9546778849e68a85ec1d1d608488d97b64614e0f504ec3fe44f36485522ca34f"
+    },
+    {
+      "name": "bcn/bench_bc45_test.go",
+      "size": 6537,
+      "sha256": "2c080cce2be1fba4c498fe099ab2e667cb07318c4a7ffd5e0d639806d47fd39e"
+    },
+    {
+      "name": "bcn/bench_bc6h_test.go",
+      "size": 3443,
+      "sha256": "d921e963edd00b23293fa24d4edec482ca99e226b94e80e4b4099cc51c1b281e"
+    },
+    {
+      "name": "bcn/bench_bc7_test.go",
+      "size": 2563,
+      "sha256": "6f9703dafb2602a69048b9ceafa92efeeca379a250d5ea76c5fb3f23029c99e0"
+    },
+    {
+      "name": "bcn/bench_decode_test.go",
+      "size": 2198,
+      "sha256": "fa6c906b7ec46e0af12a53fa92a92c1587fe5e046e1041adc0fcb7d998365882"
+    },
+    {
+      "name": "bcn/bench_encode_test.go",
+      "size": 4173,
+      "sha256": "75e0f720cb95bbe9dbfa8a34bbe366b27842dc52a42188e41b660a2b5cf67c00"
+    },
+    {
+      "name": "bcn/block.go",
+      "size": 1593,
+      "sha256": "c999378eb923927d1a1d4803499b6a5edff834c0505cd4c963a4dee0811678cc"
+    },
+    {
+      "name": "bcn/block_range.go",
+      "size": 9223,
+      "sha256": "2a88d65e6ae722b917aab5539a149eb8898ffb55626c1732749cbdff47a07ce4"
+    },
+    {
+      "name": "bcn/bptc.go",
+      "size": 3425,
+      "sha256": "99847d959ddccaec0adcb86c4f2fc810871f0c5b5ee052cbb7438620b66bc456"
+    },
+    {
+      "name": "bcn/bptc_tables.go",
+      "size": 7888,
+      "sha256": "62de511731949eaa9dc9e6a5bb366451481b81ed10213afa0ddacfd1a5686cb1"
+    },
+    {
+      "name": "bcn/color.go",
+      "size": 2759,
+      "sha256": "a4e563ed8a7ca9c924078b7f0055cf210e0a776baf6cd78357fdc8481f765d7d"
+    },
+    {
+      "name": "bcn/container_encode.go",
+      "size": 1415,
+      "sha256": "46107b88e469fb362eddb4c85b714845ca7c19684d20270a611ebab84e18a233"
+    },
+    {
+      "name": "bcn/cubemap.go",
+      "size": 454,
+      "sha256": "d8add18b82f99d831e8eaf4af9c801ce48c1cbab215072b46d6f1ee2a158c714"
+    },
+    {
+      "name": "bcn/dds.go",
+      "size": 16143,
+      "sha256": "f06e2cd87699f38fabe7d88e5732e43b8364fabaf4b21f3f1b1f8b43053dcc2f"
+    },
+    {
+      "name": "bcn/dds/dds.go",
+      "size": 1015,
+      "sha256": "2404a17aed2a9a04d832cab8fcfc64e347cabbc0c37441ee816640c8cc6b6dce"
+    },
+    {
+      "name": "bcn/dds_dx10_test.go",
+      "size": 1383,
+      "sha256": "4c2791b4f72a1ff39352bba94022549b45fa660cd8961ed9e2c8cbba15cf31d2"
+    },
+    {
+      "name": "bcn/dds_io.go",
+      "size": 1462,
+      "sha256": "0f310b46c91214df7b2d2aebd80344718f81cab7807cf02618905a5209ae3877"
+    },
+    {
+      "name": "bcn/dds_types.go",
+      "size": 4519,
+      "sha256": "963731e3ebb48666adf6d486b765d77f725fa6c9c310b8c5abe8ea3367d4c33f"
+    },
+    {
+      "name": "bcn/dds_uncompressed_test.go",
+      "size": 12377,
+      "sha256": "931d7bfdd0bc1bbd3652a3691b9c430b47a6b8742768168477e31145759b9ec9"
+    },
+    {
+      "name": "bcn/decode_parity_test.go",
+      "size": 6379,
+      "sha256": "a9d043a3850aa1ec172433c09f32028b01713577aeb470665846f6b9b5d80b7c"
+    },
+    {
+      "name": "bcn/decode_pool.go",
+      "size": 1580,
+      "sha256": "6e7958f716a8beb1923b4356712a197d7c453e72ee6f5af0e2504f17ec9a89ca"
+    },
+    {
+      "name": "bcn/doc.go",
+      "size": 1024,
+      "sha256": "b620ac791c7b8bcbe09588103859d7d9296b9d7a5f1efb171b07b28ef3c570c1"
+    },
+    {
+      "name": "bcn/dxt_compat.go",
+      "size": 2485,
+      "sha256": "60eb6e20a32457abf13aa4f1c5e4dc8f276131e4f81a9894cd6da346b932bd82"
+    },
+    {
+      "name": "bcn/dxt_compat_test.go",
+      "size": 1579,
+      "sha256": "4aee6b7ea8eba20bf2daf10f9b16d65088a880933ae53e09dfdf7803504d70a5"
+    },
+    {
+      "name": "bcn/encode.go",
+      "size": 13270,
+      "sha256": "60447757ae8a31e41e7cacacff380c950985ec12b687a593fa02dabba0c88d85"
+    },
+    {
+      "name": "bcn/encode_pool.go",
+      "size": 1625,
+      "sha256": "e2c8749d5500d5373934ecf4c3d88a07bf526285bce14793eed80c5fdb3fa4af"
+    },
+    {
+      "name": "bcn/errors.go",
+      "size": 5025,
+      "sha256": "d50a038c3a381384129edd1446c2e8cb88dba8b0c85120d5aec9442b0ac1520a"
+    },
+    {
+      "name": "bcn/example_test.go",
+      "size": 1398,
+      "sha256": "c900cbc8d1d0c2620a07640123a1ccdef8e88a5f3939c918cf84cbbe6d6da5b2"
+    },
+    {
+      "name": "bcn/format.go",
+      "size": 5424,
+      "sha256": "423df4044e292a18a40b494254e3157b1e43b3435dc756956300abd88edb0afc"
+    },
+    {
+      "name": "bcn/fuzz_test.go",
+      "size": 3902,
+      "sha256": "4055c8927a4fc65c60224d8f9c3701d7ee3f72c88378680d3f9f3329240aebe5"
+    },
+    {
+      "name": "bcn/go.mod",
+      "size": 78,
+      "sha256": "425b35ef2344d37429c5127a5db0712bde3b012ec8a0dcb0e07e5c5d8d3925e8"
+    },
+    {
+      "name": "bcn/go.sum",
+      "size": 153,
+      "sha256": "59ff7906e3b7738fa8361e647f98c13c78417293ddb48f7c4f7ca8ead4531c63"
+    },
+    {
+      "name": "bcn/golden_test.go",
+      "size": 9999,
+      "sha256": "307486bbf1b2a5909b7d4a27896e313d4267e0f0143abda22e77431b98c193da"
+    },
+    {
+      "name": "bcn/half.go",
+      "size": 2747,
+      "sha256": "d1196aaa8e7f6ae73e71fa7ffd111c89d805f58b00d727a1000eb577442e0eb1"
+    },
+    {
+      "name": "bcn/helpers_exact_test.go",
+      "size": 4291,
+      "sha256": "b8496f311452521dd26570a7c1f4e25c5b3426974e502fda03628c9a4b3ad693"
+    },
+    {
+      "name": "bcn/image.go",
+      "size": 4775,
+      "sha256": "ad32cbcd76dbf91e20da86de17ac791d29da4e69167ab5e5f07c0bcfa4ef2804"
+    },
+    {
+      "name": "bcn/image_into_test.go",
+      "size": 4475,
+      "sha256": "586e977a6ad3ad381b06e49efccca120eea365060e479306055c551429646f6b"
+    },
+    {
+      "name": "bcn/intconv.go",
+      "size": 489,
+      "sha256": "17ccda1d86eadbcd35b19ae4a539233c7e12de455f1fcdc61abd8a8cb123b8af"
+    },
+    {
+      "name": "bcn/internal/simd/cpu_amd64.go",
+      "size": 792,
+      "sha256": "f4ff79709d8716f300911b1b901bc9fb1c1671fde6a252a27fbc1b37a853b9fc"
+    },
+    {
+      "name": "bcn/internal/simd/cpu_other.go",
+      "size": 299,
+      "sha256": "25100405d027c0ee71703b0527bc458c8f8767371ff24d7bd5c31071624ba3ef"
+    },
+    {
+      "name": "bcn/internal/simd/doc.go",
+      "size": 491,
+      "sha256": "d7bc8e2dd5441fed9c841f35323dd9426ec0816de47225eb1c531cb521e54f63"
+    },
+    {
+      "name": "bcn/internal/simd/kernels_amd64.s",
+      "size": 127089,
+      "sha256": "e74e4e5ab75d5d6b0cd03ba6290b7e43dacb1425f16c08c6e192ccbaaffb38ff"
+    },
+    {
+      "name": "bcn/internal/simd/kernels_stubs_amd64.go",
+      "size": 5879,
+      "sha256": "3953a49924abde634bef6a9a9a3142921bc25db91be43d201f2d2832dbfc15f8"
+    },
+    {
+      "name": "bcn/kernels_amd64.go",
+      "size": 14377,
+      "sha256": "22b71966ae642c9f6508e5292aeefcb03f8c60c6348c311e941e5490e3cb9d34"
+    },
+    {
+      "name": "bcn/kernels_generic.go",
+      "size": 876,
+      "sha256": "2aea325d238ef752cb656f8e2b35db95a63e68070e1e95ba29f27dcb8785cb05"
+    },
+    {
+      "name": "bcn/kernels_noasm.go",
+      "size": 3561,
+      "sha256": "bd32c252db2206edce63cc70a460ba62899a2e61d92f72272710d01a37d4d310"
+    },
+    {
+      "name": "bcn/kernels_test.go",
+      "size": 15293,
+      "sha256": "af3233df117ce1cd6a0eb053df82dda740fea3c11ba1f2dc43ab6c9a14975328"
+    },
+    {
+      "name": "bcn/ktx.go",
+      "size": 13979,
+      "sha256": "aaa471a833703b8d75462d764e66678bd9ef57c6b438ccb25be6be0fa8d180fe"
+    },
+    {
+      "name": "bcn/ktx/ktx.go",
+      "size": 984,
+      "sha256": "43dda8e9740ad0d1eedb3bea68d6d17a9e8aeb40b1193b4504c3c2d3d7819dd1"
+    },
+    {
+      "name": "bcn/ktx_io.go",
+      "size": 747,
+      "sha256": "c12ee0c170cba82cb2fbd4517f41da9e83e7011bcfadfa32c452deafa84e52fe"
+    },
+    {
+      "name": "bcn/ktx_test.go",
+      "size": 8037,
+      "sha256": "374e0377725addff6f4860afd847f4c2a16e1d5ff530f7be7a959827e3327dca"
+    },
+    {
+      "name": "bcn/ktx_types.go",
+      "size": 4483,
+      "sha256": "a3a51996d5c42502f4653d520b4915e9509b43ec067c057038c7121a3cf7111b"
+    },
+    {
+      "name": "bcn/lsq.go",
+      "size": 8154,
+      "sha256": "44e109bcf64bb0d48cfbad5805e3659c384f2ca0943896151c72c96d06396fc7"
+    },
+    {
+      "name": "bcn/lsq_test.go",
+      "size": 2716,
+      "sha256": "14fd4f917d54b57fe806ed58847b3f15e88126321f5d36490758e32460a091e5"
+    },
+    {
+      "name": "bcn/mipmap.go",
+      "size": 7401,
+      "sha256": "4de805854b0204a95465c4a58f523fb56327e95da7a50f40713c9225aa1bcc6f"
+    },
+    {
+      "name": "bcn/mipmap_bench_test.go",
+      "size": 1302,
+      "sha256": "1449e918037dde8e1fe740f88e2d3844a0eaad106faa978c27f58a4a909d44bd"
+    },
+    {
+      "name": "bcn/mipmap_test.go",
+      "size": 4796,
+      "sha256": "f98c28a176a7b8fca5f391b5384973504aec9f3ba1b10bc70efa8fe5ed589ac9"
+    },
+    {
+      "name": "bcn/options.go",
+      "size": 9811,
+      "sha256": "f94c6ad8a686aa793ac0fa0576862c4c3562e4f0760be48aae97b6c8238b36f0"
+    },
+    {
+      "name": "bcn/psnr_test.go",
+      "size": 4078,
+      "sha256": "f24e65f012e27ed7c9a9842a6add248a3c5a103716b3cd78439ba96debbb8cc5"
+    },
+    {
+      "name": "bcn/quality.go",
+      "size": 3932,
+      "sha256": "ff0d06392c0b9dc8599002e68437575cda0c9443308f46767ac468183cea34e0"
+    },
+    {
+      "name": "bcn/testdata/gen/README.md",
+      "size": 393,
+      "sha256": "6c1e6a668b803ea11ac864f38a31acc3252982208785cf99ed1954f2ccdeb7af"
+    },
+    {
+      "name": "bcn/testdata/gen/gen_parity.c",
+      "size": 4105,
+      "sha256": "fd534df6c9e2d487cc9ecebd287d4550b48ca98224803228249c238a93694092"
+    },
+    {
+      "name": "bcn/testdata/parity/bc1.blocks",
+      "size": 192,
+      "sha256": "2b319c9a586bfeba891571d69fe3870ccdffe7f5866ac2a110fefe494bdc87b6"
+    },
+    {
+      "name": "bcn/testdata/parity/bc1.rgba",
+      "size": 1536,
+      "sha256": "0d7770b03e3e7ae086f853fef2b04c4ce46f35f04c31f6a7f8114abf4187c1ef"
+    },
+    {
+      "name": "bcn/testdata/parity/bc2.blocks",
+      "size": 384,
+      "sha256": "0398eb87e9fe974e991d4b0e51c61f54b7868bb8405c64e6568ccb5ca1ed441f"
+    },
+    {
+      "name": "bcn/testdata/parity/bc2.rgba",
+      "size": 1536,
+      "sha256": "36d8597c51bd732a2662e93ae5905aced87486dbb70f4ba9867f974c5d07f290"
+    },
+    {
+      "name": "bcn/testdata/parity/bc3.blocks",
+      "size": 384,
+      "sha256": "e7c3ee3e7815bc46046df79aa325847b205af8c55a66df129058347d1311eb86"
+    },
+    {
+      "name": "bcn/testdata/parity/bc3.rgba",
+      "size": 1536,
+      "sha256": "f816df648d1ab4c3e999cfbe2c013c9e604331372e1f90c53c27d9311d01809e"
+    },
+    {
+      "name": "bcn/testdata/parity/bc4.blocks",
+      "size": 192,
+      "sha256": "9b3918cef2af743794bbce71ed0ef0d21d7f6f631c5c634d2d90256f5f054563"
+    },
+    {
+      "name": "bcn/testdata/parity/bc4.r",
+      "size": 384,
+      "sha256": "df008d14670116263afc1019b45ab64c0800d73411f39646a38a6bef103ff0ea"
+    },
+    {
+      "name": "bcn/testdata/parity/bc5.blocks",
+      "size": 384,
+      "sha256": "651eb92df62aed9d70d36606aa66aab3f7486c6acf5fab95fd496094cc03b817"
+    },
+    {
+      "name": "bcn/testdata/parity/bc5.rg",
+      "size": 768,
+      "sha256": "ebfcee9463fcec172a324696acaacc27d1ca1f3d4fa5021ecc0c9f4955421093"
+    },
+    {
+      "name": "bcn/testdata/parity/bc6h.blocks",
+      "size": 608,
+      "sha256": "011ecb7ef4f3afed7b35f322dd1e5036d18672e6173e8428afc664edb40077d8"
+    },
+    {
+      "name": "bcn/testdata/parity/bc6hs.rgb16le",
+      "size": 3648,
+      "sha256": "3f2f3cb4e98fdd462a107b8a8821728daad3331b0734dff45bcc9a23b1a24fa3"
+    },
+    {
+      "name": "bcn/testdata/parity/bc6hu.rgb16le",
+      "size": 3648,
+      "sha256": "717493ec0a5c442f1f501a4a6633d467bbb557b7cc1df964ca33d4f88dd16965"
+    },
+    {
+      "name": "bcn/testdata/parity/bc7.blocks",
+      "size": 512,
+      "sha256": "65f92354314f1c2973225a02d5d39430264a9f09cbd30654b87dad2d524adae9"
+    },
+    {
+      "name": "bcn/testdata/parity/bc7.rgba",
+      "size": 2048,
+      "sha256": "7aa54064f8dab017e054610ce826bb66437059b24f1708ddb0740972aaecc07f"
+    },
+    {
+      "name": "xsys/.gitattributes",
+      "size": 345,
+      "sha256": "f01a52100b87112941cedcd5cd60a7146c104fc7971c3efa3f13ea0d3fd3d725"
+    },
+    {
+      "name": "xsys/.gitignore",
+      "size": 85,
+      "sha256": "af9c5d21341c4b4ba74b56d33f203b052ee4cdd49c2dde44d41fa43c278b63d4"
+    },
+    {
+      "name": "xsys/CONTRIBUTING.md",
+      "size": 913,
+      "sha256": "6f509e4bff3be1f056f1d8d5224c5e8eefd61fdf62c57fb1d0c8c6ce369e56e4"
+    },
+    {
+      "name": "xsys/LICENSE",
+      "size": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "name": "xsys/PATENTS",
+      "size": 1303,
+      "sha256": "96f408bfae65bf137fc2525d3ecb030271c50c1e90799f87abf8846d8dd505cc"
+    },
+    {
+      "name": "xsys/README.md",
+      "size": 593,
+      "sha256": "55c5f38e73b81d23b13230e434abd92e26222148847723b6731f40ae14d60f43"
+    },
+    {
+      "name": "xsys/codereview.cfg",
+      "size": 21,
+      "sha256": "7c54d4c5f43de8c5cba7ec4ed15d1a497e075b1656ba5e8a51d86a86543a516d"
+    },
+    {
+      "name": "xsys/cpu/asm_aix_ppc64.s",
+      "size": 407,
+      "sha256": "5a50f8f52ea89a7c638bdd6798f576523ecfc1e4ec2cb657d445f1a7dc0dfab2"
+    },
+    {
+      "name": "xsys/cpu/asm_darwin_arm64_gc.s",
+      "size": 439,
+      "sha256": "6f6f35fbf284f205f49db2410b6554bd72aa1fc8ccf35f30a619482277e31ccd"
+    },
+    {
+      "name": "xsys/cpu/asm_darwin_x86_gc.s",
+      "size": 632,
+      "sha256": "21022bf7461861b3744775075f4a4ef960c036cc469914684f87a4da9fc8b3a8"
+    },
+    {
+      "name": "xsys/cpu/byteorder.go",
+      "size": 1868,
+      "sha256": "825146fd4557b1cbd8161fa28bb4be8820089848d695316edeecb7fd5a551f8a"
+    },
+    {
+      "name": "xsys/cpu/cpu.go",
+      "size": 15212,
+      "sha256": "b56854737e8d803d582232f9790f7dda2d8ff69e5982f6cdbdd2a150be540922"
+    },
+    {
+      "name": "xsys/cpu/cpu_aix.go",
+      "size": 605,
+      "sha256": "1e9265c7703fe4b8b2bd6813e05f2fc15a83eb60e237dcafa0911b5b19a7e25f"
+    },
+    {
+      "name": "xsys/cpu/cpu_arm.go",
+      "size": 2163,
+      "sha256": "23e6d65d2ba6bf988f6413643cb336b49b438b2b15659c0b22c2d0c63a25e3c0"
+    },
+    {
+      "name": "xsys/cpu/cpu_arm64.go",
+      "size": 4130,
+      "sha256": "8497751085f331e75f297ed0eef3ceb7c31725f63e3a142a543ec2d29befae36"
+    },
+    {
+      "name": "xsys/cpu/cpu_arm64.s",
+      "size": 809,
+      "sha256": "704264fabff92f961c0bc68f0cb3cc49a21f62141e44ba709caf0ee2eccb0e5d"
+    },
+    {
+      "name": "xsys/cpu/cpu_darwin_arm64.go",
+      "size": 3766,
+      "sha256": "b8d13328eed17809afb4f807512caded369fdbd2ecdd78f80d54651079bb12a3"
+    },
+    {
+      "name": "xsys/cpu/cpu_darwin_arm64_other.go",
+      "size": 776,
+      "sha256": "70f4e3eefb56f34752172c26187dcb8f86439b1d61abeefa5ca0a454d8762c6f"
+    },
+    {
+      "name": "xsys/cpu/cpu_darwin_x86.go",
+      "size": 2113,
+      "sha256": "4d90cd4b64eed4f9bbfe8e6c4b856f785659d6f22f56f8f6cf1b172c10e9c518"
+    },
+    {
+      "name": "xsys/cpu/cpu_gc_arm64.go",
+      "size": 278,
+      "sha256": "58e20a70f4400b4969c85e01f017f36bd6eeb240fb1c49799cd18ccdf8bd8bc2"
+    },
+    {
+      "name": "xsys/cpu/cpu_gc_s390x.go",
+      "size": 674,
+      "sha256": "9af08f2d1f95402635813d6303faae72ddd1218fc27115252002282da415f7e8"
+    },
+    {
+      "name": "xsys/cpu/cpu_gc_x86.go",
+      "size": 505,
+      "sha256": "2eec0a58e170f14b054a9d0c006fede8cd5c075c5d7cde1fbab688b4b793588e"
+    },
+    {
+      "name": "xsys/cpu/cpu_gc_x86.s",
+      "size": 602,
+      "sha256": "74ac7fc7ef9c56c3306238cf031ea8ef7c0312a7116cb9fba6d07f0b1382df80"
+    },
+    {
+      "name": "xsys/cpu/cpu_gccgo_arm64.go",
+      "size": 335,
+      "sha256": "7aad4d607a87b279d42f484a3ad479819991678faaa3767be85ecd42292d5f2a"
+    },
+    {
+      "name": "xsys/cpu/cpu_gccgo_s390x.go",
+      "size": 1029,
+      "sha256": "89f09aa36fdb1fef1a4ec171178cc12daf4f49e6ee368fec496c482d04ddf145"
+    },
+    {
+      "name": "xsys/cpu/cpu_gccgo_x86.c",
+      "size": 1095,
+      "sha256": "50585132982aa1dda61a887bb62f468a1a843cf1993d59a4b0fe6ca2e8a5c8f7"
+    },
+    {
+      "name": "xsys/cpu/cpu_gccgo_x86.go",
+      "size": 630,
+      "sha256": "60315ffb16a8330d4653429d52c60d2b087073487b79366bfd640a858f56453c"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux.go",
+      "size": 322,
+      "sha256": "cf0f4c7211c4cc912689fecbd30bd4747b6dadf577b065ac03823d74ae1ac870"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_arm.go",
+      "size": 1393,
+      "sha256": "5c2f68fd8e53218eb96b8d67375564242a6bf825021a4ecbc8347af6f47898c0"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_arm64.go",
+      "size": 3662,
+      "sha256": "1f0f5c5f113cf222529b724855e636312388dc5f2bac1d4b71620422ea9baf4a"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_loong64.go",
+      "size": 632,
+      "sha256": "d6231726a9727715da997a63711856ab9ec8f3b20d0a7c37e77e9fd6166e7e72"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_mips64x.go",
+      "size": 480,
+      "sha256": "2527fa939ae3ba4ff7a7a5190c865cdde199d079e5f25b7aa52b1b56e4e11016"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_noinit.go",
+      "size": 306,
+      "sha256": "620abd97199a2230f59165a2bc58c3ba780b6801ec0246cfb7319553dd795226"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_ppc64x.go",
+      "size": 775,
+      "sha256": "01d1a98f48bec3bbb204e88898ba6b5441d30671cb502790e9091471d25d304a"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_riscv64.go",
+      "size": 7197,
+      "sha256": "7baf73edc4f429f64143e32cc07f44e0da06061af81cf45ed01b1bd549e953dc"
+    },
+    {
+      "name": "xsys/cpu/cpu_linux_s390x.go",
+      "size": 890,
+      "sha256": "290f658b0d8e7e9dd93d3b908cd202f13b3a4f228071d4211f4e1947050dbbcc"
+    },
+    {
+      "name": "xsys/cpu/cpu_loong64.go",
+      "size": 1926,
+      "sha256": "9e680f8d3915c412a40896bb2dfddf20620839598ecaace0f1cd490b4f446cea"
+    },
+    {
+      "name": "xsys/cpu/cpu_loong64.s",
+      "size": 358,
+      "sha256": "254c8be780a37245bf80cf206a706d5ab0ede28ddf2d867c5c0368749f4125f5"
+    },
+    {
+      "name": "xsys/cpu/cpu_mips64x.go",
+      "size": 320,
+      "sha256": "77a333aebca444ef9f718d27df30422a9ac88cba29add1029c30d3dc1c6dc781"
+    },
+    {
+      "name": "xsys/cpu/cpu_mipsx.go",
+      "size": 248,
+      "sha256": "35bb6ba0d168ee41f3763110d65e39e8f6271995b59e6422dc65690fb69e2a9a"
+    },
+    {
+      "name": "xsys/cpu/cpu_netbsd_arm64.go",
+      "size": 4359,
+      "sha256": "b250e2406e45f0c972605266c3d67dd7a6ad614cb0fba5467d87facf62464436"
+    },
+    {
+      "name": "xsys/cpu/cpu_openbsd_arm64.go",
+      "size": 1702,
+      "sha256": "681c260436ffe0d3d591bc99e9e08a3218e0017589552a7f6a374fcd4a54aad8"
+    },
+    {
+      "name": "xsys/cpu/cpu_openbsd_arm64.s",
+      "size": 376,
+      "sha256": "5ab9396eff64294fd703389dfae36d4d794f6261c79b6cbfc347699b38f361cc"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_arm.go",
+      "size": 218,
+      "sha256": "54da156f719d6aee6e14693c79a062680db425f5580d6222d56e57c53e228ca6"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_arm64.go",
+      "size": 287,
+      "sha256": "d19d8a37ad7b797aa4c5113c8210d93b0aa6aa9399378e786a92b51d6e73a29d"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_mips64x.go",
+      "size": 256,
+      "sha256": "f0ff8ddcebee1e3652369ff24d1f09c22702048266e0c64e0ebac908247c0829"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_ppc64x.go",
+      "size": 285,
+      "sha256": "0baab277f0a08d9b958cd1dc3c06f35ebd63c453bfff47adb65e7bbdbf94cb97"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_riscv64.go",
+      "size": 243,
+      "sha256": "f4595d128c37d0b779b788170d6e7976b0b488644b3df07774c0ffbfb4fac28c"
+    },
+    {
+      "name": "xsys/cpu/cpu_other_x86.go",
+      "size": 322,
+      "sha256": "6f447bdafdc6f75593b29977c4f43a39f743043d4f286c542a8b93fa7fad3bf9"
+    },
+    {
+      "name": "xsys/cpu/cpu_ppc64x.go",
+      "size": 360,
+      "sha256": "63aa31373ef16a2ca856ca2a1e54496d4cc91602ebf64bf5df99fbdfc334a896"
+    },
+    {
+      "name": "xsys/cpu/cpu_riscv64.go",
+      "size": 1120,
+      "sha256": "b19cf4854d2b32f81268f780d279abc4ac4fd47bb7f88abc07a7ea2fcc98690f"
+    },
+    {
+      "name": "xsys/cpu/cpu_s390x.go",
+      "size": 4993,
+      "sha256": "0abc36c54a82044ad48a406a2828e522f24b70247c922a79330cf8f616debbef"
+    },
+    {
+      "name": "xsys/cpu/cpu_s390x.s",
+      "size": 2007,
+      "sha256": "2ab869aa3b38626aba388fa6db352a3be80f1efdfd2085bdf97c2ef594a5e777"
+    },
+    {
+      "name": "xsys/cpu/cpu_s390x_test.go",
+      "size": 1993,
+      "sha256": "86ecfc9e4d55bae80a2577a79e35a2a8579f7b81df5b06e2b556a87d193ce32d"
+    },
+    {
+      "name": "xsys/cpu/cpu_test.go",
+      "size": 3017,
+      "sha256": "83c750058f975fc46b2e010d9fb267939c50765063bff6bb066de15908acbc16"
+    },
+    {
+      "name": "xsys/cpu/cpu_wasm.go",
+      "size": 439,
+      "sha256": "0da8add0ce546dfed3a844f94ce693137b6833712c016561f598e6d8b08c474e"
+    },
+    {
+      "name": "xsys/cpu/cpu_windows.go",
+      "size": 1069,
+      "sha256": "af3d72b6e5d5b0d6e801eaff989e8a38f6d26ad253faf057fa618682a1875a36"
+    },
+    {
+      "name": "xsys/cpu/cpu_windows_arm64.go",
+      "size": 1582,
+      "sha256": "908ca3b754cda425b194ca564edf0ecdd8923f75b2e0864f3f52a35a6e30253b"
+    },
+    {
+      "name": "xsys/cpu/cpu_x86.go",
+      "size": 7775,
+      "sha256": "6a9cdf0eca762b62d0e49e1f3bc9b5c68f23fecbdb888d12ef27bc32bc3893b9"
+    },
+    {
+      "name": "xsys/cpu/cpu_zos.go",
+      "size": 223,
+      "sha256": "ff82e534d4d81726e13f34919386becdcb65cb9fc24c0f5835314e00fe13070d"
+    },
+    {
+      "name": "xsys/cpu/cpu_zos_s390x.go",
+      "size": 643,
+      "sha256": "53b684a51586ff413570961780bea6526a6eab2568dce27c15efdf0d8e421d05"
+    },
+    {
+      "name": "xsys/cpu/endian_big.go",
+      "size": 397,
+      "sha256": "005d2761cef8d501304f73be92a7f43174bf738a380c9d5d7bc0cac926075f57"
+    },
+    {
+      "name": "xsys/cpu/endian_little.go",
+      "size": 433,
+      "sha256": "c6bc70c372d9e1fe86fcf295f406b17bf04bf8d1af25c2456f58520cdaef3be9"
+    },
+    {
+      "name": "xsys/cpu/endian_test.go",
+      "size": 441,
+      "sha256": "773b89c5492d9913e1c430b9154b6e87a69daa520ae9d47223bb8f9707ae3d16"
+    },
+    {
+      "name": "xsys/cpu/hwcap_linux.go",
+      "size": 1510,
+      "sha256": "4101df793fddf76dfae477f917928008bc4a797446cd4ad44cde6e906c3f8713"
+    },
+    {
+      "name": "xsys/cpu/parse.go",
+      "size": 1611,
+      "sha256": "97b269ea4f0b6d4071a9eed8a74f05055965c307bbab9090d9002bb01f7365a9"
+    },
+    {
+      "name": "xsys/cpu/parse_test.go",
+      "size": 1280,
+      "sha256": "4422f441e61fdc7bd058b7da821a89415dda510303c462476c5169de345853e1"
+    },
+    {
+      "name": "xsys/cpu/proc_cpuinfo_linux.go",
+      "size": 1113,
+      "sha256": "dfdf71a1c8d94e7cc44117cadb1cf6f66fa2e8cdfb873dd5f1d85831d19841aa"
+    },
+    {
+      "name": "xsys/cpu/runtime_auxv.go",
+      "size": 393,
+      "sha256": "d898ace395866bed261d403c8cd0ea6eab6d6d77f52042204957e389c38938cf"
+    },
+    {
+      "name": "xsys/cpu/runtime_auxv_go121.go",
+      "size": 357,
+      "sha256": "6eee9d1a593dce53d22545dc5d5f6ed9127a43e6568ef5f5521920946510d445"
+    },
+    {
+      "name": "xsys/cpu/runtime_auxv_go121_test.go",
+      "size": 444,
+      "sha256": "4c9bd410639f926d9eea0a35e13f8c73e4b342ab5626d8156bef4b71ec6cae46"
+    },
+    {
+      "name": "xsys/cpu/syscall_aix_gccgo.go",
+      "size": 726,
+      "sha256": "a384f5e0e1f961a15295f30078e8c8cf16ec28672b659b7ff80829ccf8a2a848"
+    },
+    {
+      "name": "xsys/cpu/syscall_aix_ppc64_gc.go",
+      "size": 988,
+      "sha256": "33f76a8da28ee51d3db32944949fc2ddcb9870ba0f2d22d29732dfcf2a6ba119"
+    },
+    {
+      "name": "xsys/cpu/syscall_darwin_arm64_gc.go",
+      "size": 1474,
+      "sha256": "2ec90937ba10bdeb3a646e3fcefd531bd99ce0c3653eaa6c8de2c6d86362e758"
+    },
+    {
+      "name": "xsys/cpu/syscall_darwin_x86_gc.go",
+      "size": 2542,
+      "sha256": "66059b45534544bdcde771fa793eca91d04de079e21adc4b2732e0912a57900a"
+    },
+    {
+      "name": "xsys/cpu/zcpu_windows.go",
+      "size": 1052,
+      "sha256": "f6f4da36899a0308a16b8c80589bf1eb807520f5132ab9ec63bf8edb23bc5596"
+    },
+    {
+      "name": "xsys/execabs/execabs.go",
+      "size": 3673,
+      "sha256": "3ac435dc655f3066809055981e786dcac5f5521437680393f8c10d5115c2d319"
+    },
+    {
+      "name": "xsys/execabs/execabs_go118.go",
+      "size": 331,
+      "sha256": "38f83127467b75195a2e8633084dba1c6e67938499464b1f87d18724de662a9f"
+    },
+    {
+      "name": "xsys/execabs/execabs_go119.go",
+      "size": 376,
+      "sha256": "e53534c53ea9e0cf6c8c394d840a7eab059c81170fc28c7f8fb0b6160ecd7396"
+    },
+    {
+      "name": "xsys/execabs/execabs_test.go",
+      "size": 4206,
+      "sha256": "ac3149996f9e1ad045ced8a60348ae7f5b4702963fe490112ae383c1c89c8870"
+    },
+    {
+      "name": "xsys/go.mod",
+      "size": 35,
+      "sha256": "57f4393ea18d5446a12363b35c23a616d843fa1669c7121a70a2bc3a9677d665"
+    },
+    {
+      "name": "xsys/plan9/asm.s",
+      "size": 214,
+      "sha256": "1a3a3cf8d418ac9c4093d175f6c5b12997d0bd6902a5467d3f79e3abe7e60d78"
+    },
+    {
+      "name": "xsys/plan9/asm_plan9_386.s",
+      "size": 702,
+      "sha256": "24a9c10414fc834ec763576fba475148243e4253f2a94f8001ee370148628db5"
+    },
+    {
+      "name": "xsys/plan9/asm_plan9_amd64.s",
+      "size": 704,
+      "sha256": "ffcd45494479e8704e6c76c0cb14163e4a1945d74f227689050942bd539b776c"
+    },
+    {
+      "name": "xsys/plan9/asm_plan9_arm.s",
+      "size": 644,
+      "sha256": "134d070fb08d17dcf9d99ddf49d0292b1aa068fe3458112070e0e7374d28bca2"
+    },
+    {
+      "name": "xsys/plan9/const_plan9.go",
+      "size": 1004,
+      "sha256": "622cb24770d3e8e007f200782210eafb4e711caf49fae8c3a7d9f8bbee312e4d"
+    },
+    {
+      "name": "xsys/plan9/dir_plan9.go",
+      "size": 5734,
+      "sha256": "8a085a885566456c46be6b63945569f3ade74c8043052010e63b50bfca22e428"
+    },
+    {
+      "name": "xsys/plan9/env_plan9.go",
+      "size": 555,
+      "sha256": "73d0fcf4f3d1a36028d3448e105961749f3e2e672288ce295aac942d851c3546"
+    },
+    {
+      "name": "xsys/plan9/errors_plan9.go",
+      "size": 1565,
+      "sha256": "f7cf2a2692a72eb8df570f98351fbd478306686cb3f3efce1e6921fdeda3f5d8"
+    },
+    {
+      "name": "xsys/plan9/mkall.sh",
+      "size": 4535,
+      "sha256": "4c00a754aef7a86bbff33d75cecdcc5543ddabd1b81a4d0bb1f6de47e04fb928"
+    },
+    {
+      "name": "xsys/plan9/mkerrors.sh",
+      "size": 6068,
+      "sha256": "b2ae238eb4e6477c1cb901168c1689245d1afeae71724594e37c9776881d02d3"
+    },
+    {
+      "name": "xsys/plan9/mksyscall.go",
+      "size": 12557,
+      "sha256": "371279c00ff822df3a87a2bdb894a18ce95d59baed8cfd43484d63b30ff5cb48"
+    },
+    {
+      "name": "xsys/plan9/mksysnum_plan9.sh",
+      "size": 459,
+      "sha256": "0b8858af1df4540706ecf1094957f239bee92085f9560f0337eafa634702c161"
+    },
+    {
+      "name": "xsys/plan9/pwd_plan9.go",
+      "size": 355,
+      "sha256": "48a7f3a5e85cceaeefac6c91561c3734e29397e55b79885d76303e6ae82a6d0e"
+    },
+    {
+      "name": "xsys/plan9/race.go",
+      "size": 587,
+      "sha256": "ef938073e2cbc7b312b5813ee2d5ba2e15a6cee2c5cc46908eb6bd209dd2e46c"
+    },
+    {
+      "name": "xsys/plan9/race0.go",
+      "size": 450,
+      "sha256": "47a1d57ec72da80583fc1d27295970ca08aedbcff1440f381b9fdc0ad644d7a0"
+    },
+    {
+      "name": "xsys/plan9/str.go",
+      "size": 500,
+      "sha256": "e27a462231f0f1e9676afd7d39dcbb6dc01a376114f6eec5d2324c49f670a5b4"
+    },
+    {
+      "name": "xsys/plan9/syscall.go",
+      "size": 3361,
+      "sha256": "d345244c57b95fa73670aad1a98cfeaed9976b64d9794abbf95f99ca795b6c36"
+    },
+    {
+      "name": "xsys/plan9/syscall_plan9.go",
+      "size": 7144,
+      "sha256": "4021730b069cb9d819b216c9d89d589213e2d84e096e6590708f81d289139a5f"
+    },
+    {
+      "name": "xsys/plan9/syscall_test.go",
+      "size": 783,
+      "sha256": "18ba0e43c17f76a76d8978a655997e3172069026fa14999e25b6941d8e1dca0e"
+    },
+    {
+      "name": "xsys/plan9/zsyscall_plan9_386.go",
+      "size": 6340,
+      "sha256": "90b91bdb2381562908d6568f72efefb975c477adfedbf8c1bdbc4f6e505421f4"
+    },
+    {
+      "name": "xsys/plan9/zsyscall_plan9_amd64.go",
+      "size": 6344,
+      "sha256": "c2eb064f54fd4d844e025f8ad131d11ae804d89a2bccf36360792a2b22cb3370"
+    },
+    {
+      "name": "xsys/plan9/zsyscall_plan9_arm.go",
+      "size": 6340,
+      "sha256": "9d2838a3a4427370c1078897ffab0d0c4a3fc74f2983516e6c9a7c40a3ec3718"
+    },
+    {
+      "name": "xsys/plan9/zsysnum_plan9.go",
+      "size": 1057,
+      "sha256": "6b9027a1b9a0e5029f819bbed060b8771742c5f946b4163ef1080531ee4366c6"
+    },
+    {
+      "name": "xsys/unix/.gitignore",
+      "size": 16,
+      "sha256": "cc0a4a6efa79e7f971f329717482d436e7f02657d0409c07fb476d698eee8d11"
+    },
+    {
+      "name": "xsys/unix/README.md",
+      "size": 8686,
+      "sha256": "4af9e253991697dca0d8bf0f833f8935ab0d96b77c1698fce52b36be39c282c8"
+    },
+    {
+      "name": "xsys/unix/affinity_linux.go",
+      "size": 5156,
+      "sha256": "b6c998fdf681f97006b0dae3ba0bf5d6d05a9f86fcc94f1518e37eab9dbc990a"
+    },
+    {
+      "name": "xsys/unix/aliases.go",
+      "size": 385,
+      "sha256": "53e7eeba0503ad62ec18cdf2ca51a1785249a8646354439c854148dc57c06fb5"
+    },
+    {
+      "name": "xsys/unix/asm_aix_ppc64.s",
+      "size": 407,
+      "sha256": "5a50f8f52ea89a7c638bdd6798f576523ecfc1e4ec2cb657d445f1a7dc0dfab2"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_386.s",
+      "size": 696,
+      "sha256": "790fd7c184c61a23c71b47ca48c3c8ce8ea7b305be61e0c59f737c5e8672ce3a"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_amd64.s",
+      "size": 722,
+      "sha256": "1fecd01932d872c0d4ec06178a1860ae12bfab8490056dcf0a9d7a16cd455531"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_arm.s",
+      "size": 686,
+      "sha256": "aee4126e4b15f53515db886192f7ace1cce06c36b8b7956751ba3d08c3ecc92b"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_arm64.s",
+      "size": 709,
+      "sha256": "f7740a9d925eccd280e54e7971a36508a7d2856d9ef996a394ad5cfd80bec8c3"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_ppc64.s",
+      "size": 716,
+      "sha256": "7680b5f4d70dba1d2654b31e42b7d32d759991c41f733a294791b3b37e840323"
+    },
+    {
+      "name": "xsys/unix/asm_bsd_riscv64.s",
+      "size": 711,
+      "sha256": "706ba6d0c95ce47dcdbe2a5442d65777ef1b7c0e55280609060e78e2fadacb5e"
+    },
+    {
+      "name": "xsys/unix/asm_linux_386.s",
+      "size": 1470,
+      "sha256": "9a114d3e93e4eb61429a28c38af9dbd7685c2aacf0bcf3bd85d02c945dbd0a8a"
+    },
+    {
+      "name": "xsys/unix/asm_linux_amd64.s",
+      "size": 1204,
+      "sha256": "14c826e5d2db337e49c32e0b5a66317b58da198874a0eb950c33aac571e9573c"
+    },
+    {
+      "name": "xsys/unix/asm_linux_arm.s",
+      "size": 1136,
+      "sha256": "31b76d65dc3f98d14bd6d8952161476fe6d79bd7c630243e1974f54e7586e5da"
+    },
+    {
+      "name": "xsys/unix/asm_linux_arm64.s",
+      "size": 1102,
+      "sha256": "9d1514c08da093cd38b77f03ff5fe265c16500a42295b32c66509dc828a34045"
+    },
+    {
+      "name": "xsys/unix/asm_linux_loong64.s",
+      "size": 1183,
+      "sha256": "e15e4ee47b7871b4dad52c86a33b4ee31116cbf593260b02b116215c68507c69"
+    },
+    {
+      "name": "xsys/unix/asm_linux_mips64x.s",
+      "size": 1164,
+      "sha256": "ad37fe507bb5fe75649c60f438dbea75a9e67dfd87b013ba57eaa9eafc8e165c"
+    },
+    {
+      "name": "xsys/unix/asm_linux_mipsx.s",
+      "size": 1165,
+      "sha256": "7f98956068f3f7687b3853b7308df8fc97ab5642ca2ccd7202313cd9f7a7093b"
+    },
+    {
+      "name": "xsys/unix/asm_linux_ppc64x.s",
+      "size": 909,
+      "sha256": "5a83d8878d016ac6dbc7f528669e9568697960f89ee89e62828f7c6274ed36cf"
+    },
+    {
+      "name": "xsys/unix/asm_linux_riscv64.s",
+      "size": 1041,
+      "sha256": "cd59298164685165e72b5d3a92d744f14d41aa308c72d7ad2ad9aa2b4e2f59ee"
+    },
+    {
+      "name": "xsys/unix/asm_linux_s390x.s",
+      "size": 1142,
+      "sha256": "f9205625a4e32073588696dda6e8971f2f19998b4bc076bce6ec08ee6d6eb26f"
+    },
+    {
+      "name": "xsys/unix/asm_openbsd_mips64.s",
+      "size": 677,
+      "sha256": "aebaf02e3dbc94f7969f085ce1708a33c653d1134929931b3db743ee324ab034"
+    },
+    {
+      "name": "xsys/unix/asm_solaris_amd64.s",
+      "size": 423,
+      "sha256": "fb0c083f4b4f98ed0654d6104bb5bcef5be5c6c4f3e53129246b33e82aa3babe"
+    },
+    {
+      "name": "xsys/unix/asm_zos_s390x.s",
+      "size": 11433,
+      "sha256": "87a6ef3dc4c1f487702ad317748569e25fcb3853529a1139e22226cd3cfcecdb"
+    },
+    {
+      "name": "xsys/unix/auxv.go",
+      "size": 1020,
+      "sha256": "5e470a481610ff746d64cb22b3e7a981ffa527d6ca546e87df4296704d6c6de6"
+    },
+    {
+      "name": "xsys/unix/auxv_linux_test.go",
+      "size": 455,
+      "sha256": "6bd2b211824c1dca6d19ff2e9445f38d322c66ee2bf7b8f547a6dbfd4c2b8287"
+    },
+    {
+      "name": "xsys/unix/auxv_unsupported.go",
+      "size": 370,
+      "sha256": "2866c7d661d025015c758b7ba4072cbd0d157456e8388fe13d0af0a822c2c594"
+    },
+    {
+      "name": "xsys/unix/bluetooth_linux.go",
+      "size": 680,
+      "sha256": "72ce84a68d3647cd34f04e9040861333ac9e9f9ac5b00008d41514c79da664d8"
+    },
+    {
+      "name": "xsys/unix/bpxsvc_zos.go",
+      "size": 20419,
+      "sha256": "2424f17c5e4996277e2bb13341f2bd735f1e2a188218c2e9a83e8da33656374f"
+    },
+    {
+      "name": "xsys/unix/bpxsvc_zos.s",
+      "size": 8334,
+      "sha256": "b2b78b72b16a5b0f3665a7fa5dcaa9d1c46be457f1aac8939e36b9290878c1a4"
+    },
+    {
+      "name": "xsys/unix/cap_freebsd.go",
+      "size": 5131,
+      "sha256": "ee66b772df1a3a4502973ca9512dede096a91289330c377d562ebce014b1b2aa"
+    },
+    {
+      "name": "xsys/unix/constants.go",
+      "size": 318,
+      "sha256": "f3405abc7484992964143eac589b951132d8e3a90f8359fc1a6e9ddcc201aa8a"
+    },
+    {
+      "name": "xsys/unix/creds_test.go",
+      "size": 7407,
+      "sha256": "5fc176d2c669a85ac9e6cc077f535db9dd8fe4f9aa45b8cd7c07312a0457c973"
+    },
+    {
+      "name": "xsys/unix/darwin_amd64_test.go",
+      "size": 7329,
+      "sha256": "81781d1d641bfa280d03af702f2ae6c73909f0169961c2f66749b66fe71615e0"
+    },
+    {
+      "name": "xsys/unix/darwin_arm64_test.go",
+      "size": 7257,
+      "sha256": "255d4a46e773cf7ded55978696009de11fcb230d1f627d0f43dc96b4d6b2f8ba"
+    },
+    {
+      "name": "xsys/unix/darwin_test.go",
+      "size": 2398,
+      "sha256": "f9d7c10731ed792047b5885e148d38e8a628e59ccf9cb64e309f78d2e9143f25"
+    },
+    {
+      "name": "xsys/unix/dev_aix_ppc.go",
+      "size": 739,
+      "sha256": "260c626e3d43587d50d577ca7387eb2d5b3470e9d092c99b984e4ace7a0ec5e5"
+    },
+    {
+      "name": "xsys/unix/dev_aix_ppc64.go",
+      "size": 858,
+      "sha256": "180e30bed1e9fc2a01617127f35eb0f45bfe01271f47508521be8377d13fda48"
+    },
+    {
+      "name": "xsys/unix/dev_darwin.go",
+      "size": 747,
+      "sha256": "9a0bc8af77b4325bb10b651e00b8f7974cc972d0e5456a370f2c46a56181ada7"
+    },
+    {
+      "name": "xsys/unix/dev_dragonfly.go",
+      "size": 1030,
+      "sha256": "125802ffd01c98daddf86bd57960f51f7dadccb15b530c48e6a24f4f1c697fba"
+    },
+    {
+      "name": "xsys/unix/dev_freebsd.go",
+      "size": 1013,
+      "sha256": "c246eb43233fd2e714c85e84407a084da2823d5a64e61313fd393d34589ef0f3"
+    },
+    {
+      "name": "xsys/unix/dev_linux.go",
+      "size": 1579,
+      "sha256": "eec381cf025f58965728544dae5df9394d6bebc7e68572e429814c87ee6dd284"
+    },
+    {
+      "name": "xsys/unix/dev_linux_test.go",
+      "size": 1474,
+      "sha256": "6e490eefc69f87f24d4b3f8100792526cab2e4177d8c578ed30e0711ba50c2ed"
+    },
+    {
+      "name": "xsys/unix/dev_netbsd.go",
+      "size": 913,
+      "sha256": "f712a720bab3f9598c897c45e389c6666998899b963c05892fc2e12179cf1ca4"
+    },
+    {
+      "name": "xsys/unix/dev_openbsd.go",
+      "size": 918,
+      "sha256": "bc0456ed97d8bb58bed6b4b70959e04215d3393596d92b33a7aa515238349dd1"
+    },
+    {
+      "name": "xsys/unix/dev_zos.go",
+      "size": 830,
+      "sha256": "387b8e9ec6361dd3176e279ef086a0aa6f3c47f1059250b319edbb2939dc9cb8"
+    },
+    {
+      "name": "xsys/unix/dev_zos_test.go",
+      "size": 1405,
+      "sha256": "e1436a212d261eef62ecbcd029a97d63cda7d134e62be589ce9f49f66eea6268"
+    },
+    {
+      "name": "xsys/unix/dirent.go",
+      "size": 3085,
+      "sha256": "03e3b15a8428e2f1520386291052fd30e5d74ecb4d78c724bae7953d71425be1"
+    },
+    {
+      "name": "xsys/unix/dirent_test.go",
+      "size": 3625,
+      "sha256": "38caef0ecf58178929852d84564d5713d3161a9c894763831d61c7a8c0b42503"
+    },
+    {
+      "name": "xsys/unix/dup3_test.go",
+      "size": 1490,
+      "sha256": "2c83cddd2c7fb504208f78a051d4732f93853f27a5b6286e3617be35ad5d9090"
+    },
+    {
+      "name": "xsys/unix/endian_big.go",
+      "size": 330,
+      "sha256": "e3301465531d68ae0625eb52b10d0056dcbeb55f02c275af76a423e70c0b684e"
+    },
+    {
+      "name": "xsys/unix/endian_little.go",
+      "size": 358,
+      "sha256": "bc06276262c57cf21e35c13ff2f5fdc96c18feb32a055c6201edfa76e95c967f"
+    },
+    {
+      "name": "xsys/unix/env_unix.go",
+      "size": 645,
+      "sha256": "bcb73ccfc5a8dae1f59e4debba69e0f600155b947f358c939bc753443a7a8007"
+    },
+    {
+      "name": "xsys/unix/example_exec_test.go",
+      "size": 426,
+      "sha256": "09e64910b7d2fb6640568ae16e1f67ffa6dc360365b195c15b467f534d541747"
+    },
+    {
+      "name": "xsys/unix/example_flock_test.go",
+      "size": 613,
+      "sha256": "87457c81cd8ed689bdb11627ce7845cc7cacb7a3b2a3953764d73e0a7faa6e0a"
+    },
+    {
+      "name": "xsys/unix/example_sysvshm_test.go",
+      "size": 1343,
+      "sha256": "12ba2e7fd9a3a3af12c774c9288fe20c9c869a3e4403dbefc1c77eb3e52f2c9b"
+    },
+    {
+      "name": "xsys/unix/export_mremap_test.go",
+      "size": 272,
+      "sha256": "c71527d61519253d167452ebb371ae2a84bf889c4d6e8d946684451209fd7c45"
+    },
+    {
+      "name": "xsys/unix/fcntl.go",
+      "size": 1075,
+      "sha256": "e8d84df0c6ed38a56014cc73d431aa973f1d298169735eaf9f7d42cbb26f7768"
+    },
+    {
+      "name": "xsys/unix/fcntl_darwin.go",
+      "size": 806,
+      "sha256": "fb6aa54ed72a392548bcd7c79a10ce16e9ed70da90492ef13346e2419fa52d3f"
+    },
+    {
+      "name": "xsys/unix/fcntl_linux_32bit.go",
+      "size": 436,
+      "sha256": "012288300cc487e655953e6c18adb05252b3ab97f655b30f282fb27ecb9375f5"
+    },
+    {
+      "name": "xsys/unix/fdset.go",
+      "size": 753,
+      "sha256": "8339dad44215930bdd253beaa1064c4d34ed2f81d54c4bd53d2be1f64fe35530"
+    },
+    {
+      "name": "xsys/unix/fdset_test.go",
+      "size": 1251,
+      "sha256": "2e1973aaeeb0f0ddc95b3c7e59cd957800d291b6165411e364d9bff1b3e4a6c8"
+    },
+    {
+      "name": "xsys/unix/gccgo.go",
+      "size": 1952,
+      "sha256": "e2fa0c806b04a17e3e3c42865d85d825c391871dc6517e5aef10a13f4c7dc977"
+    },
+    {
+      "name": "xsys/unix/gccgo_c.c",
+      "size": 1526,
+      "sha256": "3bea4e48ed46901e180e143da42b8380392f50f5ac428022a64bc31899ec1a81"
+    },
+    {
+      "name": "xsys/unix/gccgo_linux_amd64.go",
+      "size": 436,
+      "sha256": "f958825fc376f98f51562efa821ef42d35abd47d05a99a12c59a0b5756bc1ce6"
+    },
+    {
+      "name": "xsys/unix/getdirentries_test.go",
+      "size": 1699,
+      "sha256": "c12e2a205351086d4d7d4dea8904ae2b3e3d5fc19284772c7aaddf2dd3ec3fa4"
+    },
+    {
+      "name": "xsys/unix/getfsstat_test.go",
+      "size": 1006,
+      "sha256": "bcb1131f372a341820aedcfbb156d41caac9a8c649c4be5c8713a6ffe8863282"
+    },
+    {
+      "name": "xsys/unix/getvfsstat_test.go",
+      "size": 1088,
+      "sha256": "afbb218a763df8297df6169e25f65dc3ab901d95c642573c66a1c7e633a77a62"
+    },
+    {
+      "name": "xsys/unix/ifreq_linux.go",
+      "size": 4339,
+      "sha256": "a950bf9eec4d9385836bd0dd400c6218d5033585f9cb15135d110848a20af5c3"
+    },
+    {
+      "name": "xsys/unix/ifreq_linux_test.go",
+      "size": 4451,
+      "sha256": "a37efef5c5cad0f2e8cfd9cb6a52a176cca7aa429210f09c2f687e1014d980d2"
+    },
+    {
+      "name": "xsys/unix/internal/mkmerge/mkmerge.go",
+      "size": 13466,
+      "sha256": "fe5696bac8e38d30edd538f8626db949412df272bd0e1047f2a384ad03dac886"
+    },
+    {
+      "name": "xsys/unix/internal/mkmerge/mkmerge_test.go",
+      "size": 10825,
+      "sha256": "746d5fa986f7e973a684268d20614513e98d5419490513c77dbc07390605f4f1"
+    },
+    {
+      "name": "xsys/unix/ioctl_linux.go",
+      "size": 11577,
+      "sha256": "b0de1db3834fe4cb2e23e36e65c43614b493cb4c29c98f63f2b9a7e7e66972a1"
+    },
+    {
+      "name": "xsys/unix/ioctl_signed.go",
+      "size": 2508,
+      "sha256": "c4b33ba7a8385f5138051fbaab3737a8593b37a0348648b21526f3d3aa1f8fea"
+    },
+    {
+      "name": "xsys/unix/ioctl_unsigned.go",
+      "size": 2570,
+      "sha256": "991b152e32cde753f3b64d8ebc1d18e9078a3615006bc79c474b2bbbc653487a"
+    },
+    {
+      "name": "xsys/unix/ioctl_zos.go",
+      "size": 2081,
+      "sha256": "5b92dfbd38c982b63a7c71e4291d20176501f7c1117df19721c1cbc14de86266"
+    },
+    {
+      "name": "xsys/unix/linux/Dockerfile",
+      "size": 2261,
+      "sha256": "11ae83a67e8b1f5233ebeb8f8162809ff768cdc842ec23fb91553d0af35bfa20"
+    },
+    {
+      "name": "xsys/unix/linux/mkall.go",
+      "size": 30057,
+      "sha256": "e0f7c058e0c18fcac9ae203f0393ccdf1f9506c48ff4e9d359447b7fb272238d"
+    },
+    {
+      "name": "xsys/unix/linux/mksysnum.go",
+      "size": 6524,
+      "sha256": "35c10e34715e3d362926e05cd081e01af166bc4e57bba54705a1ca334a1f1dd4"
+    },
+    {
+      "name": "xsys/unix/linux/types.go",
+      "size": 384847,
+      "sha256": "86f16e35725b0d63cee1842da57e23814f6d4698c6221bb13d571cea15ef57e0"
+    },
+    {
+      "name": "xsys/unix/mkall.sh",
+      "size": 8317,
+      "sha256": "a2e5b0819eecde3f9b355523e7f41edb2dfa6da166825b300690506d314d253e"
+    },
+    {
+      "name": "xsys/unix/mkasm.go",
+      "size": 3830,
+      "sha256": "1ec26e4f2de5965629c30b1e55a1f7f22c31cdfffba0c86f2f24f87109e3cd57"
+    },
+    {
+      "name": "xsys/unix/mkerrors.sh",
+      "size": 21457,
+      "sha256": "838b36c1a8598da7750455cdabbabce9b6acb9f650001460af8d69bac35303e3"
+    },
+    {
+      "name": "xsys/unix/mkpost.go",
+      "size": 11076,
+      "sha256": "4151feeda717f4dd28739522ba12735a61d7c07e53db3d6786b6f24cefc47793"
+    },
+    {
+      "name": "xsys/unix/mksyscall.go",
+      "size": 12862,
+      "sha256": "0e352432abfc14dd773409c3f954c92e0d89b1f1f61881c7390918f4a24584e3"
+    },
+    {
+      "name": "xsys/unix/mksyscall_aix_ppc.go",
+      "size": 12253,
+      "sha256": "eb1cdb8dc72bb7d8c93b54d60fa839e204670a9aa9a3b4c314dfd27fbfe3f22a"
+    },
+    {
+      "name": "xsys/unix/mksyscall_aix_ppc64.go",
+      "size": 19290,
+      "sha256": "571268d6fb7fd4a739c5b35ad80a12bde4ff70eaa5d8642236cdc18069fea762"
+    },
+    {
+      "name": "xsys/unix/mksyscall_solaris.go",
+      "size": 9878,
+      "sha256": "4a5547f85f6d519e194b7fe25d375328d59ad2c6e6861644e59bf68e17f15fbd"
+    },
+    {
+      "name": "xsys/unix/mksyscall_zos_s390x.go",
+      "size": 13271,
+      "sha256": "70f1cf9ef3a072f7d64843de34574b6b01459844bbcdb3b119e925078bedc547"
+    },
+    {
+      "name": "xsys/unix/mksysctl_openbsd.go",
+      "size": 8148,
+      "sha256": "9aa76bbc3364da7e88bfe212e56533c34a9cb8430976d4536d46c358f3efdfff"
+    },
+    {
+      "name": "xsys/unix/mksysnum.go",
+      "size": 4856,
+      "sha256": "f9f6c867cc2b54c7ea30498537103f16a84740b1993c89087c9bb38499b3f580"
+    },
+    {
+      "name": "xsys/unix/mmap_nomremap.go",
+      "size": 343,
+      "sha256": "f6166771a7d9a6c116617b6e21a15b020ddf709b39162c8596e0880cef3ce4be"
+    },
+    {
+      "name": "xsys/unix/mmap_unix_test.go",
+      "size": 1948,
+      "sha256": "6037ee7e7ef7b9f8fb2ae880763ca6a49ea086d683615a2e3aa051e403aa7aca"
+    },
+    {
+      "name": "xsys/unix/mmap_zos_test.go",
+      "size": 2164,
+      "sha256": "bebfa89eb31427f4a87cc8c9daef1da1505dbf2554a769210788b4d2b86168ea"
+    },
+    {
+      "name": "xsys/unix/mremap.go",
+      "size": 1659,
+      "sha256": "c4f762c0f38d6a9f08c9b754b207a1ba64dd29d03692245171f8a344aac6935a"
+    },
+    {
+      "name": "xsys/unix/mremap_test.go",
+      "size": 1937,
+      "sha256": "dced729e970db50bf2ca67af546bfe7c4273c5644248d7f64d3f0d15ee7a0d54"
+    },
+    {
+      "name": "xsys/unix/openbsd_test.go",
+      "size": 2478,
+      "sha256": "b38fd68f8023bdf9dc43e433922a2d0d4f2f1a95908579e272a9b4c1ca253442"
+    },
+    {
+      "name": "xsys/unix/pagesize_unix.go",
+      "size": 396,
+      "sha256": "5fea300c32898efe55341abb39489aeac76f81ea9df513f68d1b2556be7b48a3"
+    },
+    {
+      "name": "xsys/unix/pipe2_test.go",
+      "size": 2096,
+      "sha256": "b50dc7f9359a423d2a31981559f08aa0fae17f30ca102e0193c6b4f4dbc4404d"
+    },
+    {
+      "name": "xsys/unix/pledge_openbsd.go",
+      "size": 2385,
+      "sha256": "e90f0adacfae47941c205d45c8fc04ef2095530850f966f9a074fd794a250d33"
+    },
+    {
+      "name": "xsys/unix/ptrace_darwin.go",
+      "size": 315,
+      "sha256": "61eab9ab1e3d5d24b8e3545352e97afa0f76a77a578f75fb078026617444052c"
+    },
+    {
+      "name": "xsys/unix/ptrace_ios.go",
+      "size": 284,
+      "sha256": "3a02dde1da1081aee268293d7f8bc6742e5dbeb4cf77fa44bdab52c0217c47ff"
+    },
+    {
+      "name": "xsys/unix/race.go",
+      "size": 629,
+      "sha256": "08df3ead4ae451092de5c3c04b4c2054376426f79a987e2dbe73a646dda13646"
+    },
+    {
+      "name": "xsys/unix/race0.go",
+      "size": 553,
+      "sha256": "8a78192af2b20cd177f78e3761e10d66567373cef3b7671aa3c7912d65de4c90"
+    },
+    {
+      "name": "xsys/unix/readdirent_getdents.go",
+      "size": 401,
+      "sha256": "50e29bed47a256b79cb3754f43d0f8c1a5ea762e400bf809d0eb44d16ddd4714"
+    },
+    {
+      "name": "xsys/unix/readdirent_getdirentries.go",
+      "size": 705,
+      "sha256": "db3a5b0e169d6f2431e3a145d2a3cc4374330e29d40378cb3fb26ede4fcd813d"
+    },
+    {
+      "name": "xsys/unix/readv_unix.go",
+      "size": 2581,
+      "sha256": "2abd5ef6af8852208f2bae9de6de1c8d90ae33caba76f7fb757004d7a4040fe8"
+    },
+    {
+      "name": "xsys/unix/readv_unix_test.go",
+      "size": 3292,
+      "sha256": "ab83d9f322893858c0f67e93af5039e00ce2a6477f1d3dcc918ffde9259c3f24"
+    },
+    {
+      "name": "xsys/unix/sendfile_test.go",
+      "size": 2335,
+      "sha256": "952358590da877a9a87d5a5305e973f254f7db3117390843b0bb4ac38a3993da"
+    },
+    {
+      "name": "xsys/unix/sockcmsg_dragonfly.go",
+      "size": 544,
+      "sha256": "ca6c99e3061644a02a28d20b6b8e6eb4aa50490511528a6b34cf7070f0f44e2c"
+    },
+    {
+      "name": "xsys/unix/sockcmsg_linux.go",
+      "size": 2658,
+      "sha256": "51d948aa226aa043c2760288aa883f9dbd53b9d65cf8bc20215146fc016dde6f"
+    },
+    {
+      "name": "xsys/unix/sockcmsg_unix.go",
+      "size": 3214,
+      "sha256": "7863093bfa7ec9e564c36992fbf2b7c97244c84d406e5fdc60b72c56a23af396"
+    },
+    {
+      "name": "xsys/unix/sockcmsg_unix_other.go",
+      "size": 1233,
+      "sha256": "73f23d4f0c002e24160530515a45f46bb6fbe8728cc79b135a8c6956d5c8458c"
+    },
+    {
+      "name": "xsys/unix/sockcmsg_zos.go",
+      "size": 1761,
+      "sha256": "05fe500643578c70b627c2b7041faf8e5b00266b7e33d2ff6a1f8e26e3179c84"
+    },
+    {
+      "name": "xsys/unix/symaddr_zos_s390x.s",
+      "size": 1601,
+      "sha256": "01262578778aa029ff817e964e38e7d68701476cd6334bc881f561921831b940"
+    },
+    {
+      "name": "xsys/unix/syscall.go",
+      "size": 2882,
+      "sha256": "41abaa37d079eee890fb7803dde876a19ba3acdbadf41f269ae8ed0d73ca0e37"
+    },
+    {
+      "name": "xsys/unix/syscall_aix.go",
+      "size": 16480,
+      "sha256": "778769e1bdde39c280ab69bd71a41075550da6a721588174ea22ad858c3b4f5a"
+    },
+    {
+      "name": "xsys/unix/syscall_aix_ppc.go",
+      "size": 1304,
+      "sha256": "4bb1d071cf56d0f31a9018d9dfbe96d268a8da5f5b00a227cdbb688c21717a80"
+    },
+    {
+      "name": "xsys/unix/syscall_aix_ppc64.go",
+      "size": 1950,
+      "sha256": "105ad1ebe5dabeafad78d102afcc6231e674e81dbe157f4a48e7c3373e23dec0"
+    },
+    {
+      "name": "xsys/unix/syscall_aix_test.go",
+      "size": 2148,
+      "sha256": "d519586463140cf5e9c457c65da6174628fc140b26eed800670c8045bfe439d7"
+    },
+    {
+      "name": "xsys/unix/syscall_bsd.go",
+      "size": 15321,
+      "sha256": "53d6db23c6307444ad18512ee160159c175608c0d424a86ec22dec6b28eeda65"
+    },
+    {
+      "name": "xsys/unix/syscall_bsd_test.go",
+      "size": 1442,
+      "sha256": "b9cf8fd87a46d7adc7bf8fc7d317397a012567c2eb4e080f836e002fb07e02bf"
+    },
+    {
+      "name": "xsys/unix/syscall_darwin.go",
+      "size": 23373,
+      "sha256": "8928e516d815b6d95ff8d6b7ffdbf88843e47076737d885bd81d68bfa8f825ed"
+    },
+    {
+      "name": "xsys/unix/syscall_darwin_amd64.go",
+      "size": 1530,
+      "sha256": "7a180893c051cc50d668414ce2ae60da968b7303aa3b1ebb816fcb0619b7faa5"
+    },
+    {
+      "name": "xsys/unix/syscall_darwin_arm64.go",
+      "size": 1447,
+      "sha256": "ca9f22a90e5e81a736c0ad500f015b139cbb05a23ffdbc39906c6feb6975244e"
+    },
+    {
+      "name": "xsys/unix/syscall_darwin_libSystem.go",
+      "size": 1225,
+      "sha256": "0c327ad9b9845e19b1e097dfb7b569bc9793b670874e24be4a87ac9bd4647557"
+    },
+    {
+      "name": "xsys/unix/syscall_darwin_test.go",
+      "size": 6193,
+      "sha256": "caba96317f188ce47c5803a2dff8413a7b5a4393bb98bfdb3a4415886c250a40"
+    },
+    {
+      "name": "xsys/unix/syscall_dragonfly.go",
+      "size": 11684,
+      "sha256": "bbad86381e07c5f4a6370bbc0e16d7fa285492c080237ed0b285bf5911f358ef"
+    },
+    {
+      "name": "xsys/unix/syscall_dragonfly_amd64.go",
+      "size": 1276,
+      "sha256": "edbdb3562f740dcdcbadc0e8a651841429d5c7342e67b8063c6cea0edf871754"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd.go",
+      "size": 15943,
+      "sha256": "4008e3ba2768c6e74c2543ab438a5f8cf30fd06a86cd13dc8d7142740b432246"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_386.go",
+      "size": 1518,
+      "sha256": "2ad1792d561743e033461fdfe16e29756318baf5f4d0ffb76b04f8cca00ae8de"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_amd64.go",
+      "size": 1471,
+      "sha256": "d57c9f92d30c8cef868ec6ef999bc57ea7e244e9324cd230b2deb5ff0c49bfb3"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_arm.go",
+      "size": 1378,
+      "sha256": "3cf2893961f37c2368365b6e89b586bdf3ec73becfe0c4c4f6d0bc702d61d731"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_arm64.go",
+      "size": 1345,
+      "sha256": "f3016c9d290e207f21023e6afe743e981dfcf3218418db2e62808dc3f52e32de"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_riscv64.go",
+      "size": 1347,
+      "sha256": "6d5edb901717e9316090f160657eed229dd5674e9ce619350dd97fee75c5fccb"
+    },
+    {
+      "name": "xsys/unix/syscall_freebsd_test.go",
+      "size": 7617,
+      "sha256": "4a3fa7417ff778d5ee5a8057660789f2f7dfc1fbc5257002c890f898edbec2c9"
+    },
+    {
+      "name": "xsys/unix/syscall_hurd.go",
+      "size": 651,
+      "sha256": "405088abff66c371c2e1a2897f7b9950060232c732a30963c009630dcc7ff7c5"
+    },
+    {
+      "name": "xsys/unix/syscall_hurd_386.go",
+      "size": 447,
+      "sha256": "bfe9660fd2a5a19be10df94c096fcbc1bcf63908b118c22d990df834297999f8"
+    },
+    {
+      "name": "xsys/unix/syscall_illumos.go",
+      "size": 1805,
+      "sha256": "883dd53a9104fa6ea5dbc3363349d8465ed32663e63f2907d34f59f48dcb4e75"
+    },
+    {
+      "name": "xsys/unix/syscall_internal_bsd_test.go",
+      "size": 3236,
+      "sha256": "223cf7dc62f08c64cbccfcc529e83d81790ea55001d5282ffe4f6669776a8e61"
+    },
+    {
+      "name": "xsys/unix/syscall_internal_darwin_test.go",
+      "size": 4415,
+      "sha256": "9a80152a59ae66d49a8dc4bca0653cc3935d3f41edb66a19d9b034564aae7df1"
+    },
+    {
+      "name": "xsys/unix/syscall_internal_linux_test.go",
+      "size": 20581,
+      "sha256": "c80079b8747a9f05282a2800d9bf83dd97e31c3c277ab1a27dd333c91bab071e"
+    },
+    {
+      "name": "xsys/unix/syscall_internal_solaris_test.go",
+      "size": 8963,
+      "sha256": "a0b8ce6ce116641e78a1ca9fc18bdcea7f0b5f1db16ba54c9762e59bde5c108b"
+    },
+    {
+      "name": "xsys/unix/syscall_linux.go",
+      "size": 80259,
+      "sha256": "5a1f64326a3de29148008a364f560fa8c8227238ca1b681ba5bec2e7c266bb98"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_386.go",
+      "size": 9022,
+      "sha256": "9fbfc8d057d611b65f8b7ccbc2618b361b66de81d089e54e16b616cbe73f9444"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_alarm.go",
+      "size": 440,
+      "sha256": "eede15c54c7c4dfc0691ae0e646fd31aca15bfd72f53783081e829cd150b19e0"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_amd64.go",
+      "size": 5335,
+      "sha256": "dfb1ba340e05d035b27aec5624c4743b5b686607ece9ab8d39eed329ac179df4"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_amd64_gc.go",
+      "size": 290,
+      "sha256": "6c5b86f3c4aa3dcf8619c5d444491414f72e014767e57fd9ad62f57653f4d837"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_arm.go",
+      "size": 7076,
+      "sha256": "69c97dc72e69f117d7bed4798b989859bf3ca9014d3994260c788f52bf518eb1"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_arm64.go",
+      "size": 6104,
+      "sha256": "31c005da895cedf5947aabf197554913df6b3dd84915ce0acf54a9e32ab13482"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_gc.go",
+      "size": 495,
+      "sha256": "41a54001d221205e9f1538066105b46c08cd329e85d4529426063961daa86235"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_gc_386.go",
+      "size": 585,
+      "sha256": "4b7f4eb1f9ecf86005b6aafbe0aed40dd9a0eef685ed86bb808afb25f15cfb7e"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_gc_arm.go",
+      "size": 411,
+      "sha256": "91a8f7ff35117a087e3cf4a1ed21474d58294f36ba339ecc1fce4e0b955181f4"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_gccgo_386.go",
+      "size": 986,
+      "sha256": "d0ba74e31927265f5a40fe5f331d3c68a012a87c4ad3cbe459c474f96bbc5537"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_gccgo_arm.go",
+      "size": 596,
+      "sha256": "1e235d97c691118af96a10ef1271e0eab2e77a8e70b329be2a798517825b6952"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_loong64.go",
+      "size": 6810,
+      "sha256": "e407a8bc6e283f39b5b10d8265da6fc083ea9f6b5af221789d21f921c371a1e9"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_mips64x.go",
+      "size": 5890,
+      "sha256": "3042f17d84af307540273cbb81306ea9326f822b3037c75533d91b79f1207244"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_mipsx.go",
+      "size": 5875,
+      "sha256": "3e856424b493930ec6bf0de029680a029ba282296f43140dd1cc34343dc0b160"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_ppc.go",
+      "size": 6940,
+      "sha256": "8c28964cb826e7b65d4e661855a5a8990f77c781567495bb095f7ed6e0731260"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_ppc64x.go",
+      "size": 5021,
+      "sha256": "233b2dc5241eebcd69f163eb9c3c13321f436ffc84fb47da7f0bc543bed88081"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_riscv64.go",
+      "size": 6262,
+      "sha256": "276001ae62135483e32b0840f2bf37ee38a17e08ea5d8c43b4b61922ce50d955"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_s390x.go",
+      "size": 9433,
+      "sha256": "b5e868626e55881f515ca6ac31f2121e2391824163fc8ae15355c99da15a15d6"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_sparc64.go",
+      "size": 4396,
+      "sha256": "20242d1d7aedc5083faf025595fa95332fb32087d82a76b3d0d2e098ec3181f0"
+    },
+    {
+      "name": "xsys/unix/syscall_linux_test.go",
+      "size": 35278,
+      "sha256": "aee90ce888b769744ac42476b129a805994abb5965b08ea292aad6d8761291c4"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd.go",
+      "size": 13005,
+      "sha256": "07b5b81fd3b5a41dd97a1fa6f679f7ea96cae3bbbca7c112c9c8e847c2491e9f"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd_386.go",
+      "size": 819,
+      "sha256": "d3172691c063016fb6c22284085f61e59cb44bd9f705a6c8ad610f960db7215b"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd_amd64.go",
+      "size": 814,
+      "sha256": "36e0dc5f9f9b24f6bdaabc811f444e4c226325ac67332699027884b4de429b1d"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd_arm.go",
+      "size": 819,
+      "sha256": "92883018b17ec95c903cc1204498f24eb3e54bffed060963e907666e8edae23f"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd_arm64.go",
+      "size": 814,
+      "sha256": "0c78cdd9794b69d4936425b6296ee9945d56cdc42a2dcdd7f632db7ad6f82312"
+    },
+    {
+      "name": "xsys/unix/syscall_netbsd_test.go",
+      "size": 1853,
+      "sha256": "12aa52dceff303ecb2c2f65610a3345d6401f9add8c6d1db7c5db5c5f6e5f723"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd.go",
+      "size": 11636,
+      "sha256": "32d12aa40fbad0a373c3382ff8e92238ab0ba04e2f534d7125008760fd8566be"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_386.go",
+      "size": 1000,
+      "sha256": "cb655debbaf5b4e3a1e4097542c82c80021d85ae789eda1a021f369afc081828"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_amd64.go",
+      "size": 990,
+      "sha256": "0c9ce3bd3a1ef3e3ebfe138dc118711f0bae444a4a6b875c65bcdce98e758abe"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_arm.go",
+      "size": 1000,
+      "sha256": "844a7e43d9ff569b7c77c1216adc94662afcd25934a82249be35cea34a8ca400"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_arm64.go",
+      "size": 990,
+      "sha256": "f899973d6beaef91ebf443c48825b44ad013816ff61d521f1efb79f73fbfb60d"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_libc.go",
+      "size": 1128,
+      "sha256": "8f249670f3576e501a7d9d9efb839e8dff2f3f5b4cd1b0811d512517c682f219"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_mips64.go",
+      "size": 955,
+      "sha256": "bc6f44bc01d924993cca7bacf74486598b71c2aa3a6b82357c51ecb36b2a569d"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_ppc64.go",
+      "size": 990,
+      "sha256": "0c6873a1bd84d6fde93cfda412e16c8a67ad00d42fe11afc4a429954d379a98d"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_riscv64.go",
+      "size": 994,
+      "sha256": "b37288a7b7d1c3e8d947af473c1d438bba8c33af933524d82116261b5d1cda1f"
+    },
+    {
+      "name": "xsys/unix/syscall_openbsd_test.go",
+      "size": 1005,
+      "sha256": "67163a414c908e66d423f17ab2bc0646f94cb7ca3d14830b79b4686d587f9c3a"
+    },
+    {
+      "name": "xsys/unix/syscall_solaris.go",
+      "size": 33790,
+      "sha256": "5fe99111895a2d2bb51e089c72a0b12f2af87ac2e2601ac78213882a5cb08657"
+    },
+    {
+      "name": "xsys/unix/syscall_solaris_amd64.go",
+      "size": 593,
+      "sha256": "e9d156d6665945ff7f5fe2b6602d31923664e260ef7b8e8cf2063ab6d2ecf8a7"
+    },
+    {
+      "name": "xsys/unix/syscall_solaris_test.go",
+      "size": 11873,
+      "sha256": "731c5fbb450aa6ba6aed20f9cc9494c12330c89317b96a75d18d3e6d4a6070c4"
+    },
+    {
+      "name": "xsys/unix/syscall_test.go",
+      "size": 1294,
+      "sha256": "a630637219f08a1db77ef35f18ba514e30c42c6f96d64409547b62f3f1d1169a"
+    },
+    {
+      "name": "xsys/unix/syscall_unix.go",
+      "size": 17244,
+      "sha256": "d851dcf05549674486f35d58b0357bb5c1ea9378bd234b1646534a35dc4a6da5"
+    },
+    {
+      "name": "xsys/unix/syscall_unix_gc.go",
+      "size": 640,
+      "sha256": "8b7592bca0fff629f9bb6f2c78c4ec8810f989e04b29d76ebd1ff81efd34db5b"
+    },
+    {
+      "name": "xsys/unix/syscall_unix_gc_ppc64x.go",
+      "size": 786,
+      "sha256": "eccdc8f6dfce151bea174bb9bcb14bd3ace20c96b893cdf34a419d52052227b7"
+    },
+    {
+      "name": "xsys/unix/syscall_unix_test.go",
+      "size": 27607,
+      "sha256": "bae5c2217a5c05346274458839d30a08d29b03d5215c01a840858e50f74ed4ae"
+    },
+    {
+      "name": "xsys/unix/syscall_zos_s390x.go",
+      "size": 88760,
+      "sha256": "642f1ecaeba6b5928c2900c37890d65cea839b31e2c1fe4b29906e813cc26ede"
+    },
+    {
+      "name": "xsys/unix/syscall_zos_test.go",
+      "size": 98113,
+      "sha256": "05ce68822d771228da920a7facfb6c9fd95c7ed8b4feac692071c932888bad71"
+    },
+    {
+      "name": "xsys/unix/sysctl_netbsd_test.go",
+      "size": 327,
+      "sha256": "71ae3e81d3cd249d727af03da6a17917fe9f98509a8f0360e834515175b5a9d3"
+    },
+    {
+      "name": "xsys/unix/sysvshm_linux.go",
+      "size": 521,
+      "sha256": "8f932aac3521059ca3b4156c78b1ec45f1976972d1f70dee14375a1b7a507e44"
+    },
+    {
+      "name": "xsys/unix/sysvshm_unix.go",
+      "size": 1456,
+      "sha256": "e9e5031e048cf7c58692650ea14887158c3bedaaba506be63cbd8190cea2c066"
+    },
+    {
+      "name": "xsys/unix/sysvshm_unix_other.go",
+      "size": 407,
+      "sha256": "b513c4e9cd077df2b1452bd645abcc3e252ec28ef44cf4e2a984d94bd5464fb3"
+    },
+    {
+      "name": "xsys/unix/sysvshm_unix_test.go",
+      "size": 2021,
+      "sha256": "bba43e5dfae57977f21ba6a53c3a8d3aece77ba3ec4c2c37dcc36fed9f012e5e"
+    },
+    {
+      "name": "xsys/unix/timestruct.go",
+      "size": 2254,
+      "sha256": "d0d07c2481ce2692f4e5728d65ccab1d105ecf64f52ac6b9a923ef106088a249"
+    },
+    {
+      "name": "xsys/unix/timestruct_test.go",
+      "size": 1746,
+      "sha256": "23099c116687e6fc3cdb974168c2509b7309423378b695da726de125d2a594b2"
+    },
+    {
+      "name": "xsys/unix/types_aix.go",
+      "size": 4348,
+      "sha256": "05725df418aff2a7c4f2043acec1798d596f0c8e378e33354972c04ba27b4188"
+    },
+    {
+      "name": "xsys/unix/types_darwin.go",
+      "size": 8120,
+      "sha256": "bf67d6e01915bf8c780cca5ef97627bd59820c4a365368d5df92fcb1b1556cd7"
+    },
+    {
+      "name": "xsys/unix/types_dragonfly.go",
+      "size": 5494,
+      "sha256": "69391bf833965a831b5fdfd1eb9a09e0882a47b6730ad619ca96f8f1fe4f7788"
+    },
+    {
+      "name": "xsys/unix/types_freebsd.go",
+      "size": 7966,
+      "sha256": "c2728c0b002cb5ad7625553dba4f33d6a1ba389e96df2755d2c56b9de6d02080"
+    },
+    {
+      "name": "xsys/unix/types_netbsd.go",
+      "size": 6135,
+      "sha256": "a83961b75cf96811da965d52dc8eaade91df95c2f74bd6b3de024a576f320e65"
+    },
+    {
+      "name": "xsys/unix/types_openbsd.go",
+      "size": 5607,
+      "sha256": "db537e0138d49edc8e129b59e9e2acdff958c6c50b6c7fd46ef8e4f440befabe"
+    },
+    {
+      "name": "xsys/unix/types_solaris.go",
+      "size": 7303,
+      "sha256": "fa8d0a2581c9fb7ddc35ee5805bc9ecd7ff2647bad263b3c6f5c39e0fac5a63f"
+    },
+    {
+      "name": "xsys/unix/unveil_openbsd.go",
+      "size": 1217,
+      "sha256": "b195b18022ffb7f5120c89b2e874ebaae9425ee73bd15e5d6e172cd4daaaf086"
+    },
+    {
+      "name": "xsys/unix/vgetrandom_linux.go",
+      "size": 345,
+      "sha256": "4dfa240c42977f70ef32d1cea7effdbd902b5ef6814e67f20c48da10548b4bc9"
+    },
+    {
+      "name": "xsys/unix/vgetrandom_unsupported.go",
+      "size": 292,
+      "sha256": "822c28801c556c34f31cd7a14ddbe4c3708e543de6fe81c4ad1fae9420268258"
+    },
+    {
+      "name": "xsys/unix/xattr_bsd.go",
+      "size": 5793,
+      "sha256": "b6f5db793b511dab8b925b61165983980b7679d897d39f9e44a2277e61e00ac8"
+    },
+    {
+      "name": "xsys/unix/xattr_test.go",
+      "size": 4702,
+      "sha256": "f49d3e74928f074c9cd15264ef03739b36aeb58c10bea08e4dad15023cee141a"
+    },
+    {
+      "name": "xsys/unix/xattr_zos_test.go",
+      "size": 4913,
+      "sha256": "d62f0caf56c056afc0eca9e9c527b97749abc54d51125d1437fbe689c7cef85a"
+    },
+    {
+      "name": "xsys/unix/zerrors_aix_ppc.go",
+      "size": 53675,
+      "sha256": "e05dab83828668d3732014abe9f1e11f62c218990fb9be4f598425c0c1cd49db"
+    },
+    {
+      "name": "xsys/unix/zerrors_aix_ppc64.go",
+      "size": 53932,
+      "sha256": "630c6a0a9f909c1138f6008a045affe5df1a3308f2fc1b321fb4fe3916265e69"
+    },
+    {
+      "name": "xsys/unix/zerrors_darwin_amd64.go",
+      "size": 90132,
+      "sha256": "7314fbdfe24b9b48d27d21192c753c825f25a4328156d54c242b5a1f5ccfc307"
+    },
+    {
+      "name": "xsys/unix/zerrors_darwin_arm64.go",
+      "size": 90132,
+      "sha256": "a4255cecfc6a5e82653d5bb96ee2ef6191a3fa664046de7a016ddeccbf2c9e5f"
+    },
+    {
+      "name": "xsys/unix/zerrors_dragonfly_amd64.go",
+      "size": 72394,
+      "sha256": "3884e33b8c394639bc8ef32d436df7a1520ecffbcc4ce2f4fab77eb1c3cb97ca"
+    },
+    {
+      "name": "xsys/unix/zerrors_freebsd_386.go",
+      "size": 81461,
+      "sha256": "007480fe44b8d12f4048903351e35d4d6a3eab0889aac620dcd33cfde0b36faa"
+    },
+    {
+      "name": "xsys/unix/zerrors_freebsd_amd64.go",
+      "size": 81347,
+      "sha256": "ac896c1e7c7714ba8ab2087bc827a601a6c8a92dd0420c9c56744d2ab88bff4d"
+    },
+    {
+      "name": "xsys/unix/zerrors_freebsd_arm.go",
+      "size": 81090,
+      "sha256": "42373bf5c7521282ee975bf8797b6e47dcc6b9685e213e185021c1789adca8c2"
+    },
+    {
+      "name": "xsys/unix/zerrors_freebsd_arm64.go",
+      "size": 81119,
+      "sha256": "7b0db98e291065f74f491fbb408c99f7af7f99208a6e3fd2ccca8f6bccb04b56"
+    },
+    {
+      "name": "xsys/unix/zerrors_freebsd_riscv64.go",
+      "size": 85759,
+      "sha256": "00b371a983b3502c066b0c0d75a911f79f84aeac30923f7a7a5283ca94755bea"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux.go",
+      "size": 219181,
+      "sha256": "28438683d95a7fcae9d95d33cdfa19e2ae3f41247cc1ae561701553c0c7dbbdf"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_386.go",
+      "size": 36783,
+      "sha256": "94b6cc94af9f4cf8608a247af2a11d78fbe0374bd482dc7e7601e0f706bcf784"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_amd64.go",
+      "size": 36795,
+      "sha256": "cce71ceeb02fa2e1343b602fcad5b32faf879d3f52f1888a50e58ecaf9776907"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_arm.go",
+      "size": 36980,
+      "sha256": "850ba9c1cd3a0862c5724ec2ac3695db7b772fefacc387c90e6aff4caf75dcea"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_arm64.go",
+      "size": 36950,
+      "sha256": "7e49bc4cba2e6bc9c8b5682e323793d81b773f92656d4f66b26bc91cdc49a0de"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_loong64.go",
+      "size": 36483,
+      "sha256": "cdc48a1c2e168a75850f746f72fc877febf81b3f188e53bfdbdba682eff066a4"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_mips.go",
+      "size": 37314,
+      "sha256": "898e3940da6ae7203ed3709088148b914a6141294cdfbedc5a13c813adeb3199"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_mips64.go",
+      "size": 37319,
+      "sha256": "b40ed03ea59a0f5e3f687aca1b3fb35eb5f453d8583a67c1f19573f3a5150a92"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_mips64le.go",
+      "size": 37329,
+      "sha256": "c53cb63ebb6cc9325a0a13b4f80fe9efdbe39184f0f424440a4d12d6fb254742"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_mipsle.go",
+      "size": 37324,
+      "sha256": "382772f624f5f60b88a4813706bd9ea3636cffc4a1c48846107b0d6aaf404915"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_ppc.go",
+      "size": 39447,
+      "sha256": "774687322c76e0d689730e6d560359364111346a42c457a80dd63a06cc44857f"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_ppc64.go",
+      "size": 39621,
+      "sha256": "b39ac9400ceab5736c709d3edf937d6d882511481858947deddc569acd254549"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_ppc64le.go",
+      "size": 39631,
+      "sha256": "305f9ab3bc958d57c52d27248ed5efb5dfb51a769ebee5c719a5be38164df935"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_riscv64.go",
+      "size": 43627,
+      "sha256": "fad87a56dfdd371f6842f3dc5affc4001340207a3ff4c3951a2f8eedbe8cc6cd"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_s390x.go",
+      "size": 39345,
+      "sha256": "017d25f2c34e3d5c775f36da48933c7429204eb5f1037163a4fcee8c3c6c2d69"
+    },
+    {
+      "name": "xsys/unix/zerrors_linux_sparc64.go",
+      "size": 41484,
+      "sha256": "bde3dba2ed36aa85ccc3ee6e1135fc512c00780ae17cccdbf76972edd779c738"
+    },
+    {
+      "name": "xsys/unix/zerrors_netbsd_386.go",
+      "size": 74502,
+      "sha256": "443453636ba638badcf6e2127bcfaec61ad70cfa9b98647badfdda81b9516adc"
+    },
+    {
+      "name": "xsys/unix/zerrors_netbsd_amd64.go",
+      "size": 74084,
+      "sha256": "091c5337f22379bdf944f9bf6b639f2b20b0781c465879f6aff2965f8928b700"
+    },
+    {
+      "name": "xsys/unix/zerrors_netbsd_arm.go",
+      "size": 73615,
+      "sha256": "b4a08e2cd9ac780dfa4e5eee2c9a08a34db6077fb84f2cb95c5fff3b82d808a2"
+    },
+    {
+      "name": "xsys/unix/zerrors_netbsd_arm64.go",
+      "size": 74084,
+      "sha256": "65397af71c94e188e4dbaa8d31fd811c3c3ae2f1bde8c9506ff41e8c3525d98f"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_386.go",
+      "size": 80435,
+      "sha256": "ef763a308139bb402c2c802bc9d63c903f34288264b33bf7b7b14153dae562cf"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_amd64.go",
+      "size": 80437,
+      "sha256": "0a7627470dce06b95a13b99ed321b89a9b9665e871f500e9ef9a07dd9186e824"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_arm.go",
+      "size": 80425,
+      "sha256": "37663f6c7d26928fb53c78397eed495133c971df42b3f5f29c9ce03207d09e6f"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_arm64.go",
+      "size": 80437,
+      "sha256": "1cfd33d63b136a00da86ea1b4bf3d46ca0f1e6f6eb4a71c03075a51fcfb2998b"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_mips64.go",
+      "size": 80434,
+      "sha256": "ed990700f0194f8bc9b2f030365848c09ae8a9bc33a00028935ff26724caa8a7"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_ppc64.go",
+      "size": 80394,
+      "sha256": "cdea7b2a72bfd4097983492ed13b2ca161f9685c446c6de720bed246898d811a"
+    },
+    {
+      "name": "xsys/unix/zerrors_openbsd_riscv64.go",
+      "size": 80356,
+      "sha256": "997f75783bed55c60e65a356139d616ed0da2bee276ccdbfeea255f6786c5ddc"
+    },
+    {
+      "name": "xsys/unix/zerrors_solaris_amd64.go",
+      "size": 60420,
+      "sha256": "e2ba0e91f4560ea11c6317f5e3da7d8aa30e09022e1533045028ebaa975643f0"
+    },
+    {
+      "name": "xsys/unix/zerrors_zos_s390x.go",
+      "size": 40409,
+      "sha256": "6b1582550a07dd39c5ea081520200cd94cf178d2ed83c488ea4a006ad9286627"
+    },
+    {
+      "name": "xsys/unix/zptrace_armnn_linux.go",
+      "size": 1200,
+      "sha256": "11dbfe9592da41fdb9689aed2903977c61f22a480bb054f4c9e3c8202df284b4"
+    },
+    {
+      "name": "xsys/unix/zptrace_linux_arm64.go",
+      "size": 721,
+      "sha256": "3148ef332ae164e19e447a3859d35c96dd56de0833f22f622d5e73f9a0d1c009"
+    },
+    {
+      "name": "xsys/unix/zptrace_mipsnn_linux.go",
+      "size": 1390,
+      "sha256": "e9be9bf128adc6660fbb4680b449a4ed9fcda027f5ebf35cd42df4065ffc79a2"
+    },
+    {
+      "name": "xsys/unix/zptrace_mipsnnle_linux.go",
+      "size": 1442,
+      "sha256": "9869c8980e2f50432e76f44ff2681bd62ec524db1828551da2f9f2761262a05d"
+    },
+    {
+      "name": "xsys/unix/zptrace_x86_linux.go",
+      "size": 1849,
+      "sha256": "dc4b1c692caaaab1e50e386776a08ce44e3a4d2def73513bb4fa8d04332ac631"
+    },
+    {
+      "name": "xsys/unix/zsymaddr_zos_s390x.s",
+      "size": 9011,
+      "sha256": "15f6a988dbda1b91bb91d3204ebf9b51424fa3b89cf36284e1084ba0983441f2"
+    },
+    {
+      "name": "xsys/unix/zsyscall_aix_ppc.go",
+      "size": 36534,
+      "sha256": "d097275c6bb77738a93bf819430a440fd17968bb57b969cd28932c9ae03ff978"
+    },
+    {
+      "name": "xsys/unix/zsyscall_aix_ppc64.go",
+      "size": 30758,
+      "sha256": "d66e0f51215071990de1968d52e80be0d57c2d49b3ad0ca9cd9448859d04fff8"
+    },
+    {
+      "name": "xsys/unix/zsyscall_aix_ppc64_gc.go",
+      "size": 43453,
+      "sha256": "5a806c7a1368edba0adb4f7c029c8b4e1c7f4ce3e2053608f8546bb358fd8282"
+    },
+    {
+      "name": "xsys/unix/zsyscall_aix_ppc64_gccgo.go",
+      "size": 31593,
+      "sha256": "6dfa24c210eb72c021e67ec6a4735ae42b3b94907867f45e9a36e3ee78a8e729"
+    },
+    {
+      "name": "xsys/unix/zsyscall_darwin_amd64.go",
+      "size": 73440,
+      "sha256": "4d3c4c03fd4dad43eb78c390e9f3f0d8ab95c433a4ff18c1a7f6930282bf6606"
+    },
+    {
+      "name": "xsys/unix/zsyscall_darwin_amd64.s",
+      "size": 31880,
+      "sha256": "08e931fd2055f452d04b450a839ce2d87423f28ebc2aa014e391a7a764612b13"
+    },
+    {
+      "name": "xsys/unix/zsyscall_darwin_arm64.go",
+      "size": 73384,
+      "sha256": "630f26d7c5679ac8ac11dfe0e7e1861aec0c801e1ef7ca503030f8e8736469a3"
+    },
+    {
+      "name": "xsys/unix/zsyscall_darwin_arm64.s",
+      "size": 31810,
+      "sha256": "5daa70eefd10942e6ba8da79d69152b330da1981874d6726d1d09cf8d8a0d30e"
+    },
+    {
+      "name": "xsys/unix/zsyscall_dragonfly_amd64.go",
+      "size": 39723,
+      "sha256": "a732dabec53544123755d2f6da0dcb19600ec126f532b27322a01a5eedb41a82"
+    },
+    {
+      "name": "xsys/unix/zsyscall_freebsd_386.go",
+      "size": 46177,
+      "sha256": "5dd36e95f2d0ccfab556cae4c281f53ea0ad04e71826cdfe95e94cf6c63f3560"
+    },
+    {
+      "name": "xsys/unix/zsyscall_freebsd_amd64.go",
+      "size": 45979,
+      "sha256": "25b3b0394494814dc7e52c37ac2f319606cdb46ac4abfab55e14ecac60c5428b"
+    },
+    {
+      "name": "xsys/unix/zsyscall_freebsd_arm.go",
+      "size": 46211,
+      "sha256": "70d3d252dc6bbfde7871192caa80963b8f1f934d4332c903a74426c8c71cfaaa"
+    },
+    {
+      "name": "xsys/unix/zsyscall_freebsd_arm64.go",
+      "size": 45979,
+      "sha256": "a3045fd79c8c8d1fc5ffd48d5dc6a0fe27dd8daab2cf22053479acfaf39b002b"
+    },
+    {
+      "name": "xsys/unix/zsyscall_freebsd_riscv64.go",
+      "size": 45985,
+      "sha256": "03821551530bdbce9e731b861fc58079289c4e0086b06856c1077b2220ffadd6"
+    },
+    {
+      "name": "xsys/unix/zsyscall_illumos_amd64.go",
+      "size": 2698,
+      "sha256": "6dbad6fb56bf5533b9a5a75edca9a37d7b1a2740155fc9db4761ee39422f77a8"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux.go",
+      "size": 56910,
+      "sha256": "2903ee63248999159b31618b694ef2be85ec4bc917d91bcef019a2bf1deccf9a"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_386.go",
+      "size": 11956,
+      "sha256": "8c7cc56e3f0094e72cfa8fd1657362d9d329917348ebec6be711c7232e276119"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_amd64.go",
+      "size": 16454,
+      "sha256": "a492772c3ad8ae8600283c2223289426bfaa3f75666ef62a77914b1ca140f2eb"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_arm.go",
+      "size": 15541,
+      "sha256": "8dc31fa25dbf0ab5105df1d53366a1c8ce11a21f31135ca368d9fb27a4190354"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_arm64.go",
+      "size": 14120,
+      "sha256": "c8c873571d7c622aa9ac6f22365474b2fb32ae0848758226da0d3d05985570ea"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_loong64.go",
+      "size": 12472,
+      "sha256": "29aa3c63a80acf8b274cb3de06aafd575dec58f1291c39f5e0d4bf08256d10ac"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_mips.go",
+      "size": 16722,
+      "sha256": "6c749f9d48ac74b6200f0752d6a4f8bb704546964ec90494f2218e2073a9b89a"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_mips64.go",
+      "size": 16223,
+      "sha256": "190a77b994967a261d3b4e22136f6131ba0a134f3a86bfd36298bb813dd491e5"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_mips64le.go",
+      "size": 15955,
+      "sha256": "bd17ead2f70d6212799b9d0d1b375a8150445f585aad0186ab35347b8f1a46f1"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_mipsle.go",
+      "size": 16726,
+      "sha256": "fb7a266371b40e46128ef6d4e20a52edf81e3b3fae98be5a854b69614ae52356"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_ppc.go",
+      "size": 16798,
+      "sha256": "96e6830cd407ba01430025b6c2fbc85854a107a32121377cfb386a32f2cb4dbb"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_ppc64.go",
+      "size": 17777,
+      "sha256": "3ee17b636bc8c248ef7d680a39e80e770db1b1c3b682d0e4507e69cafb8709f0"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_ppc64le.go",
+      "size": 17781,
+      "sha256": "89e245e0a4ef81dfc90adbec4b56ce86c321fb176758ef1343e3f744158057f2"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_riscv64.go",
+      "size": 14103,
+      "sha256": "9071338d9d4adf6ea20657db089a4ad526c755c6d2cbfa51b0403ce89d7e2c6e"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_s390x.go",
+      "size": 11960,
+      "sha256": "30888f8d2ce8a84ba0c963f217c8a269db57f33b65e3ab55ede9ca0c8e168432"
+    },
+    {
+      "name": "xsys/unix/zsyscall_linux_sparc64.go",
+      "size": 16384,
+      "sha256": "a59b931511a693f77334ccf879b23d3759972500da65a77d9c827f22e29ef313"
+    },
+    {
+      "name": "xsys/unix/zsyscall_netbsd_386.go",
+      "size": 45185,
+      "sha256": "1afde75a0285d44e60306ef59a47b194eb02f174aa9798ac0ff7838f99f07df9"
+    },
+    {
+      "name": "xsys/unix/zsyscall_netbsd_amd64.go",
+      "size": 44992,
+      "sha256": "78a3e84de88d1840e46872b0b07c04e0b05aca1e0517ae41e1d44d204e93007e"
+    },
+    {
+      "name": "xsys/unix/zsyscall_netbsd_arm.go",
+      "size": 45190,
+      "sha256": "4bc2f501601b9afe42ec05caf640af236e85512d60957178b2529f03529f9d00"
+    },
+    {
+      "name": "xsys/unix/zsyscall_netbsd_arm64.go",
+      "size": 44992,
+      "sha256": "51a8535b3d6d1688c278cd04057c672af6bec3ce4ba267626e45be4095fbc555"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_386.go",
+      "size": 61818,
+      "sha256": "54479d265bff0e5ee1367c086583ab667ed3d1c3ad4060c271b11ed4cb210695"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_386.s",
+      "size": 28301,
+      "sha256": "29be9e4e1f9b136c6f1e5f6291bc1e59d37f7a84827e2a6da2e9dba71c5bdfe6"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_amd64.go",
+      "size": 61635,
+      "sha256": "057716028d481feac7b8f6f9d1782d4b6b8765c2e1ed67b5c1f751ec27ac4ca9"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_amd64.s",
+      "size": 28303,
+      "sha256": "69fc00bea915f9f22b20bb773ec5debba0171a35c82319c8161a5804e9680065"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_arm.go",
+      "size": 61843,
+      "sha256": "366507e3b856de0e209c2040a886fedf0f66f96e0b4e790d521b25a6f3a23545"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_arm.s",
+      "size": 28301,
+      "sha256": "3e75b61ef0b449c145d9b89f660cc8d0a28b03ce75ec5ff5774342ef36b5f99b"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_arm64.go",
+      "size": 61635,
+      "sha256": "0a528ad67bdcea83f4d412411978bf6978972c79114cc6447b63bb1a5b304049"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_arm64.s",
+      "size": 28303,
+      "sha256": "58194af14490f313be3b8830d64035964d78097e0cd02291796565e1d6f69748"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_mips64.go",
+      "size": 61638,
+      "sha256": "3f501ccb7a17db83108252bf90484bf2e20445c18c9d2b191b9c8a5858b95d1e"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_mips64.s",
+      "size": 28304,
+      "sha256": "1f72a7bffb62b0c56044e92aec0168d0a6110be4203a702b2c43e03bdf5c39f4"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_ppc64.go",
+      "size": 61635,
+      "sha256": "d6f19035bc7189e42ae41226cead8685b15131bf5783604221f5542f9448a1bc"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_ppc64.s",
+      "size": 29161,
+      "sha256": "0e4a7661edce1d49bf7f5e069ac86b5851de57474b306833f6a3e6a6e8badf15"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_riscv64.go",
+      "size": 61641,
+      "sha256": "0385f5a840c6fca5e94afe1617ee55b6b474f0ebf4803b2b31f606f18623b050"
+    },
+    {
+      "name": "xsys/unix/zsyscall_openbsd_riscv64.s",
+      "size": 28305,
+      "sha256": "1402e80981b8fbfa13f8c42a6ebae5dd4d59f2f0376ca08f205615e19d500f0f"
+    },
+    {
+      "name": "xsys/unix/zsyscall_solaris_amd64.go",
+      "size": 64967,
+      "sha256": "4ca86eaf8f9017fb7a065a272f195b8eb2ac0184d99d84994edef3a7e7594a19"
+    },
+    {
+      "name": "xsys/unix/zsyscall_zos_s390x.go",
+      "size": 90288,
+      "sha256": "0bce46788df89d5046f2fb01dfd0a4117ea6d9fa89c7e87d0c2d0ca45c1c8dfd"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_386.go",
+      "size": 12218,
+      "sha256": "fe83841f74f78d5a4dfa0f27d7ec176309b0f35cce550d5c437031281a9c698d"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_amd64.go",
+      "size": 12220,
+      "sha256": "02aae16ad0cfd0f0c7619faa57b645c77a4d29e0accd5421d96dc8ce8fdece70"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_arm.go",
+      "size": 12218,
+      "sha256": "d3288c57ed415e241ff252c531a501d30d311323f63aee630a9bc4af2efaf923"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_arm64.go",
+      "size": 12220,
+      "sha256": "98bcd5efc831b3ea2a9018e74ba73a5c91bf70c99dcc6535d488384b6e5631ce"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_mips64.go",
+      "size": 12221,
+      "sha256": "0f23078edcb76a7ea146dc4a733dab86a26faa972e62c581e11287b19fee6ab7"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_ppc64.go",
+      "size": 12220,
+      "sha256": "dd0bc67bf9c9f136dc41aa88a90680648b2aa1f95b1dbf238f2d77556a409baf"
+    },
+    {
+      "name": "xsys/unix/zsysctl_openbsd_riscv64.go",
+      "size": 12259,
+      "sha256": "1676b925d522477e4e7fd676824bda93fb59b6137dfe664e5e0b2185562e1c50"
+    },
+    {
+      "name": "xsys/unix/zsysnum_darwin_amd64.go",
+      "size": 18270,
+      "sha256": "4b5206af23653e05e1387725e20213ff7c9792ab60aaa9298eab7a148394fd1b"
+    },
+    {
+      "name": "xsys/unix/zsysnum_darwin_arm64.go",
+      "size": 18189,
+      "sha256": "3153f86ca570545e32a352b93289a5e5353cb32902c8ba0e8135d2dc26a10312"
+    },
+    {
+      "name": "xsys/unix/zsysnum_dragonfly_amd64.go",
+      "size": 28272,
+      "sha256": "72a8b1f6889157965cd4d35d4b2053dff3ca194c1b54184b13fd7e4358ddd92a"
+    },
+    {
+      "name": "xsys/unix/zsysnum_freebsd_386.go",
+      "size": 36960,
+      "sha256": "3633274e0b4ce8b1c8a2d0a13377b302afe093c027338d776e9ce905fc5fc566"
+    },
+    {
+      "name": "xsys/unix/zsysnum_freebsd_amd64.go",
+      "size": 36962,
+      "sha256": "f2cf398c41711963500d9f40e3d9eec5ac5f7873ac0a6a8a347acfcf5694bdee"
+    },
+    {
+      "name": "xsys/unix/zsysnum_freebsd_arm.go",
+      "size": 36960,
+      "sha256": "58d9c373407b0b2f2586880c821abb4b226addb5ddded76231a3100aa257dffb"
+    },
+    {
+      "name": "xsys/unix/zsysnum_freebsd_arm64.go",
+      "size": 36962,
+      "sha256": "779583884bd496fcd157cb3d4cc5fa14ef1f079b168d0602d4a1483140657fae"
+    },
+    {
+      "name": "xsys/unix/zsysnum_freebsd_riscv64.go",
+      "size": 36964,
+      "sha256": "67d27d478fc096d1a1bc958216ad4e956cb8b35a8e778e72471369d0809cfff3"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_386.go",
+      "size": 18552,
+      "sha256": "c363bdb0f3a319265b76ad8891a0482aee31e24e9963ce85231e71978ed97d5a"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_amd64.go",
+      "size": 13593,
+      "sha256": "b409916de5e1eb0f91344bba82dbb5971736718ac2812560699e23862e9f01d3"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_arm.go",
+      "size": 17132,
+      "sha256": "5d0401768090537749ea830f102f68e87c4ea49fdf7e4bbd2f68cb65ed9e9e97"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_arm64.go",
+      "size": 11607,
+      "sha256": "7c43b0aa88caeb268c7c71336f12408232816346578122ce9090c2ed8b1f8b64"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_loong64.go",
+      "size": 11495,
+      "sha256": "16392f862d719a3192af979366d12986ad815a3000a26bbe94c900cafda3e2df"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_mips.go",
+      "size": 18465,
+      "sha256": "99003991bb603fc8086bd2b34ff210d4b1989e82084dfb1c094f5f0bed0db3d5"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_mips64.go",
+      "size": 13726,
+      "sha256": "0ebae4f2ebfac44ecde62e7115775eaddb12f2d2b1b82c5eed7789ef74562a43"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_mips64le.go",
+      "size": 13732,
+      "sha256": "197cda2aac80527e4116e16723b17a28ed24551d935c605a0ade6bff8fe30098"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_mipsle.go",
+      "size": 18471,
+      "sha256": "c1664b48a82c00aa2603cbf4948b1feb5db5a84acf2614fa3ed1b2061f914f14"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_ppc.go",
+      "size": 18187,
+      "sha256": "753f58d51e88bc7c7af3a78403e9e7e8deee49301d0588c846b543642e5e8644"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_ppc64.go",
+      "size": 14953,
+      "sha256": "f3740a2e9f0dca6ad5764837be4848dad23f62745a4f5ed42cbfdd54dbc98193"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_ppc64le.go",
+      "size": 14959,
+      "sha256": "001da7eaee2de15767540b7fdd979dba555c57f1714a52885777249725fc79b7"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_riscv64.go",
+      "size": 11635,
+      "sha256": "c44e9e7ef932aacb5fda279fb505cf399c15f4f596287028da1db8d4086825d1"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_s390x.go",
+      "size": 13810,
+      "sha256": "29c78a3cbe98ec20138489697647106e4c3cca8c30feb35e7b8b18f78fa01782"
+    },
+    {
+      "name": "xsys/unix/zsysnum_linux_sparc64.go",
+      "size": 14275,
+      "sha256": "93b11fbe738adf381206a0b1510c20e837ee055963a270aefb375c17cfebb0f4"
+    },
+    {
+      "name": "xsys/unix/zsysnum_netbsd_386.go",
+      "size": 26342,
+      "sha256": "248162a04517fd9f5076d8e14aba165c44579fac8f72f30fe53599d02d163e45"
+    },
+    {
+      "name": "xsys/unix/zsysnum_netbsd_amd64.go",
+      "size": 26344,
+      "sha256": "b7dcf17be14bcb342222f5af8aa4645014673bfd972da0f597ef8a4dce3f4c20"
+    },
+    {
+      "name": "xsys/unix/zsysnum_netbsd_arm.go",
+      "size": 26342,
+      "sha256": "eb431dca837d55447ffb0d5dcd3e7a198d3077b1a0c71d010c3abb7b01210616"
+    },
+    {
+      "name": "xsys/unix/zsysnum_netbsd_arm64.go",
+      "size": 26329,
+      "sha256": "2f133810ec7a871f96eb09c90c01323b32ef6d9ff1e489145f2ef879f70dc85c"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_386.go",
+      "size": 18335,
+      "sha256": "938e2818ede93c15a376677ff997482eedc6a5264f15f90c16f62d432ed7e9f3"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_amd64.go",
+      "size": 18337,
+      "sha256": "8153c5fbf8dcc2af5aba6a08a072a3fbcef6eb712f63ce5dbba679b47bd21c95"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_arm.go",
+      "size": 18335,
+      "sha256": "ff951a51a836fb7c910f4bd5692ecd3de7a2128e028f77f4ec73c6e5b8212d47"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_arm64.go",
+      "size": 18252,
+      "sha256": "bc9b53c4a014787ef672ff936f22081414c0d5fc17ab047bfbd0958882577b30"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_mips64.go",
+      "size": 18480,
+      "sha256": "a51aa0ef1d1a00512782f0972cb3363f10bf91243eb8ae12e47e72828f53aebd"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_ppc64.go",
+      "size": 18191,
+      "sha256": "85ae531da3a8ebed54bb6b84d95d8682f47632dbc64a7c6dc7ca90dbba89591c"
+    },
+    {
+      "name": "xsys/unix/zsysnum_openbsd_riscv64.go",
+      "size": 18254,
+      "sha256": "e7dc9f3757d7e3e0dc2f72cfad57e3bb14e2affe2f7a7d7a011c08a6d3026c40"
+    },
+    {
+      "name": "xsys/unix/zsysnum_zos_s390x.go",
+      "size": 150072,
+      "sha256": "3dc9830a788d0bff4aeb155d3cba8206471744ef1f65155cf60d279e12bdd461"
+    },
+    {
+      "name": "xsys/unix/ztypes_aix_ppc.go",
+      "size": 5031,
+      "sha256": "ca03c228be88ccd7f0611da395ad644ed6a3f9309d14c283f2b1ed4f401537b7"
+    },
+    {
+      "name": "xsys/unix/ztypes_aix_ppc64.go",
+      "size": 5103,
+      "sha256": "81723afa671a0adece188f2d1d791f1147d3e0b7d8b15f294a2d88d25032ee32"
+    },
+    {
+      "name": "xsys/unix/ztypes_darwin_amd64.go",
+      "size": 13970,
+      "sha256": "dec344fc5c2bbd048193d5679e57a635755d90f56427899ad6db7468a1955863"
+    },
+    {
+      "name": "xsys/unix/ztypes_darwin_arm64.go",
+      "size": 13970,
+      "sha256": "b17d2e512a7bab550ef24d3d3ed9b0f3bed89de5a15ac003d7371058d6ea168e"
+    },
+    {
+      "name": "xsys/unix/ztypes_dragonfly_amd64.go",
+      "size": 7071,
+      "sha256": "f42b56162bdd809632c82f00b8827f3191b36dc2a0503cd5c24cc0287dd22d40"
+    },
+    {
+      "name": "xsys/unix/ztypes_freebsd_386.go",
+      "size": 9881,
+      "sha256": "57afdf236f8a8d0702246f874f29f9de80e2e9435ce0060347442d668b3a0c6d"
+    },
+    {
+      "name": "xsys/unix/ztypes_freebsd_amd64.go",
+      "size": 9936,
+      "sha256": "64be7fca399caa366cc25b8671064aef4e38e5e8a6664fec70fb6c369bc49930"
+    },
+    {
+      "name": "xsys/unix/ztypes_freebsd_arm.go",
+      "size": 9756,
+      "sha256": "111580b4adafe3136b13d31ca7cc2014269b81d5442125d48af94bce27fb6de6"
+    },
+    {
+      "name": "xsys/unix/ztypes_freebsd_arm64.go",
+      "size": 9642,
+      "sha256": "855dfcbc3446ee938c62ffd8f7483d8191d1e0716ccb0d90558e840ab6389f5b"
+    },
+    {
+      "name": "xsys/unix/ztypes_freebsd_riscv64.go",
+      "size": 9713,
+      "sha256": "84cd6004660183cfa94b2ec0342012a5cee655936dce53cc2c3eba386358d72f"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux.go",
+      "size": 270748,
+      "sha256": "a5eab77c5555033a363e4fa1dd5cb5d4a4f0bfaf6dedb77ccbcb32990e121790"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_386.go",
+      "size": 13482,
+      "sha256": "835d85137e8d116c92f7d14d0e6ddc0c5d4306072333d0cd3caf95cf186f8831"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_amd64.go",
+      "size": 13655,
+      "sha256": "f057c46400ef36587cd8516928f81e934f65d81dcfed58f5b8b2afe52a658664"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_arm.go",
+      "size": 13425,
+      "sha256": "e281b0186c091bc6412d4e79649e200b2e10bd40f9167b34c39f49f15edc7eba"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_arm64.go",
+      "size": 13299,
+      "sha256": "ea4252104bc8d21a430fe87543ee8dc47d9901c49961f763b00232ddeea4c1a3"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_loong64.go",
+      "size": 13320,
+      "sha256": "781025577d81f94d9148444a8188eec1db205c98aa98ac908efcbd6ac232861b"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_mips.go",
+      "size": 13487,
+      "sha256": "9db997f6b909c63e6fd13b60d87179a9ee1d7c9c1777a77d0c726f3f15427faf"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_mips64.go",
+      "size": 13356,
+      "sha256": "6c5198915d3f5ab8db0fa894149f6a55196d890cb2de401a771c91b4febc1db4"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_mips64le.go",
+      "size": 13362,
+      "sha256": "8eb92434878a5af524a1909246a0e130d60a80e2a1462aabd368051473df2f98"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_mipsle.go",
+      "size": 13493,
+      "sha256": "7e6136bebde22a813826c968bf5ff1508a28ebad2cd16923dcc93df239c31b5d"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_ppc.go",
+      "size": 13673,
+      "sha256": "838dc7965f4bd502b1c1aa72dbff7d321d5ebdec575c00d9a6a26c380b0994a1"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_ppc64.go",
+      "size": 13497,
+      "sha256": "e809a626d8c00d2d9939b14e3eeab3c97c7e9d5b23937b82413bb11ec3dd8662"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_ppc64le.go",
+      "size": 13503,
+      "sha256": "95a5b9f0d57c69321d5497c01ff938271d592e42c3ac2672273b668fe82fc4bb"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_riscv64.go",
+      "size": 16160,
+      "sha256": "98c3ced3b34b827f2f0ba7b2f0c199d9e93eb041afa872754a670fdf789aa306"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_s390x.go",
+      "size": 13799,
+      "sha256": "8f0052bdd2e44f37319ea1ec426222e22fa90b57bdd09b39dde3452e0bb8a4fd"
+    },
+    {
+      "name": "xsys/unix/ztypes_linux_sparc64.go",
+      "size": 13354,
+      "sha256": "ccb61d4d282cf0af1e6fd25e70bec49001f6108091fc8a788c95b08e7bcfb855"
+    },
+    {
+      "name": "xsys/unix/ztypes_netbsd_386.go",
+      "size": 9691,
+      "sha256": "14029cc86620b576fa25d86df35615275d5d6822e43e32fd709522856e92a105"
+    },
+    {
+      "name": "xsys/unix/ztypes_netbsd_amd64.go",
+      "size": 9881,
+      "sha256": "347516a7d89bbb8981eee55d11108eb576abcd22214fdfc67fca3bcd894a74be"
+    },
+    {
+      "name": "xsys/unix/ztypes_netbsd_arm.go",
+      "size": 9818,
+      "sha256": "1e495068b1d3d3d2639f2e1b89801b881775a5f981b3a5e7a9ba6c63c746c3db"
+    },
+    {
+      "name": "xsys/unix/ztypes_netbsd_arm64.go",
+      "size": 9881,
+      "sha256": "d4616b0ed08e79c1e946600e92a36b46c1fcb1762391c7362b7ddd195ebce332"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_386.go",
+      "size": 9463,
+      "sha256": "4645835e4288ef10383d66b258ab363d6f95c47b05530e5460cd76b6a0917296"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_amd64.go",
+      "size": 9467,
+      "sha256": "59c2cba459e6adcbc0633207918962e7b2cb9ab4b5e46601241a2fcf5030f748"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_arm.go",
+      "size": 9602,
+      "sha256": "c47dbdd515f42c58307c3b4ea330340cb93385fb4ee84864b7e945c32e8b0d49"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_arm64.go",
+      "size": 9484,
+      "sha256": "1a9e0f84ebaeb44d6b85c0c04bbfdb984211e55dd0edd330e4bc5968d278887b"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_mips64.go",
+      "size": 9485,
+      "sha256": "7c630ca5f1a98246d4f9a47d2e79e795e4734fcf557a8a4ce0219e7b2dadfc3c"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_ppc64.go",
+      "size": 9507,
+      "sha256": "619a499350ae9dca653b75d57c6440a6be245f50a37391103d9ba93149ce3cb4"
+    },
+    {
+      "name": "xsys/unix/ztypes_openbsd_riscv64.go",
+      "size": 9509,
+      "sha256": "7e01f3951c4328c4bd228d5f2c6b7f78e5ed6102c36e227283b283b67da4fd3b"
+    },
+    {
+      "name": "xsys/unix/ztypes_solaris_amd64.go",
+      "size": 7711,
+      "sha256": "8be6e25c48202114da5c04e530ee67bf870c7773e1d8ffb3a36e7a5d34d1fc1f"
+    },
+    {
+      "name": "xsys/unix/ztypes_zos_s390x.go",
+      "size": 8918,
+      "sha256": "0f12e659910139f6f617a42718292e585415eb118d2566cdb59f3ca7752d5413"
+    },
+    {
+      "name": "xsys/windows/aliases.go",
+      "size": 310,
+      "sha256": "8209f09b0195574766435d50f0b769dd76a460777ff194c53952db22c4d54d77"
+    },
+    {
+      "name": "xsys/windows/dll_windows.go",
+      "size": 10522,
+      "sha256": "1c62d9345dd0c1d8e660792c1955a407b2049210c3bd2d8000004375f07afed9"
+    },
+    {
+      "name": "xsys/windows/env_windows.go",
+      "size": 1367,
+      "sha256": "fcfa69bb220a15cc151240ecc57bb144cf25c6628e899bc72d8217171376ab5b"
+    },
+    {
+      "name": "xsys/windows/env_windows_test.go",
+      "size": 1110,
+      "sha256": "33b90684c7b61deb42306c1cb41ae853b1cef33bdb7e1b3ba50929989811379f"
+    },
+    {
+      "name": "xsys/windows/eventlog.go",
+      "size": 825,
+      "sha256": "0162de9581d94b7f73c2125e310a8c08d1f5f6ec9d99d68b450ea330cdab33e0"
+    },
+    {
+      "name": "xsys/windows/exec_windows.go",
+      "size": 7513,
+      "sha256": "9c4824d3c8a1d54189f9d81e54a5786971b338c6d8b116ad188c1746212534a8"
+    },
+    {
+      "name": "xsys/windows/memory_windows.go",
+      "size": 1405,
+      "sha256": "070342979027b739e224a8d35c5dabd9ac6ea662b9a58954446f27103c2443c4"
+    },
+    {
+      "name": "xsys/windows/mkerrors.bash",
+      "size": 2168,
+      "sha256": "1e8ad2fee707012f9df5b217fb17fc08bbe65677d249d167d065c7d83c215e43"
+    },
+    {
+      "name": "xsys/windows/mkknownfolderids.bash",
+      "size": 1382,
+      "sha256": "3b7f6ac42ae1e73aa8d06d4f89f18b91916f153b030e9c01e15d41959b6b5fc6"
+    },
+    {
+      "name": "xsys/windows/mksyscall.go",
+      "size": 367,
+      "sha256": "ece9a0ac70f7ee5765046bed09762c27e22b7a3777ab82d65ba696806cdcd264"
+    },
+    {
+      "name": "xsys/windows/mkwinsyscall/mkwinsyscall.go",
+      "size": 24295,
+      "sha256": "32d08d6d6e9c4dfe52ac0deb3740c04a02b4571a0355f5ed3929f3053dc1b4fa"
+    },
+    {
+      "name": "xsys/windows/mkwinsyscall/mkwinsyscall_test.go",
+      "size": 3278,
+      "sha256": "d33f9a6f2b881e311f3587d6a71645cce3854c53fe22af5a9424f4ba283d1b9e"
+    },
+    {
+      "name": "xsys/windows/race.go",
+      "size": 591,
+      "sha256": "bda47d77e2bd07cbdb9471188672b735973fbf85e9f6494a0c7fb397d53f20fa"
+    },
+    {
+      "name": "xsys/windows/race0.go",
+      "size": 454,
+      "sha256": "fd656479b0761b07939c12b95733002fe0437f33e6a9b317cdaf8b3fe3e116e4"
+    },
+    {
+      "name": "xsys/windows/registry/export_test.go",
+      "size": 380,
+      "sha256": "6d55dd44801e28db39f66527ab2f9a97bc1a887750b68a25826a1ceedce3bad2"
+    },
+    {
+      "name": "xsys/windows/registry/key.go",
+      "size": 7289,
+      "sha256": "59aab3af1dd13c55cb65c9189cc3da277fecfe82dc4c21baf557cb1c3d2c128d"
+    },
+    {
+      "name": "xsys/windows/registry/mksyscall.go",
+      "size": 297,
+      "sha256": "1628ad29b024b82ef412ebff1f56033d330432372aa4ae6b4859de8f56071c3f"
+    },
+    {
+      "name": "xsys/windows/registry/registry_test.go",
+      "size": 20344,
+      "sha256": "bf72e4290dad8c88bed4d0e8d9c5215c80814faacb05b9a178e5e7607278213a"
+    },
+    {
+      "name": "xsys/windows/registry/syscall.go",
+      "size": 1673,
+      "sha256": "c630e393502f67d3c8369774ba3b3a6b09df646e22b788e7298237d3b38c21ab"
+    },
+    {
+      "name": "xsys/windows/registry/value.go",
+      "size": 11793,
+      "sha256": "abf23b1dc18dbb3d54ea1e113794cf6d564c2dd1f946e7159f9aadabb8a1a1a5"
+    },
+    {
+      "name": "xsys/windows/registry/zsyscall_windows.go",
+      "size": 4453,
+      "sha256": "8206b74089e5ac1da35035ed5fda2f9ca32b763b1c9b23f9e40881ba0731b45a"
+    },
+    {
+      "name": "xsys/windows/security_windows.go",
+      "size": 57283,
+      "sha256": "a81ceadb4023d6712587d1d9d0b5a51948dfbfb8a5786811d3020fe55182b6c6"
+    },
+    {
+      "name": "xsys/windows/service.go",
+      "size": 10503,
+      "sha256": "88b18aaac8358e790f5f723acac90799e84b813bc02c9c7ddad2e0f15a0503d7"
+    },
+    {
+      "name": "xsys/windows/setupapi_windows.go",
+      "size": 68854,
+      "sha256": "72097fc028210a5700ede92673d155af6de97210292770bfb31363691dad07c4"
+    },
+    {
+      "name": "xsys/windows/str.go",
+      "size": 504,
+      "sha256": "6c8cc24a3e0c11c6b4950dbb49a5f7eb72e65fcb861a8cd71cdad376125a43cb"
+    },
+    {
+      "name": "xsys/windows/svc/debug/log.go",
+      "size": 1435,
+      "sha256": "ba11eca5eedae29b812088fbabba1ea77d3fcfe6e8970a1d7e1fc8a9d877668e"
+    },
+    {
+      "name": "xsys/windows/svc/debug/service.go",
+      "size": 1028,
+      "sha256": "b2af7b29d35c583d5d70285648feedcbdd95f590648e98a8514e8248566192cd"
+    },
+    {
+      "name": "xsys/windows/svc/eventlog/install.go",
+      "size": 2342,
+      "sha256": "705ade9993e7af8560c60faf69a41eace7747514484e02d1c36576bae471b1c2"
+    },
+    {
+      "name": "xsys/windows/svc/eventlog/log.go",
+      "size": 2276,
+      "sha256": "411062238b559f25beb5eefe57662387d0104243e51d5b68285b44ca6b656e2b"
+    },
+    {
+      "name": "xsys/windows/svc/eventlog/log_test.go",
+      "size": 1061,
+      "sha256": "0325796b8e07cfbce4ef63820cebc2bc95ecdabf4a8e00db753ea253a4a91b80"
+    },
+    {
+      "name": "xsys/windows/svc/example/beep.go",
+      "size": 478,
+      "sha256": "2b5b4713af41e94b4dee5a944f21370f58854793cbf1b5ab21175c61fd800cc1"
+    },
+    {
+      "name": "xsys/windows/svc/example/install.go",
+      "size": 1836,
+      "sha256": "115455fe81eff4145f591d952ce34f45a67c305cc46a34ae1ea0eec6525f6bfa"
+    },
+    {
+      "name": "xsys/windows/svc/example/main.go",
+      "size": 1841,
+      "sha256": "fa01f02ca26bbc12746e5af7d1de418182562a8e8f824173e9eff59841c39ea5"
+    },
+    {
+      "name": "xsys/windows/svc/example/manage.go",
+      "size": 1397,
+      "sha256": "d82e25ac0993fa87535fafb4b9a888d781b7b2af4f67e17aea872e64c7c5de43"
+    },
+    {
+      "name": "xsys/windows/svc/example/service.go",
+      "size": 2247,
+      "sha256": "e1cb54a8a1ed424258d829b71df257253a72fa21f31c395c1dd096f84a4d6261"
+    },
+    {
+      "name": "xsys/windows/svc/mgr/config.go",
+      "size": 5945,
+      "sha256": "fb5016a3c58cfd0f6181503d1345dd08fda6d8a735a21b25a9985011c04d9a20"
+    },
+    {
+      "name": "xsys/windows/svc/mgr/mgr.go",
+      "size": 6633,
+      "sha256": "c8eb4e82299afc82c429f1fc67790c74e8b2a3af7ddc700040f95c74130831bc"
+    },
+    {
+      "name": "xsys/windows/svc/mgr/mgr_test.go",
+      "size": 11647,
+      "sha256": "a9375a0055dabdd58b71e1bf8af723bcd5cfae9caf202b25b16cc4a967cda921"
+    },
+    {
+      "name": "xsys/windows/svc/mgr/recovery.go",
+      "size": 7054,
+      "sha256": "1c62319d61239b77013e65fb3cc345c1b8980a85db29af56b49123ff77ef3787"
+    },
+    {
+      "name": "xsys/windows/svc/mgr/service.go",
+      "size": 4161,
+      "sha256": "8493951684be0a4fb30cc823ca998deecbe6b1da5e6d2edb950e74c64a1b2cff"
+    },
+    {
+      "name": "xsys/windows/svc/security.go",
+      "size": 3286,
+      "sha256": "f02ac38b5e14f7b1ff31e38d0cffea64b48628ed1efb7ef325a05df975e424a4"
+    },
+    {
+      "name": "xsys/windows/svc/service.go",
+      "size": 11120,
+      "sha256": "e4e88669503e8f96dd5b699b9cfec92c75d7ab702c475e6549d34bea98e9fd9f"
+    },
+    {
+      "name": "xsys/windows/svc/svc_test.go",
+      "size": 6264,
+      "sha256": "311a600c76abf4c006a1c868341f469b673a2f8a89ff67b6a4d9e46dd8498a79"
+    },
+    {
+      "name": "xsys/windows/syscall.go",
+      "size": 3238,
+      "sha256": "60b6c688bece9fb3550cb369311b55dc33d1e2350a93f9c8a5f8fa0cd8ddb2cc"
+    },
+    {
+      "name": "xsys/windows/syscall_test.go",
+      "size": 3003,
+      "sha256": "14783f418bbeb7af303e19cc0334bafa4388072034e539af3f558581b8cf6089"
+    },
+    {
+      "name": "xsys/windows/syscall_windows.go",
+      "size": 88929,
+      "sha256": "589a6e28bca016f69eb25b75e82a808162d707de98d3d50367337303dcdd7018"
+    },
+    {
+      "name": "xsys/windows/syscall_windows_test.go",
+      "size": 49020,
+      "sha256": "be5197dcb5309dfecdb310f44ffc27621535ea49d9cc9599367b553eb11a8f6c"
+    },
+    {
+      "name": "xsys/windows/testdata/README",
+      "size": 532,
+      "sha256": "4f8aaab802215e6cef9099c9112c8fe45632ecfc4c28a1ee7b339f313d1f22c0"
+    },
+    {
+      "name": "xsys/windows/testdata/ev-signed-file.exe",
+      "size": 18152,
+      "sha256": "5d92ebb58e887fe05878ac8805bc125eb47916764678668cd8cbd4c092cd6667"
+    },
+    {
+      "name": "xsys/windows/types_windows.go",
+      "size": 129524,
+      "sha256": "afa1ce9faf38958759a3cabca512e105bf937970e8ed411e6d8a7a9fa9de4558"
+    },
+    {
+      "name": "xsys/windows/types_windows_386.go",
+      "size": 875,
+      "sha256": "02d259fd40882f68a35913b0c1d3320054804d92a4a7a4e6b86b1816c1b90258"
+    },
+    {
+      "name": "xsys/windows/types_windows_amd64.go",
+      "size": 817,
+      "sha256": "c375406875cabc6447a9a8ca917eccab2227ea33a17ac3ed02a3a8fca0af8ce1"
+    },
+    {
+      "name": "xsys/windows/types_windows_arm.go",
+      "size": 875,
+      "sha256": "e4dade4b688c7dea2a0d89a819d6917f3ab7be2514e462d7eb2fc2052cdc625c"
+    },
+    {
+      "name": "xsys/windows/types_windows_arm64.go",
+      "size": 817,
+      "sha256": "c375406875cabc6447a9a8ca917eccab2227ea33a17ac3ed02a3a8fca0af8ce1"
+    },
+    {
+      "name": "xsys/windows/xattr_test.go",
+      "size": 6403,
+      "sha256": "a2c6bf2c4f16236133c62904a28ea20be80aecf09c7eda05d03072fbe420e2e2"
+    },
+    {
+      "name": "xsys/windows/zerrors_windows.go",
+      "size": 945502,
+      "sha256": "fdf634bbd093494501a9aec0660aa53b434fdc2c2bb989e8d0925323e511358d"
+    },
+    {
+      "name": "xsys/windows/zknownfolderids_windows.go",
+      "size": 19145,
+      "sha256": "3815bbaa8adf5400041954decc56e8889eb56eb20bfc30053e7799703af0fc95"
+    },
+    {
+      "name": "xsys/windows/zsyscall_windows.go",
+      "size": 209178,
+      "sha256": "c40bdeba110bf46782feb55976a00c88c2ae51d8c812de5ae023326eeb083c92"
+    }
+  ]
+}

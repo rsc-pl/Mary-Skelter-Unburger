@@ -1,0 +1,317 @@
+{
+  "games": {
+    "finale": {
+      "map_file": "finale-stable-alignment.jsonl.gz",
+      "map_sha256": "2b965fa077d0c3549afb14c3abc6fb0f52ccb27a2ddf572c62618e257f72e63e",
+      "mapped_fields": 107267,
+      "native_records_sha256": "885c38d10164eab1e7a900fd66120ae6180829a5ba38c819d880a933cd1a1e04",
+      "segments": {
+        "archive088_dialogues": {
+          "changed_fields_mapped": 1540,
+          "exact_runs": 7,
+          "mapped_pair_records": 770,
+          "pc_pair_records": 2445,
+          "top_runs": [
+            151,
+            127,
+            119,
+            117,
+            97,
+            93
+          ],
+          "unique_three_pair_anchors": 756,
+          "western_pair_records": 3535
+        },
+        "story_main": {
+          "changed_fields_mapped": 96924,
+          "changed_pc_fields": 32697,
+          "exact_runs": 106,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_31289"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_32198"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_32535"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_33205"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_33210"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_33214"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_33221"
+            },
+            {
+              "ordinal": 1,
+              "pc_record_id": "MSF_STORY_33517"
+            }
+          ],
+          "mapped_fields": 96924,
+          "pc_fields": 97060,
+          "top_runs": [
+            16490,
+            13828,
+            12947,
+            6491,
+            6257,
+            4351
+          ],
+          "unique_three_field_anchors": 90841,
+          "unmapped_pc_fields": 136,
+          "western_fields": 97689
+        },
+        "system_bin": {
+          "changed_fields_mapped": 1523,
+          "changed_pc_fields": 239,
+          "exact_runs": 5,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_SYSTEM_GDAT0_1259"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_SYSTEM_GDAT0_1277"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_SYSTEM_GDAT0_1282"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_SYSTEM_GDAT0_1286"
+            }
+          ],
+          "mapped_fields": 1523,
+          "pc_fields": 1527,
+          "top_runs": [
+            1259,
+            240,
+            17,
+            4,
+            3
+          ],
+          "unique_three_field_anchors": 1408,
+          "unmapped_pc_fields": 4,
+          "western_fields": 1527
+        },
+        "system_enc055": {
+          "changed_fields_mapped": 346,
+          "changed_pc_fields": 111,
+          "exact_runs": 3,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC055_G01453_R0000_O00000008"
+            }
+          ],
+          "mapped_fields": 346,
+          "pc_fields": 347,
+          "top_runs": [
+            183,
+            109,
+            54
+          ],
+          "unique_three_field_anchors": 200,
+          "unmapped_pc_fields": 1,
+          "western_fields": 347
+        },
+        "system_enc072": {
+          "changed_fields_mapped": 6934,
+          "changed_pc_fields": 5368,
+          "exact_runs": 4,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00001"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00002"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00003"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00004"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00005"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00006"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00007"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MSF_ENC072_A_00008"
+            }
+          ],
+          "mapped_fields": 6934,
+          "pc_fields": 19677,
+          "top_runs": [
+            2578,
+            2269,
+            1781,
+            306
+          ],
+          "unique_three_field_anchors": 763,
+          "unmapped_pc_fields": 12743,
+          "western_fields": 20066
+        }
+      },
+      "western_index_sha256": "fdcfaee4bef201f7c0654206c63f1d63a77c8b26aca01e738c6bad37633a5831"
+    },
+    "ms2": {
+      "map_file": "ms2-stable-alignment.jsonl.gz",
+      "map_sha256": "9089303b6491e8e0ddda37fff43356b7077aa9437d9908fa6f8b63aea9a3c32c",
+      "mapped_fields": 83602,
+      "native_records_sha256": "f44d656d48e0dc4849f3125c338cc9834f83618a0eb4cd605f3e15cd0cbc3c87",
+      "segments": {
+        "story_full": {
+          "changed_fields_mapped": 58375,
+          "changed_pc_fields": 18143,
+          "exact_runs": 1,
+          "first_unmapped_pc": [],
+          "mapped_fields": 58375,
+          "pc_fields": 58375,
+          "top_runs": [
+            58375
+          ],
+          "unique_three_field_anchors": 53844,
+          "unmapped_pc_fields": 0,
+          "western_fields": 58375
+        },
+        "system_bin": {
+          "changed_fields_mapped": 1765,
+          "changed_pc_fields": 321,
+          "exact_runs": 17,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0407"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0416"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0417"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0419"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0450"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0451"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0476"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_SYSTEM_BIN055_0477"
+            }
+          ],
+          "mapped_fields": 1765,
+          "pc_fields": 1788,
+          "top_runs": [
+            548,
+            538,
+            218,
+            167,
+            102,
+            88
+          ],
+          "unique_three_field_anchors": 1658,
+          "unmapped_pc_fields": 23,
+          "western_fields": 1872
+        },
+        "system_enc": {
+          "changed_fields_mapped": 23462,
+          "changed_pc_fields": 4264,
+          "exact_runs": 145,
+          "first_unmapped_pc": [
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0006_O00000004"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0006_O00000132"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0006_O00000644"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0006_O00000772"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0011_O00000176"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0011_O00000240"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0011_O00000752"
+            },
+            {
+              "ordinal": 0,
+              "pc_record_id": "MS2_ENC052_G00001_R0011_O00000816"
+            }
+          ],
+          "mapped_fields": 23462,
+          "pc_fields": 23955,
+          "top_runs": [
+            6285,
+            5507,
+            2480,
+            2155,
+            1879,
+            656
+          ],
+          "unique_three_field_anchors": 8045,
+          "unmapped_pc_fields": 493,
+          "western_fields": 23745
+        }
+      },
+      "western_index_sha256": "2a2d114d4afdd202ff43a571b9bd7b9ce8210542586834ae0e235b25fc134087"
+    }
+  },
+  "kind": "PC_SINGLE_SOURCE_TO_WESTERN_SWITCH_STRUCTURAL_ALIGNMENT",
+  "release_ready": false,
+  "schema_version": 1
+}

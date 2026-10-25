@@ -1,14 +1,30 @@
-# Machine-local configuration, caches, reports, and generated output
-.local/
+# Expanded portable Python runtimes
+/toolchain/python-runtime/linux-amd64/
+/toolchain/python-runtime/windows-amd64/
 
-# Python
+# Generated Go executables
+/toolchain/bin/
+
+# Owner-local files, caches and credentials
+/.local/
+
+/.local/
+/third_party.zip
+/third_party*.zip
+/*.tar.zst
+/*.tar.zst.part*
+/scripts/
+
+/toolchain/bin/
+
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-
-# Editor / OS noise
 .idea/
 .vscode/
 .DS_Store
 *~
+
+# Committed as offline ZIP under toolchain/go-deps
+/third_party/go/

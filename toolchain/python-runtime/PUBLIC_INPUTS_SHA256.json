@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "linux-amd64": {
+      "numpy": {
+        "name": "numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "sha256": "11e06aa0af8c0f05104d56450d6093ee639e15f24ecf62d417329d06e522e017",
+        "url": "https://files.pythonhosted.org/packages/f5/10/ca162f45a102738958dcec8023062dad0cbc17d1ab99d68c4e4a6c45fb2b/numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      },
+      "pillow": {
+        "name": "pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "sha256": "0847a763afefb695bc912d7c131e7e0632d4edc1d8698f58ddabec8e46b8b6d3",
+        "url": "https://files.pythonhosted.org/packages/f7/62/de5bdd77d935331f4f802edc11e4d82950f642caad6cb2f949837b8560e2/pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+      },
+      "python": {
+        "name": "cpython-3.13.15+20260807-x86_64-unknown-linux-gnu-install_only.tar.gz",
+        "sha256": "7253808c3413d9ebd03e76b3853c895b9287f12e0750a30fce1cbf430e516113",
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15%2B20260807-x86_64-unknown-linux-gnu-install_only.tar.gz"
+      }
+    },
+    "windows-amd64": {
+      "numpy": {
+        "name": "numpy-2.3.5-cp313-cp313-win_amd64.whl",
+        "sha256": "00dc4e846108a382c5869e77c6ed514394bdeb3403461d25a829711041217d5b",
+        "url": "https://files.pythonhosted.org/packages/0c/88/e2eaa6cffb115b85ed7c7c87775cb8bcf0816816bc98ca8dbfa2ee33fe6e/numpy-2.3.5-cp313-cp313-win_amd64.whl"
+      },
+      "pillow": {
+        "name": "pillow-12.3.0-cp313-cp313-win_amd64.whl",
+        "sha256": "1cca606cd25738df4ed873d5ad46bbdb3d83b5cbca291f6b4ff13a4df6b0bbe8",
+        "url": "https://files.pythonhosted.org/packages/a6/9b/7a58e61d62be561da3a356fe2384d4059a6345fc130e23ef1c36a5b81d24/pillow-12.3.0-cp313-cp313-win_amd64.whl"
+      },
+      "python": {
+        "name": "cpython-3.13.15+20260807-x86_64-pc-windows-msvc-install_only.tar.gz",
+        "sha256": "a9c1da0175c2390df2a5d9b5994cc962780f6eaa59ac6b9a832154b8862abbff",
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15%2B20260807-x86_64-pc-windows-msvc-install_only.tar.gz"
+      }
+    }
+  },
+  "cpython": "3.13.15",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "release": "20260807",
+  "schema": 1
+}

@@ -1,0 +1,8525 @@
+{
+  "schema_version": 2,
+  "assets": [
+    {
+      "id": "MS2_RESULT_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1333,
+      "cl3_inner_name": "result_2.tid",
+      "renderer": "ms2_result_font_v2",
+      "source_variants": [
+        {
+          "tid_sha256": "3af42766364633da20762a59c3c3054f52179548ae0604a8265d773a0a980a14",
+          "width": 2048,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "glyph_sources": {
+        "OTSUU": [
+          88,
+          1266,
+          199,
+          72
+        ],
+        "HAMELN": [
+          813,
+          1266,
+          237,
+          72
+        ],
+        "GRETEL": [
+          1192,
+          1264,
+          225,
+          74
+        ],
+        "RAPUNZEL": [
+          35,
+          1406,
+          307,
+          72
+        ],
+        "KAGUYA": [
+          439,
+          1404,
+          243,
+          75
+        ],
+        "THUMBELINA": [
+          751,
+          1406,
+          360,
+          72
+        ],
+        "SNOWWHITE": [
+          1128,
+          1406,
+          352,
+          72
+        ],
+        "CINDERELLA": [
+          385,
+          1546,
+          350,
+          72
+        ],
+        "ALICE": [
+          1213,
+          1546,
+          179,
+          72
+        ],
+        "JACK": [
+          110,
+          1686,
+          154,
+          77
+        ]
+      },
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            88,
+            1266,
+            199,
+            72
+          ]
+        },
+        {
+          "from": "LITTLEMERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            424,
+            1240,
+            257,
+            111
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            439,
+            1404,
+            243,
+            75
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            751,
+            1406,
+            360,
+            72
+          ]
+        },
+        {
+          "from": "SNOWWHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1128,
+            1406,
+            352,
+            72
+          ]
+        },
+        {
+          "from": "SLEEPINGBEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            42,
+            1523,
+            275,
+            110
+          ]
+        },
+        {
+          "from": "REDRIDINGHOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            756,
+            1523,
+            351,
+            110
+          ]
+        }
+      ],
+      "typography_preset": "result_nameplate",
+      "rows": [
+        {
+          "from": "OTSUU",
+          "text": "TSUU",
+          "rect": [
+            88,
+            1266,
+            199,
+            72
+          ]
+        },
+        {
+          "from": "LITTLEMERMAID",
+          "text": "NINGYOHIME",
+          "rect": [
+            424,
+            1240,
+            257,
+            111
+          ]
+        },
+        {
+          "from": "HAMELN",
+          "text": "HAMELN",
+          "rect": [
+            813,
+            1266,
+            237,
+            72
+          ]
+        },
+        {
+          "from": "GRETEL",
+          "text": "GRETEL",
+          "rect": [
+            1192,
+            1264,
+            225,
+            74
+          ]
+        },
+        {
+          "from": "RAPUNZEL",
+          "text": "RAPUNZEL",
+          "rect": [
+            35,
+            1406,
+            307,
+            72
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "text": "KAGUYAHIME",
+          "rect": [
+            439,
+            1404,
+            243,
+            75
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "text": "OYAYUBIHIME",
+          "rect": [
+            751,
+            1406,
+            360,
+            72
+          ]
+        },
+        {
+          "from": "SNOWWHITE",
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1128,
+            1406,
+            352,
+            72
+          ]
+        },
+        {
+          "from": "SLEEPINGBEAUTY",
+          "text": "NEMURIHIME",
+          "rect": [
+            42,
+            1523,
+            275,
+            110
+          ]
+        },
+        {
+          "from": "CINDERELLA",
+          "text": "CINDERELLA",
+          "rect": [
+            385,
+            1546,
+            350,
+            72
+          ]
+        },
+        {
+          "from": "REDRIDINGHOOD",
+          "text": "AKAZUKIN",
+          "rect": [
+            756,
+            1523,
+            351,
+            110
+          ]
+        },
+        {
+          "from": "ALICE",
+          "text": "ALICE",
+          "rect": [
+            1213,
+            1546,
+            179,
+            72
+          ]
+        },
+        {
+          "from": "JACK",
+          "text": "JACK",
+          "rect": [
+            110,
+            1686,
+            154,
+            77
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MS2_BATTLE_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1331,
+      "cl3_inner_name": "battle_2.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "3dd5e08c9e7311acbc7cda6f5a77e65cb2f862aedc075bae3657fed83bf77379",
+          "width": 2048,
+          "height": 4096,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "ms2_battle_nameplates_font_v3",
+      "typography_preset": "battle_nameplate",
+      "background_asset": "battle/ms2_nameplate_bg.png",
+      "text_box": [
+        0,
+        24,
+        343,
+        145
+      ],
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            780,
+            1220,
+            1123,
+            1401
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            1128,
+            1220,
+            1471,
+            1401
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            84,
+            1408,
+            427,
+            1589
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            432,
+            1408,
+            775,
+            1589
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            780,
+            1408,
+            1123,
+            1589
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            1128,
+            1408,
+            1471,
+            1589
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            84,
+            1596,
+            427,
+            1777
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            432,
+            1596,
+            775,
+            1777
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            780,
+            1596,
+            1123,
+            1777
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1128,
+            1596,
+            1471,
+            1777
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            84,
+            1784,
+            427,
+            1965
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            432,
+            1784,
+            775,
+            1965
+          ]
+        },
+        {
+          "text": "JACK",
+          "rect": [
+            780,
+            1784,
+            1123,
+            1965
+          ]
+        },
+        {
+          "text": "MAMORU",
+          "rect": [
+            1128,
+            1784,
+            1471,
+            1965
+          ]
+        },
+        {
+          "text": "HANSEL",
+          "rect": [
+            84,
+            1972,
+            427,
+            2153
+          ]
+        }
+      ],
+      "final_scale": 0.94,
+      "supersample": 4,
+      "extra_cleanup_names": [
+        "NINGYOHIME",
+        "AKAZUKIN"
+      ],
+      "extra_cleanup_filter_size": 21
+    },
+    {
+      "id": "MS2_HEROINE_ROOM_LIST_BLUE",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1853,
+      "cl3_inner_name": "menu_heroineroom.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "11f61fb1794a7a6b75193b7cf4b7a23ba2519b9aa5ec4a0ba68da89cacbea5b5",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "renderer": "ms2_heroine_room_blue_font_v6",
+      "typography_preset": "ms2_room_entry_gebryna",
+      "rows": [
+        {
+          "name": "NINGYOHIME",
+          "rect": [
+            5,
+            230,
+            680,
+            357
+          ],
+          "name_target_width": 581
+        },
+        {
+          "name": "HAMELN",
+          "rect": [
+            5,
+            359,
+            680,
+            486
+          ],
+          "name_target_width": 395
+        },
+        {
+          "name": "GRETEL",
+          "rect": [
+            5,
+            488,
+            680,
+            615
+          ],
+          "name_target_width": 382
+        },
+        {
+          "name": "RAPUNZEL",
+          "rect": [
+            5,
+            617,
+            680,
+            744
+          ],
+          "name_target_width": 489
+        },
+        {
+          "name": "KAGUYAHIME",
+          "rect": [
+            5,
+            746,
+            680,
+            873
+          ],
+          "name_target_width": 399
+        },
+        {
+          "name": "OYAYUBIHIME",
+          "rect": [
+            5,
+            875,
+            680,
+            1002
+          ],
+          "name_target_width": 574
+        },
+        {
+          "name": "SHIRAYUKIHIME",
+          "rect": [
+            682,
+            230,
+            1357,
+            357
+          ],
+          "name_target_width": 501
+        },
+        {
+          "name": "NEMURIHIME",
+          "rect": [
+            682,
+            359,
+            1357,
+            486
+          ],
+          "name_target_width": 591
+        },
+        {
+          "name": "CINDERELLA",
+          "rect": [
+            682,
+            488,
+            1357,
+            615
+          ],
+          "name_target_width": 555
+        },
+        {
+          "name": "AKAZUKIN",
+          "rect": [
+            682,
+            617,
+            1357,
+            744
+          ],
+          "name_target_width": 565
+        },
+        {
+          "name": "ALICE",
+          "rect": [
+            682,
+            746,
+            1357,
+            873
+          ],
+          "name_target_width": 308
+        }
+      ],
+      "text_left_margin": 78,
+      "room_vertical_scale": 0.82,
+      "room_vertical_anchor": "bottom"
+    },
+    {
+      "id": "MS2_JOB_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1854,
+      "cl3_inner_name": "menu_job.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "face_mode": "white",
+      "target_height": 54,
+      "gap": -1,
+      "space_width": 14,
+      "clear_mode": "transparent",
+      "mask_dilate": 3,
+      "source_variants": [
+        {
+          "tid_sha256": "ff9b3806df6c5b8a829619324692a379294dc9247bf53626302af80b3c620727",
+          "width": 2048,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "glyph_cells": [
+        {
+          "source": "OTSUU",
+          "rect": [
+            718,
+            157,
+            912,
+            221
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            965,
+            157,
+            1250,
+            222
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            970,
+            238,
+            1248,
+            305
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            700,
+            315,
+            930,
+            383
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            708,
+            397,
+            925,
+            462
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            971,
+            400,
+            1247,
+            465
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            676,
+            474,
+            957,
+            545
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            699,
+            556,
+            934,
+            623
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            1020,
+            558,
+            1195,
+            620
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            710,
+            150,
+            925,
+            228
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            955,
+            150,
+            1260,
+            230
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            690,
+            230,
+            940,
+            310
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            960,
+            230,
+            1260,
+            312
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            980,
+            305,
+            1240,
+            392
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            970,
+            466,
+            1250,
+            555
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            690,
+            550,
+            950,
+            635
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_white_oblique",
+      "font_nominal_size": 62,
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            690,
+            145,
+            950,
+            230
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            950,
+            145,
+            1265,
+            230
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            690,
+            225,
+            950,
+            312
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            950,
+            225,
+            1265,
+            312
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            690,
+            305,
+            950,
+            392
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            950,
+            305,
+            1265,
+            392
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            690,
+            385,
+            950,
+            472
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            950,
+            385,
+            1265,
+            472
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            690,
+            465,
+            950,
+            555
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            950,
+            465,
+            1265,
+            555
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            690,
+            545,
+            950,
+            638
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            950,
+            545,
+            1265,
+            638
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.07
+    },
+    {
+      "id": "MS2_MYROOM_TITLE",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1860,
+      "cl3_inner_name": "menu_kyoju_myroom.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "9a575cb0fcac7538388b73ecc85bf777f5f69da9f928e3791dabddaaa5f5f976",
+          "width": 2048,
+          "height": 1024,
+          "format": "DXT5"
+        }
+      ],
+      "renderer": "ms2_myroom_title_font_v3",
+      "clear_rect": [
+        930,
+        650,
+        1440,
+        825
+      ],
+      "top_source_rect": [
+        1045,
+        675,
+        1405,
+        745
+      ],
+      "top_y": 665,
+      "room_y": 735,
+      "replacements": [
+        {
+          "from": "OTSUU'S ROOM",
+          "to": "TSUU'S ROOM"
+        }
+      ],
+      "typography_preset": "ms2_room_entry_gebryna",
+      "name": "TSUU",
+      "name_target_width": 342,
+      "name_offset_y": 22,
+      "room_vertical_scale": 0.92,
+      "room_vertical_anchor": "top"
+    },
+    {
+      "id": "MS2_AFFECTION_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1877,
+      "cl3_inner_name": "menu_yujodo.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "389e0356ec34a98b6d85e779a2a0ba40bd6dbc382ebd4d3dd0da3bcf6f019efc",
+          "width": 512,
+          "height": 1024,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "ms2_affection_font_v2",
+      "face_mode": "cyan",
+      "mask_dilate": 5,
+      "target_height": 25,
+      "gap": -1,
+      "space_width": 9,
+      "clear_mode": "dominant",
+      "glyph_cells": [
+        {
+          "source": "HAMELN",
+          "rect": [
+            3,
+            422,
+            165,
+            466
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            3,
+            476,
+            155,
+            520
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            3,
+            529,
+            205,
+            575
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            3,
+            584,
+            158,
+            624
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            3,
+            636,
+            246,
+            681
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            250,
+            366,
+            485,
+            414
+          ]
+        },
+        {
+          "source": "SLEEPING BEAUTY",
+          "rect": [
+            250,
+            415,
+            458,
+            479
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            250,
+            477,
+            490,
+            522
+          ]
+        },
+        {
+          "source": "RED RIDING HOOD",
+          "rect": [
+            250,
+            522,
+            473,
+            582
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            250,
+            583,
+            374,
+            625
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            2,
+            365,
+            205,
+            420
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            2,
+            582,
+            160,
+            626
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            2,
+            634,
+            247,
+            682
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            249,
+            365,
+            486,
+            415
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            249,
+            414,
+            459,
+            480
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            249,
+            521,
+            474,
+            583
+          ]
+        }
+      ],
+      "typography_preset": "affection_cyan",
+      "rows": [
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            2,
+            365,
+            205,
+            420
+          ],
+          "typography_preset": "affection_pink"
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            3,
+            422,
+            165,
+            466
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            3,
+            476,
+            155,
+            520
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            3,
+            529,
+            205,
+            575
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            3,
+            584,
+            160,
+            626
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            3,
+            636,
+            247,
+            682
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            249,
+            365,
+            486,
+            415
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            249,
+            414,
+            459,
+            480
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            250,
+            477,
+            490,
+            522
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            249,
+            521,
+            474,
+            583
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            250,
+            583,
+            374,
+            625
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MSF_EN_BATTLE_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 74,
+      "gdat_index": 0,
+      "cl3_inner_name": "battle_f_NX.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "9d74f84a6759acf0a736ad96785107fb8834a8a9c16e22f0fa1672c22c260e13",
+          "width": 4096,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "msf_battle_nameplates_font_v2",
+      "face_mode": "pink",
+      "mask_dilate": 7,
+      "target_height": 66,
+      "gap": -1,
+      "space_width": 12,
+      "descenders": "gpyqj",
+      "cell_size": [
+        400,
+        199
+      ],
+      "background_cells": [
+        [
+          1196,
+          2,
+          1596,
+          201
+        ],
+        [
+          1598,
+          2,
+          1998,
+          201
+        ],
+        [
+          1196,
+          204,
+          1596,
+          403
+        ],
+        [
+          1598,
+          204,
+          1998,
+          403
+        ],
+        [
+          1196,
+          406,
+          1596,
+          605
+        ],
+        [
+          1598,
+          406,
+          1998,
+          605
+        ],
+        [
+          1196,
+          608,
+          1596,
+          807
+        ],
+        [
+          1598,
+          608,
+          1998,
+          807
+        ],
+        [
+          1196,
+          810,
+          1596,
+          1009
+        ],
+        [
+          1598,
+          810,
+          1998,
+          1009
+        ],
+        [
+          1196,
+          1012,
+          1596,
+          1211
+        ],
+        [
+          1598,
+          1012,
+          1998,
+          1211
+        ],
+        [
+          1196,
+          1214,
+          1596,
+          1413
+        ],
+        [
+          1598,
+          1214,
+          1998,
+          1413
+        ],
+        [
+          1196,
+          1416,
+          1596,
+          1615
+        ],
+        [
+          1598,
+          1416,
+          1998,
+          1615
+        ],
+        [
+          392,
+          1214,
+          792,
+          1413
+        ],
+        [
+          794,
+          1214,
+          1194,
+          1413
+        ],
+        [
+          794,
+          1416,
+          1194,
+          1615
+        ],
+        [
+          794,
+          1618,
+          1194,
+          1817
+        ],
+        [
+          1196,
+          1618,
+          1596,
+          1817
+        ],
+        [
+          1598,
+          1618,
+          1998,
+          1817
+        ]
+      ],
+      "background_median_rect": [
+        110,
+        20,
+        340,
+        175
+      ],
+      "background_median_size": 31,
+      "text_box": [
+        0,
+        28,
+        400,
+        148
+      ],
+      "glyph_cells": [
+        {
+          "source": "Mary",
+          "rect": [
+            1196,
+            2,
+            1596,
+            201
+          ]
+        },
+        {
+          "source": "Charlotte",
+          "rect": [
+            1598,
+            2,
+            1998,
+            201
+          ]
+        },
+        {
+          "source": "Alice",
+          "rect": [
+            1196,
+            204,
+            1596,
+            403
+          ]
+        },
+        {
+          "source": "Otsuu",
+          "rect": [
+            1598,
+            204,
+            1998,
+            403
+          ]
+        },
+        {
+          "source": "Pyre",
+          "rect": [
+            1598,
+            406,
+            1998,
+            605
+          ]
+        },
+        {
+          "source": "Rapunzel",
+          "rect": [
+            1196,
+            608,
+            1596,
+            807
+          ]
+        },
+        {
+          "source": "Gretel",
+          "rect": [
+            1598,
+            608,
+            1998,
+            807
+          ]
+        },
+        {
+          "source": "Hameln",
+          "rect": [
+            1196,
+            810,
+            1596,
+            1009
+          ]
+        },
+        {
+          "source": "Kaguya",
+          "rect": [
+            1598,
+            1214,
+            1998,
+            1413
+          ]
+        },
+        {
+          "source": "Cinderella",
+          "rect": [
+            1196,
+            1416,
+            1596,
+            1615
+          ]
+        },
+        {
+          "source": "Riley",
+          "rect": [
+            1598,
+            1416,
+            1998,
+            1615
+          ]
+        }
+      ],
+      "glyph_rects": [
+        {
+          "char": "T",
+          "rect": [
+            1636,
+            1012,
+            1682,
+            1211
+          ]
+        },
+        {
+          "char": "S",
+          "rect": [
+            1248,
+            1214,
+            1312,
+            1324
+          ]
+        },
+        {
+          "char": "b",
+          "rect": [
+            1804,
+            1012,
+            1840,
+            1211
+          ]
+        }
+      ],
+      "synthesize_chars": [
+        "N",
+        "k"
+      ],
+      "synthetic_outline_rgba": [
+        145,
+        0,
+        40,
+        255
+      ],
+      "replacements": [
+        {
+          "from": "Mary",
+          "to": "Mary",
+          "rect": [
+            1196,
+            2,
+            1596,
+            201
+          ]
+        },
+        {
+          "from": "Charlotte",
+          "to": "Charlotte",
+          "rect": [
+            1598,
+            2,
+            1998,
+            201
+          ]
+        },
+        {
+          "from": "Alice",
+          "to": "Alice",
+          "rect": [
+            1196,
+            204,
+            1596,
+            403
+          ]
+        },
+        {
+          "from": "Tsuu",
+          "to": "Tsuu",
+          "rect": [
+            1598,
+            204,
+            1998,
+            403
+          ]
+        },
+        {
+          "from": "Ningyohime",
+          "to": "Ningyohime",
+          "rect": [
+            1196,
+            406,
+            1596,
+            605
+          ]
+        },
+        {
+          "from": "Shira",
+          "to": "Shira",
+          "rect": [
+            1598,
+            406,
+            1998,
+            605
+          ]
+        },
+        {
+          "from": "Rapunzel",
+          "to": "Rapunzel",
+          "rect": [
+            1196,
+            608,
+            1596,
+            807
+          ]
+        },
+        {
+          "from": "Gretel",
+          "to": "Gretel",
+          "rect": [
+            1598,
+            608,
+            1998,
+            807
+          ]
+        },
+        {
+          "from": "Hameln",
+          "to": "Hameln",
+          "rect": [
+            1196,
+            810,
+            1596,
+            1009
+          ]
+        },
+        {
+          "from": "Nemurihime",
+          "to": "Nemurihime",
+          "rect": [
+            1598,
+            810,
+            1998,
+            1009
+          ]
+        },
+        {
+          "from": "Akazukin",
+          "to": "Akazukin",
+          "rect": [
+            1196,
+            1012,
+            1596,
+            1211
+          ]
+        },
+        {
+          "from": "Oyayubihime",
+          "to": "Oyayubihime",
+          "rect": [
+            1598,
+            1012,
+            1998,
+            1211
+          ]
+        },
+        {
+          "from": "Shirayukihime",
+          "to": "Shirayukihime",
+          "rect": [
+            1196,
+            1214,
+            1596,
+            1413
+          ]
+        },
+        {
+          "from": "Kaguyahime",
+          "to": "Kaguyahime",
+          "rect": [
+            1598,
+            1214,
+            1998,
+            1413
+          ]
+        },
+        {
+          "from": "Cinderella",
+          "to": "Cinderella",
+          "rect": [
+            1196,
+            1416,
+            1596,
+            1615
+          ]
+        },
+        {
+          "from": "Riley",
+          "to": "Riley",
+          "rect": [
+            1598,
+            1416,
+            1998,
+            1615
+          ]
+        },
+        {
+          "from": "Jack",
+          "to": "Jack",
+          "rect": [
+            1196,
+            1618,
+            1596,
+            1817
+          ]
+        },
+        {
+          "from": "Ellie",
+          "to": "Ellie",
+          "rect": [
+            1598,
+            1618,
+            1998,
+            1817
+          ]
+        },
+        {
+          "from": "Hiaburibashira",
+          "to": "Hiaburibashira",
+          "rect": [
+            392,
+            1214,
+            792,
+            1413
+          ]
+        },
+        {
+          "from": "???",
+          "to": "???",
+          "rect": [
+            794,
+            1214,
+            1194,
+            1413
+          ]
+        },
+        {
+          "from": "Juu",
+          "to": "Juu",
+          "rect": [
+            794,
+            1416,
+            1194,
+            1615
+          ]
+        },
+        {
+          "from": "Clara",
+          "to": "Clara",
+          "rect": [
+            794,
+            1618,
+            1194,
+            1817
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_finale_battle_v2",
+      "supersample": 4
+    },
+    {
+      "id": "MS2_BONUS_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1400,
+      "cl3_inner_name": "BONUS_CHARACTER.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "8f4638abe267aad2b7d07b36232268d64cc4e208d79b07afb5a3e53d4fb0f246",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 55,
+      "gap": -1,
+      "space_width": 15,
+      "glyph_cells": [
+        {
+          "source": "OTSUU",
+          "rect": [
+            930,
+            0,
+            1260,
+            80
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            1260,
+            0,
+            1580,
+            80
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            930,
+            160,
+            1260,
+            245
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            930,
+            245,
+            1260,
+            325
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            1260,
+            245,
+            1580,
+            325
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            930,
+            325,
+            1260,
+            405
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            930,
+            405,
+            1260,
+            480
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            1260,
+            405,
+            1580,
+            480
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            930,
+            0,
+            1260,
+            80
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1260,
+            0,
+            1580,
+            80
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            930,
+            80,
+            1260,
+            160
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1260,
+            80,
+            1580,
+            160
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            1260,
+            160,
+            1580,
+            245
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            1260,
+            325,
+            1580,
+            405
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            930,
+            405,
+            1260,
+            480
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_white_oblique",
+      "clear_mode": "transparent",
+      "font_nominal_size": 60,
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            930,
+            0,
+            1260,
+            80
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            1260,
+            0,
+            1580,
+            80
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            930,
+            80,
+            1260,
+            160
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1260,
+            80,
+            1580,
+            160
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            930,
+            160,
+            1260,
+            245
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            1260,
+            160,
+            1580,
+            245
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            930,
+            245,
+            1260,
+            325
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1260,
+            245,
+            1580,
+            325
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            930,
+            325,
+            1260,
+            405
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            1260,
+            325,
+            1580,
+            405
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            930,
+            405,
+            1260,
+            485
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            1260,
+            405,
+            1580,
+            485
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.09
+    },
+    {
+      "id": "MS2_CAMP_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1431,
+      "cl3_inner_name": "Camp_common_CHARA.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "60e36bc502a51cf763c6063476b3ec0648457f601899d0fac14ad0a7652d860c",
+          "width": 1024,
+          "height": 1024,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "yellow",
+      "target_height": 63,
+      "gap": -2,
+      "space_width": 18,
+      "glyph_cells": [
+        {
+          "source": "ALICE",
+          "rect": [
+            0,
+            0,
+            430,
+            88
+          ]
+        },
+        {
+          "source": "RED RIDING HOOD",
+          "rect": [
+            430,
+            0,
+            900,
+            88
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            0,
+            88,
+            430,
+            176
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            430,
+            88,
+            900,
+            176
+          ]
+        },
+        {
+          "source": "SLEEPING BEAUTY",
+          "rect": [
+            0,
+            176,
+            430,
+            264
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            430,
+            176,
+            900,
+            264
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            0,
+            264,
+            430,
+            352
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            430,
+            264,
+            900,
+            352
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            0,
+            352,
+            430,
+            440
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            430,
+            352,
+            900,
+            440
+          ]
+        },
+        {
+          "source": "OTSUU",
+          "rect": [
+            0,
+            440,
+            430,
+            528
+          ]
+        },
+        {
+          "source": "LITTLE MERMAID",
+          "rect": [
+            430,
+            440,
+            900,
+            528
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            430,
+            0,
+            900,
+            88
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            0,
+            88,
+            430,
+            176
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            430,
+            88,
+            900,
+            176
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            0,
+            176,
+            430,
+            264
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            0,
+            352,
+            430,
+            440
+          ]
+        },
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            0,
+            440,
+            430,
+            528
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            430,
+            440,
+            900,
+            528
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_camp_gold",
+      "clear_mode": "transparent",
+      "font_nominal_size": 68,
+      "rows": [
+        {
+          "text": "ALICE",
+          "rect": [
+            0,
+            0,
+            430,
+            88
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            430,
+            0,
+            900,
+            88
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            0,
+            88,
+            430,
+            176
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            430,
+            88,
+            900,
+            176
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            0,
+            176,
+            430,
+            264
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            430,
+            176,
+            900,
+            264
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            0,
+            264,
+            430,
+            352
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            430,
+            264,
+            900,
+            352
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            0,
+            352,
+            430,
+            440
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            430,
+            352,
+            900,
+            440
+          ]
+        },
+        {
+          "text": "TSUU",
+          "rect": [
+            0,
+            440,
+            430,
+            528
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            430,
+            440,
+            900,
+            528
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.025
+    },
+    {
+      "id": "MS2_JOB_CLASS_24PX",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1453,
+      "cl3_inner_name": "jobname_24px.tid",
+      "renderer": "font_atlas_v2",
+      "source_variants": [
+        {
+          "gdat_index": 1453,
+          "inner_name": "jobname_24px.tid",
+          "tid_sha256": "687a6b6bd576b686784c8325ebfe6334312c8629b879a2b97ebf4fbcd54991d3",
+          "width": 2048,
+          "height": 512,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 43,
+      "gap": -2,
+      "space_width": 14,
+      "glyph_cells": [
+        {
+          "source": "FIGHTER",
+          "rect": [
+            0,
+            0,
+            375,
+            54
+          ]
+        },
+        {
+          "source": "PALADIN",
+          "rect": [
+            0,
+            54,
+            375,
+            108
+          ]
+        },
+        {
+          "source": "MARSHAL",
+          "rect": [
+            0,
+            108,
+            375,
+            162
+          ]
+        },
+        {
+          "source": "DESTROYER",
+          "rect": [
+            0,
+            162,
+            375,
+            216
+          ]
+        },
+        {
+          "source": "BLOOD LORD",
+          "rect": [
+            0,
+            216,
+            375,
+            270
+          ]
+        },
+        {
+          "source": "ALTAIR",
+          "rect": [
+            0,
+            270,
+            375,
+            324
+          ]
+        },
+        {
+          "source": "SAKURA MAIDEN",
+          "rect": [
+            0,
+            324,
+            400,
+            378
+          ]
+        },
+        {
+          "source": "MAGICIAN",
+          "rect": [
+            375,
+            0,
+            775,
+            54
+          ]
+        },
+        {
+          "source": "THERAPIST",
+          "rect": [
+            375,
+            54,
+            775,
+            108
+          ]
+        },
+        {
+          "source": "COUNSELOR",
+          "rect": [
+            375,
+            108,
+            775,
+            162
+          ]
+        },
+        {
+          "source": "NECROMANCER",
+          "rect": [
+            375,
+            162,
+            775,
+            216
+          ]
+        },
+        {
+          "source": "BLOOD WITCH",
+          "rect": [
+            375,
+            216,
+            775,
+            270
+          ]
+        },
+        {
+          "source": "MILKY WAY",
+          "rect": [
+            375,
+            270,
+            775,
+            324
+          ]
+        },
+        {
+          "source": "T-HEALER",
+          "rect": [
+            375,
+            324,
+            775,
+            378
+          ]
+        },
+        {
+          "source": "ARCHER",
+          "rect": [
+            775,
+            0,
+            1175,
+            54
+          ]
+        },
+        {
+          "source": "SNIPER",
+          "rect": [
+            775,
+            54,
+            1175,
+            108
+          ]
+        },
+        {
+          "source": "SPEED GUNNER",
+          "rect": [
+            775,
+            108,
+            1175,
+            162
+          ]
+        },
+        {
+          "source": "DARK SEEKER",
+          "rect": [
+            775,
+            162,
+            1175,
+            216
+          ]
+        },
+        {
+          "source": "BLOOD HUNTER",
+          "rect": [
+            775,
+            216,
+            1175,
+            270
+          ]
+        },
+        {
+          "source": "HERCULES",
+          "rect": [
+            775,
+            270,
+            1175,
+            324
+          ]
+        },
+        {
+          "source": "G-ASSASSIN",
+          "rect": [
+            775,
+            324,
+            1175,
+            378
+          ]
+        },
+        {
+          "source": "SCIENTIST",
+          "rect": [
+            1175,
+            0,
+            1575,
+            54
+          ]
+        },
+        {
+          "source": "ITEM MEISTER",
+          "rect": [
+            1175,
+            54,
+            1575,
+            108
+          ]
+        },
+        {
+          "source": "MIMIC",
+          "rect": [
+            1175,
+            108,
+            1575,
+            162
+          ]
+        },
+        {
+          "source": "LOGIC",
+          "rect": [
+            1175,
+            162,
+            1575,
+            216
+          ]
+        },
+        {
+          "source": "BLOOD CHEMIST",
+          "rect": [
+            1175,
+            216,
+            1575,
+            270
+          ]
+        },
+        {
+          "source": "STAR GAZER",
+          "rect": [
+            1175,
+            270,
+            1575,
+            324
+          ]
+        },
+        {
+          "source": "JO-SINGER",
+          "rect": [
+            1175,
+            324,
+            1575,
+            378
+          ]
+        },
+        {
+          "source": "LIBERO",
+          "rect": [
+            1575,
+            0,
+            2048,
+            54
+          ]
+        },
+        {
+          "source": "POET",
+          "rect": [
+            1575,
+            54,
+            2048,
+            108
+          ]
+        },
+        {
+          "source": "FAIRY",
+          "rect": [
+            1575,
+            108,
+            2048,
+            162
+          ]
+        },
+        {
+          "source": "PIERROT",
+          "rect": [
+            1575,
+            162,
+            2048,
+            216
+          ]
+        },
+        {
+          "source": "LEECH",
+          "rect": [
+            1575,
+            216,
+            2048,
+            270
+          ]
+        },
+        {
+          "source": "WEAVER",
+          "rect": [
+            1575,
+            270,
+            2048,
+            324
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "DESTROYER",
+          "to": "DESTROY",
+          "rect": [
+            0,
+            162,
+            375,
+            216
+          ]
+        },
+        {
+          "from": "SAKURA MAIDEN",
+          "to": "SAKURA MIKO",
+          "rect": [
+            0,
+            324,
+            400,
+            378
+          ]
+        },
+        {
+          "from": "SCIENTIST",
+          "to": "SCIENCE",
+          "rect": [
+            1175,
+            0,
+            1575,
+            54
+          ]
+        },
+        {
+          "from": "ITEM MEISTER",
+          "to": "ITEM TOOLER",
+          "rect": [
+            1175,
+            54,
+            1575,
+            108
+          ]
+        },
+        {
+          "from": "MIMIC",
+          "to": "MIMICRY",
+          "rect": [
+            1175,
+            108,
+            1575,
+            162
+          ]
+        },
+        {
+          "from": "LOGIC",
+          "to": "LOGICALIST",
+          "rect": [
+            1175,
+            162,
+            1575,
+            216
+          ]
+        },
+        {
+          "from": "BLOOD CHEMIST",
+          "to": "BLACHEMIST",
+          "rect": [
+            1175,
+            216,
+            1575,
+            270
+          ]
+        },
+        {
+          "from": "LEECH",
+          "to": "BLOOD",
+          "rect": [
+            1575,
+            216,
+            2048,
+            270
+          ]
+        },
+        {
+          "from": "WEAVER",
+          "to": "TANZAKU",
+          "rect": [
+            1575,
+            270,
+            2048,
+            324
+          ]
+        }
+      ],
+      "typography_preset": "pink_block_small_neofara",
+      "clear_mode": "transparent",
+      "font_nominal_size": 44
+    },
+    {
+      "id": "MS2_JOB_CLASS_MIDDLE",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1454,
+      "cl3_inner_name": "jobname_middle.tid",
+      "renderer": "font_atlas_v2",
+      "source_variants": [
+        {
+          "gdat_index": 1454,
+          "inner_name": "jobname_middle.tid",
+          "tid_sha256": "f0171ef248287210ec12c2e73d9e4a282e33cce53e06b51211c9ba41ebbccaad",
+          "width": 1024,
+          "height": 1024,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 43,
+      "gap": -2,
+      "space_width": 14,
+      "glyph_cells": [
+        {
+          "source": "FIGHTER",
+          "rect": [
+            0,
+            0,
+            300,
+            52
+          ]
+        },
+        {
+          "source": "PALADIN",
+          "rect": [
+            0,
+            52,
+            300,
+            104
+          ]
+        },
+        {
+          "source": "MARSHAL",
+          "rect": [
+            0,
+            104,
+            300,
+            156
+          ]
+        },
+        {
+          "source": "DESTROYER",
+          "rect": [
+            0,
+            156,
+            300,
+            208
+          ]
+        },
+        {
+          "source": "BLOOD LORD",
+          "rect": [
+            0,
+            208,
+            300,
+            260
+          ]
+        },
+        {
+          "source": "MAGICIAN",
+          "rect": [
+            0,
+            260,
+            300,
+            312
+          ]
+        },
+        {
+          "source": "THERAPIST",
+          "rect": [
+            0,
+            312,
+            300,
+            364
+          ]
+        },
+        {
+          "source": "COUNSELOR",
+          "rect": [
+            0,
+            364,
+            300,
+            416
+          ]
+        },
+        {
+          "source": "NECROMANCER",
+          "rect": [
+            0,
+            416,
+            300,
+            468
+          ]
+        },
+        {
+          "source": "HERCULES",
+          "rect": [
+            0,
+            468,
+            300,
+            520
+          ]
+        },
+        {
+          "source": "SAKURA MAIDEN",
+          "rect": [
+            0,
+            520,
+            300,
+            572
+          ]
+        },
+        {
+          "source": "JO-SINGER",
+          "rect": [
+            0,
+            572,
+            300,
+            624
+          ]
+        },
+        {
+          "source": "BLOOD WITCH",
+          "rect": [
+            300,
+            0,
+            600,
+            52
+          ]
+        },
+        {
+          "source": "ARCHER",
+          "rect": [
+            300,
+            52,
+            600,
+            104
+          ]
+        },
+        {
+          "source": "SNIPER",
+          "rect": [
+            300,
+            104,
+            600,
+            156
+          ]
+        },
+        {
+          "source": "SPEED GUNNER",
+          "rect": [
+            300,
+            156,
+            600,
+            208
+          ]
+        },
+        {
+          "source": "DARK SEEKER",
+          "rect": [
+            300,
+            208,
+            600,
+            260
+          ]
+        },
+        {
+          "source": "BLOOD HUNTER",
+          "rect": [
+            300,
+            260,
+            600,
+            312
+          ]
+        },
+        {
+          "source": "SCIENTIST",
+          "rect": [
+            300,
+            312,
+            600,
+            364
+          ]
+        },
+        {
+          "source": "ITEM MEISTER",
+          "rect": [
+            300,
+            364,
+            600,
+            416
+          ]
+        },
+        {
+          "source": "MIMIC",
+          "rect": [
+            300,
+            416,
+            600,
+            468
+          ]
+        },
+        {
+          "source": "STAR GAZER",
+          "rect": [
+            300,
+            468,
+            600,
+            520
+          ]
+        },
+        {
+          "source": "T-HEALER",
+          "rect": [
+            300,
+            520,
+            600,
+            572
+          ]
+        },
+        {
+          "source": "LOGIC",
+          "rect": [
+            600,
+            0,
+            1024,
+            52
+          ]
+        },
+        {
+          "source": "BLOOD CHEMIST",
+          "rect": [
+            600,
+            52,
+            1024,
+            104
+          ]
+        },
+        {
+          "source": "LIBERO",
+          "rect": [
+            600,
+            104,
+            1024,
+            156
+          ]
+        },
+        {
+          "source": "POET",
+          "rect": [
+            600,
+            156,
+            1024,
+            208
+          ]
+        },
+        {
+          "source": "FAIRY",
+          "rect": [
+            600,
+            208,
+            1024,
+            260
+          ]
+        },
+        {
+          "source": "PIERROT",
+          "rect": [
+            600,
+            260,
+            1024,
+            312
+          ]
+        },
+        {
+          "source": "LEECH",
+          "rect": [
+            600,
+            312,
+            1024,
+            364
+          ]
+        },
+        {
+          "source": "ALTAIR",
+          "rect": [
+            600,
+            364,
+            1024,
+            416
+          ]
+        },
+        {
+          "source": "MILKY WAY",
+          "rect": [
+            600,
+            416,
+            1024,
+            468
+          ]
+        },
+        {
+          "source": "WEAVER",
+          "rect": [
+            600,
+            468,
+            1024,
+            520
+          ]
+        },
+        {
+          "source": "G-ASSASSIN",
+          "rect": [
+            600,
+            520,
+            1024,
+            572
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "DESTROYER",
+          "to": "DESTROY",
+          "rect": [
+            0,
+            156,
+            300,
+            208
+          ]
+        },
+        {
+          "from": "SAKURA MAIDEN",
+          "to": "SAKURA MIKO",
+          "rect": [
+            0,
+            520,
+            300,
+            572
+          ]
+        },
+        {
+          "from": "SCIENTIST",
+          "to": "SCIENCE",
+          "rect": [
+            300,
+            312,
+            600,
+            364
+          ]
+        },
+        {
+          "from": "ITEM MEISTER",
+          "to": "ITEM TOOLER",
+          "rect": [
+            300,
+            364,
+            600,
+            416
+          ]
+        },
+        {
+          "from": "MIMIC",
+          "to": "MIMICRY",
+          "rect": [
+            300,
+            416,
+            600,
+            468
+          ]
+        },
+        {
+          "from": "LOGIC",
+          "to": "LOGICALIST",
+          "rect": [
+            600,
+            0,
+            1024,
+            52
+          ]
+        },
+        {
+          "from": "BLOOD CHEMIST",
+          "to": "BLACHEMIST",
+          "rect": [
+            600,
+            52,
+            1024,
+            104
+          ]
+        },
+        {
+          "from": "LEECH",
+          "to": "BLOOD",
+          "rect": [
+            600,
+            312,
+            1024,
+            364
+          ]
+        },
+        {
+          "from": "WEAVER",
+          "to": "TANZAKU",
+          "rect": [
+            600,
+            468,
+            1024,
+            520
+          ]
+        }
+      ],
+      "typography_preset": "pink_block_small_neofara",
+      "clear_mode": "transparent",
+      "font_nominal_size": 46
+    },
+    {
+      "id": "MS2_DLC_JOB_LABELS",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "renderer": "ms2_dlc_job_labels_v1",
+      "grouped": true,
+      "face_mode": "yellow",
+      "mask_dilate": 5,
+      "target_height": 34,
+      "gap": -1,
+      "space_width": 10,
+      "glyph_donors": [
+        {
+          "inner_name": "dlcjobname_thealer.tid",
+          "source": "T-HEALER2"
+        },
+        {
+          "inner_name": "dlcjobname_gassassin.tid",
+          "source": "G-ASSASSIN2"
+        },
+        {
+          "inner_name": "dlcjobname_josinger.tid",
+          "source": "JO-SINGER2"
+        }
+      ],
+      "synthesize_chars": [
+        "B",
+        "C",
+        "M",
+        "P",
+        "U",
+        "W"
+      ],
+      "synthetic_outline_rgba": [
+        230,
+        20,
+        100,
+        255
+      ],
+      "targets": [
+        {
+          "gdat_index": 1541,
+          "inner_name": "dlcjobname_thealer.tid",
+          "tid_sha256": "9955ff24eadde13bfd66a018d31c43b10f88fffa5bc63c61779e2d045be4949d",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "T-HEALER2",
+          "to": "T-HEALER 2"
+        },
+        {
+          "gdat_index": 1542,
+          "inner_name": "dlcjobname_gassassin.tid",
+          "tid_sha256": "e76b3e9ef3bdab6279b99832090b2af8fbf3b17e75ccc11a6f59ab06005d28b8",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "G-ASSASSIN2",
+          "to": "G-ASSASSIN 2"
+        },
+        {
+          "gdat_index": 1543,
+          "inner_name": "dlcjobname_josinger.tid",
+          "tid_sha256": "a9c0cb46d8ffc0135da77ad75a24ea7b7469901efa97ae0ba15719039e9b83b8",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "JO-SINGER2",
+          "to": "JO-SINGER 2"
+        },
+        {
+          "gdat_index": 1544,
+          "inner_name": "dlcjobname_syura.tid",
+          "tid_sha256": "a9a4649c0001f1856c26e9dcc1b72188bea92ce06d28231a0e099e6f395df5f0",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "修羅セーター",
+          "to": "SHURA SWEATER"
+        },
+        {
+          "gdat_index": 1545,
+          "inner_name": "dlcjobname_youen.tid",
+          "tid_sha256": "82786970d6256de87f323ff751cb47fe7d332b5f05d08f3d6daca296a1ca74d4",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "妖艶魔術師",
+          "to": "BEWITCHING MAGICIAN"
+        },
+        {
+          "gdat_index": 1546,
+          "inner_name": "dlcjobname_nureba.tid",
+          "tid_sha256": "21628cf0c3c6482a139c9c198dbe073316716125e8ffb7b9fc4895dbdb9209d7",
+          "width": 296,
+          "height": 56,
+          "format": "DXT5",
+          "from": "濡れバスコープ",
+          "to": "WET BASCOPE"
+        }
+      ]
+    },
+    {
+      "id": "MS2_KESSIKI_SKILL_LABELS",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1455,
+      "cl3_inner_name": "name_kessiki30px.tid",
+      "renderer": "font_atlas_v2",
+      "source_variants": [
+        {
+          "tid_sha256": "3a57a59b004c92181f2c7210100a557aa51bbb91cd4d9d6508ddea6512fdc738",
+          "width": 1024,
+          "height": 1024,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 59,
+      "gap": -2,
+      "space_width": 14,
+      "derive_exclamation": true,
+      "glyph_cells": [
+        {
+          "source": "MARY GUN LV.1",
+          "rect": [
+            0,
+            0,
+            460,
+            84
+          ]
+        },
+        {
+          "source": "RABBIT HOLE",
+          "rect": [
+            0,
+            84,
+            460,
+            168
+          ]
+        },
+        {
+          "source": "BODY NIPPER",
+          "rect": [
+            0,
+            168,
+            460,
+            252
+          ]
+        },
+        {
+          "source": "TINY PRINCESS",
+          "rect": [
+            0,
+            252,
+            460,
+            336
+          ]
+        },
+        {
+          "source": "POISON BOMB",
+          "rect": [
+            0,
+            336,
+            460,
+            420
+          ]
+        },
+        {
+          "source": "ROSE ARROW",
+          "rect": [
+            0,
+            420,
+            460,
+            504
+          ]
+        },
+        {
+          "source": "MARY GUN LV.2",
+          "rect": [
+            0,
+            504,
+            460,
+            588
+          ]
+        },
+        {
+          "source": "MARY GUN LV.4",
+          "rect": [
+            0,
+            588,
+            460,
+            672
+          ]
+        },
+        {
+          "source": "FROZEN TEAR",
+          "rect": [
+            0,
+            672,
+            460,
+            756
+          ]
+        },
+        {
+          "source": "TWELVE DASH",
+          "rect": [
+            460,
+            0,
+            1024,
+            84
+          ]
+        },
+        {
+          "source": "BAMBOO GUARD",
+          "rect": [
+            460,
+            84,
+            1024,
+            168
+          ]
+        },
+        {
+          "source": "HAIR FLAIR",
+          "rect": [
+            460,
+            168,
+            1024,
+            252
+          ]
+        },
+        {
+          "source": "BREAD PORTAL",
+          "rect": [
+            460,
+            252,
+            1024,
+            336
+          ]
+        },
+        {
+          "source": "MAGNETIC PICCOLO",
+          "rect": [
+            460,
+            336,
+            1024,
+            420
+          ]
+        },
+        {
+          "source": "MARY REVERSER",
+          "rect": [
+            460,
+            420,
+            1024,
+            504
+          ]
+        },
+        {
+          "source": "MARY GUN LV.3",
+          "rect": [
+            460,
+            504,
+            1024,
+            588
+          ]
+        },
+        {
+          "source": "BAMBOO WEAVER",
+          "rect": [
+            460,
+            588,
+            1024,
+            672
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "RABBIT HOLE",
+          "to": "WONDER HOLE",
+          "rect": [
+            0,
+            84,
+            460,
+            168
+          ]
+        },
+        {
+          "from": "HAIR FLAIR",
+          "to": "HAIR!",
+          "rect": [
+            460,
+            168,
+            1024,
+            252
+          ]
+        },
+        {
+          "from": "MARY REVERSER",
+          "to": "MARY GUN REVERSER",
+          "rect": [
+            460,
+            420,
+            1024,
+            504
+          ]
+        }
+      ],
+      "typography_preset": "pink_block_large_neofara",
+      "clear_mode": "transparent",
+      "font_nominal_size": 64
+    },
+    {
+      "id": "MSF_EN_BONUS_CHARACTER_SELECT_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 1,
+      "cl3_inner_name": "Bonus_Character_CharacterSelect.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "1dee0ba6333d836942b181695e08d8e26de5edbf72109bf9f29fd9176e49fb51",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 50,
+      "gap": -2,
+      "space_width": 16,
+      "clear_mode": "transparent",
+      "synthesize_z": true,
+      "glyph_rects": [
+        {
+          "char": "J",
+          "rect": [
+            490,
+            1140,
+            514,
+            1223
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            516,
+            1140,
+            567,
+            1223
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            567,
+            1140,
+            610,
+            1223
+          ]
+        },
+        {
+          "char": "K",
+          "rect": [
+            615,
+            1140,
+            658,
+            1223
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            788,
+            1138,
+            839,
+            1220
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            840,
+            1138,
+            879,
+            1220
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            879,
+            1138,
+            894,
+            1220
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            899,
+            1138,
+            942,
+            1220
+          ]
+        },
+        {
+          "char": "E",
+          "rect": [
+            947,
+            1138,
+            987,
+            1220
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            447,
+            1474,
+            489,
+            1564
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            488,
+            1474,
+            538,
+            1564
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            536,
+            1474,
+            582,
+            1564
+          ]
+        },
+        {
+          "char": "E",
+          "rect": [
+            583,
+            1474,
+            623,
+            1564
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            620,
+            1474,
+            660,
+            1564
+          ]
+        },
+        {
+          "char": "N",
+          "rect": [
+            657,
+            1474,
+            700,
+            1564
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            1109,
+            1479,
+            1152,
+            1559
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1153,
+            1479,
+            1204,
+            1559
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1204,
+            1479,
+            1250,
+            1559
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1251,
+            1479,
+            1294,
+            1559
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            1717,
+            1478,
+            1759,
+            1562
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            1764,
+            1478,
+            1804,
+            1562
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1801,
+            1478,
+            1851,
+            1562
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1852,
+            1478,
+            1898,
+            1562
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1895,
+            1478,
+            1946,
+            1562
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            445,
+            1644,
+            491,
+            1734
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            492,
+            1644,
+            507,
+            1734
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            509,
+            1644,
+            552,
+            1734
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            554,
+            1644,
+            597,
+            1734
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            598,
+            1644,
+            613,
+            1734
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            615,
+            1644,
+            661,
+            1734
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            658,
+            1644,
+            701,
+            1734
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            784,
+            1647,
+            826,
+            1730
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            829,
+            1647,
+            871,
+            1730
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            873,
+            1647,
+            888,
+            1730
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            886,
+            1647,
+            938,
+            1730
+          ]
+        },
+        {
+          "char": "K",
+          "rect": [
+            935,
+            1647,
+            978,
+            1730
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            975,
+            1647,
+            990,
+            1730
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            1381,
+            1643,
+            1426,
+            1735
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1424,
+            1643,
+            1475,
+            1735
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            1473,
+            1643,
+            1519,
+            1735
+          ]
+        },
+        {
+          "char": "O",
+          "rect": [
+            1520,
+            1643,
+            1563,
+            1735
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1564,
+            1643,
+            1610,
+            1735
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1607,
+            1643,
+            1650,
+            1735
+          ]
+        },
+        {
+          "char": "O",
+          "rect": [
+            1718,
+            1646,
+            1760,
+            1732
+          ]
+        },
+        {
+          "char": "T",
+          "rect": [
+            1760,
+            1646,
+            1802,
+            1732
+          ]
+        },
+        {
+          "char": "S",
+          "rect": [
+            1804,
+            1646,
+            1846,
+            1732
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1851,
+            1646,
+            1894,
+            1732
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1898,
+            1646,
+            1941,
+            1732
+          ]
+        },
+        {
+          "char": "G",
+          "rect": [
+            763,
+            1317,
+            805,
+            1403
+          ]
+        },
+        {
+          "char": "B",
+          "rect": [
+            442,
+            1330,
+            486,
+            1410
+          ]
+        },
+        {
+          "char": "Y",
+          "rect": [
+            640,
+            1330,
+            688,
+            1410
+          ]
+        }
+      ],
+      "glyph_cells": [],
+      "replacements": [
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            1043,
+            1113,
+            1355,
+            1239
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1358,
+            1130,
+            1672,
+            1225
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1689,
+            1119,
+            1965,
+            1234
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            424,
+            1278,
+            713,
+            1418
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            1683,
+            1297,
+            1979,
+            1402
+          ]
+        },
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            1700,
+            1638,
+            1959,
+            1740
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            1688,
+            1788,
+            1984,
+            1930
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_finale_bonus_select",
+      "font_nominal_size": 46,
+      "rows": [
+        {
+          "text": "JACK",
+          "rect": [
+            455,
+            1110,
+            705,
+            1238
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            740,
+            1110,
+            1010,
+            1238
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            1020,
+            1110,
+            1360,
+            1238
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            1350,
+            1110,
+            1680,
+            1238
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1670,
+            1110,
+            1995,
+            1238
+          ]
+        },
+        {
+          "text": "KADOWAKI\nTOWA",
+          "rect": [
+            60,
+            1330,
+            405,
+            1510
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            405,
+            1260,
+            730,
+            1425
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            735,
+            1260,
+            1040,
+            1425
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            1040,
+            1260,
+            1365,
+            1425
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1360,
+            1260,
+            1675,
+            1425
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            1670,
+            1260,
+            1995,
+            1425
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            420,
+            1440,
+            720,
+            1585
+          ]
+        },
+        {
+          "text": "PROFESSOR\nTOOJIMA",
+          "rect": [
+            735,
+            1440,
+            1070,
+            1585
+          ]
+        },
+        {
+          "text": "HARU",
+          "rect": [
+            1080,
+            1440,
+            1330,
+            1585
+          ]
+        },
+        {
+          "text": "UESHIMA MIKO",
+          "rect": [
+            1340,
+            1440,
+            1680,
+            1585
+          ]
+        },
+        {
+          "text": "CLARA",
+          "rect": [
+            1690,
+            1440,
+            1985,
+            1585
+          ]
+        },
+        {
+          "text": "MICHIRU",
+          "rect": [
+            420,
+            1615,
+            715,
+            1750
+          ]
+        },
+        {
+          "text": "CHIAKI",
+          "rect": [
+            760,
+            1615,
+            1020,
+            1750
+          ]
+        },
+        {
+          "text": "HIKARI",
+          "rect": [
+            1070,
+            1615,
+            1330,
+            1750
+          ]
+        },
+        {
+          "text": "MAMORU",
+          "rect": [
+            1340,
+            1615,
+            1680,
+            1750
+          ]
+        },
+        {
+          "text": "TSUU",
+          "rect": [
+            1680,
+            1615,
+            1980,
+            1750
+          ]
+        },
+        {
+          "text": "WANDERING\nMERCHANT",
+          "rect": [
+            410,
+            1765,
+            720,
+            1950
+          ]
+        },
+        {
+          "text": "ORDER\nFOLLOWER",
+          "rect": [
+            735,
+            1765,
+            1035,
+            1950
+          ]
+        },
+        {
+          "text": "LIBERATOR",
+          "rect": [
+            1060,
+            1765,
+            1335,
+            1950
+          ]
+        },
+        {
+          "text": "RESEARCHER",
+          "rect": [
+            1340,
+            1765,
+            1680,
+            1950
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            1670,
+            1765,
+            1995,
+            1950
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.26,
+      "r32c3_preserve_source_subtitles": true
+    },
+    {
+      "id": "MSF_EN_BONUS_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 18,
+      "cl3_inner_name": "BONUS_CHARACTER.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "abeeb446fe1674ff21750a3eea060809b887b73ac13e2ad02beaddae24b6aa92",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 40,
+      "gap": -1,
+      "space_width": 14,
+      "clear_mode": "transparent",
+      "glyph_cells": [
+        {
+          "source": "OTSUU",
+          "rect": [
+            1020,
+            10,
+            1195,
+            75
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            1280,
+            10,
+            1540,
+            75
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            1270,
+            80,
+            1540,
+            160
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            1020,
+            165,
+            1190,
+            235
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            1030,
+            245,
+            1190,
+            315
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            1260,
+            245,
+            1540,
+            315
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            1010,
+            325,
+            1210,
+            400
+          ]
+        },
+        {
+          "source": "RED RIDING HOOD",
+          "rect": [
+            1240,
+            325,
+            1550,
+            405
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            1020,
+            415,
+            1190,
+            475
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            1330,
+            415,
+            1465,
+            475
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            1000,
+            0,
+            1210,
+            80
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1260,
+            0,
+            1560,
+            80
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            940,
+            75,
+            1260,
+            165
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1250,
+            75,
+            1560,
+            165
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            1230,
+            160,
+            1570,
+            240
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            1220,
+            320,
+            1570,
+            410
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            1000,
+            410,
+            1210,
+            480
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_finale_bonus_name",
+      "font_nominal_size": 44,
+      "rows": [
+        {
+          "text": "Tsuu",
+          "rect": [
+            930,
+            0,
+            1260,
+            80
+          ]
+        },
+        {
+          "text": "Oyayubihime",
+          "rect": [
+            1260,
+            0,
+            1580,
+            80
+          ]
+        },
+        {
+          "text": "Ningyohime",
+          "rect": [
+            930,
+            80,
+            1260,
+            160
+          ]
+        },
+        {
+          "text": "Shirayukihime",
+          "rect": [
+            1260,
+            80,
+            1580,
+            160
+          ]
+        },
+        {
+          "text": "Hameln",
+          "rect": [
+            930,
+            160,
+            1260,
+            245
+          ]
+        },
+        {
+          "text": "Nemurihime",
+          "rect": [
+            1260,
+            160,
+            1580,
+            245
+          ]
+        },
+        {
+          "text": "Gretel",
+          "rect": [
+            930,
+            245,
+            1260,
+            325
+          ]
+        },
+        {
+          "text": "Cinderella",
+          "rect": [
+            1260,
+            245,
+            1580,
+            325
+          ]
+        },
+        {
+          "text": "Rapunzel",
+          "rect": [
+            930,
+            325,
+            1260,
+            405
+          ]
+        },
+        {
+          "text": "Akazukin",
+          "rect": [
+            1260,
+            325,
+            1580,
+            405
+          ]
+        },
+        {
+          "text": "Kaguyahime",
+          "rect": [
+            930,
+            405,
+            1260,
+            485
+          ]
+        },
+        {
+          "text": "Alice",
+          "rect": [
+            1260,
+            405,
+            1580,
+            485
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.14
+    },
+    {
+      "id": "MSF_EN_FINALE_CHARACTER_GRID",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 71,
+      "cl3_inner_name": "bonus_character_f.tid",
+      "renderer": "raster_atlas_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "b29bd53fa0b7d06d79a3a1c3bffbe8183a047ec6b720ee473d962a8781e2e94a",
+          "width": 2048,
+          "height": 1024,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 32,
+      "gap": -1,
+      "space_width": 12,
+      "clear_mode": "transparent",
+      "synthesize_z": true,
+      "glyph_cells": [
+        {
+          "source": "MARY",
+          "rect": [
+            60,
+            270,
+            225,
+            335
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            335,
+            270,
+            565,
+            335
+          ]
+        },
+        {
+          "source": "CHARLOTTE",
+          "rect": [
+            15,
+            335,
+            290,
+            405
+          ]
+        },
+        {
+          "source": "SLEEPING BEAUTY",
+          "rect": [
+            300,
+            335,
+            620,
+            410
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            55,
+            400,
+            225,
+            470
+          ]
+        },
+        {
+          "source": "RED RIDING HOOD",
+          "rect": [
+            295,
+            400,
+            625,
+            470
+          ]
+        },
+        {
+          "source": "OTSUU",
+          "rect": [
+            45,
+            465,
+            235,
+            535
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            295,
+            465,
+            620,
+            535
+          ]
+        },
+        {
+          "source": "LITTLE MERMAID",
+          "rect": [
+            0,
+            525,
+            305,
+            600
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            295,
+            525,
+            620,
+            600
+          ]
+        },
+        {
+          "source": "PYRE",
+          "rect": [
+            55,
+            595,
+            235,
+            670
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            330,
+            595,
+            570,
+            670
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            10,
+            665,
+            280,
+            735
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            0,
+            455,
+            250,
+            545
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            250,
+            455,
+            640,
+            545
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            0,
+            515,
+            320,
+            610
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            250,
+            515,
+            640,
+            610
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            250,
+            325,
+            640,
+            420
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            250,
+            390,
+            645,
+            480
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            285,
+            585,
+            595,
+            680
+          ]
+        },
+        {
+          "from": "PYRE",
+          "to": "SHIRA",
+          "rect": [
+            0,
+            585,
+            250,
+            680
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MSF_EN_CAMP_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 89,
+      "cl3_inner_name": "camp_top_f.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "6dc75e6fc8271cc899459df6f5ab92ec4b79c03182879db186714e49313e7dd2",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 34,
+      "gap": -1,
+      "space_width": 10,
+      "clear_mode": "transparent",
+      "source_rotation": -90,
+      "output_rotation": 90,
+      "glyph_cells": [
+        {
+          "source": "MARY",
+          "rect": [
+            834,
+            1260,
+            872,
+            1425
+          ]
+        },
+        {
+          "source": "CHARLOTTE",
+          "rect": [
+            897,
+            1230,
+            935,
+            1425
+          ]
+        },
+        {
+          "source": "ALICE",
+          "rect": [
+            966,
+            1230,
+            1000,
+            1425
+          ]
+        },
+        {
+          "source": "OTSUU",
+          "rect": [
+            1031,
+            1230,
+            1065,
+            1425
+          ]
+        },
+        {
+          "source": "LITTLE MERMAID",
+          "rect": [
+            1092,
+            1190,
+            1136,
+            1425
+          ]
+        },
+        {
+          "source": "PYRE",
+          "rect": [
+            1164,
+            1230,
+            1202,
+            1425
+          ]
+        },
+        {
+          "source": "RAPUNZEL",
+          "rect": [
+            1227,
+            1230,
+            1266,
+            1425
+          ]
+        },
+        {
+          "source": "GRETEL",
+          "rect": [
+            1295,
+            1230,
+            1331,
+            1425
+          ]
+        },
+        {
+          "source": "HAMELN",
+          "rect": [
+            832,
+            1460,
+            869,
+            1720
+          ]
+        },
+        {
+          "source": "SLEEPING BEAUTY",
+          "rect": [
+            891,
+            1460,
+            943,
+            1720
+          ]
+        },
+        {
+          "source": "RED RIDING HOOD",
+          "rect": [
+            960,
+            1460,
+            1005,
+            1720
+          ]
+        },
+        {
+          "source": "THUMBELINA",
+          "rect": [
+            1028,
+            1460,
+            1068,
+            1720
+          ]
+        },
+        {
+          "source": "SNOW WHITE",
+          "rect": [
+            1092,
+            1460,
+            1136,
+            1720
+          ]
+        },
+        {
+          "source": "KAGUYA",
+          "rect": [
+            1163,
+            1460,
+            1203,
+            1720
+          ]
+        },
+        {
+          "source": "CINDERELLA",
+          "rect": [
+            1227,
+            1460,
+            1266,
+            1720
+          ]
+        },
+        {
+          "source": "RILEY",
+          "rect": [
+            1295,
+            1460,
+            1334,
+            1720
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            1020,
+            1210,
+            1075,
+            1440
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            1080,
+            1170,
+            1148,
+            1445
+          ]
+        },
+        {
+          "from": "PYRE",
+          "to": "SHIRA",
+          "rect": [
+            1150,
+            1210,
+            1215,
+            1445
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            880,
+            1440,
+            955,
+            1740
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            950,
+            1440,
+            1015,
+            1740
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1018,
+            1440,
+            1078,
+            1740
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1080,
+            1440,
+            1148,
+            1740
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            1150,
+            1440,
+            1215,
+            1740
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_finale_camp_v2",
+      "font_nominal_size": 40,
+      "rows": [
+        {
+          "text": "Mary",
+          "rect": [
+            820,
+            1200,
+            880,
+            1450
+          ]
+        },
+        {
+          "text": "Charlotte",
+          "rect": [
+            880,
+            1160,
+            945,
+            1450
+          ]
+        },
+        {
+          "text": "Alice",
+          "rect": [
+            945,
+            1190,
+            1010,
+            1450
+          ]
+        },
+        {
+          "text": "Tsuu",
+          "rect": [
+            1010,
+            1210,
+            1075,
+            1445
+          ]
+        },
+        {
+          "text": "Ningyohime",
+          "rect": [
+            1075,
+            1160,
+            1148,
+            1448
+          ]
+        },
+        {
+          "text": "Shira",
+          "rect": [
+            1145,
+            1210,
+            1218,
+            1448
+          ]
+        },
+        {
+          "text": "Rapunzel",
+          "rect": [
+            1210,
+            1170,
+            1280,
+            1450
+          ]
+        },
+        {
+          "text": "Gretel",
+          "rect": [
+            1275,
+            1210,
+            1345,
+            1450
+          ]
+        },
+        {
+          "text": "Hameln",
+          "rect": [
+            820,
+            1440,
+            885,
+            1745
+          ]
+        },
+        {
+          "text": "Nemurihime",
+          "rect": [
+            875,
+            1440,
+            955,
+            1745
+          ]
+        },
+        {
+          "text": "Akazukin",
+          "rect": [
+            945,
+            1440,
+            1018,
+            1745
+          ]
+        },
+        {
+          "text": "Oyayubihime",
+          "rect": [
+            1010,
+            1440,
+            1080,
+            1745
+          ]
+        },
+        {
+          "text": "Shirayukihime",
+          "rect": [
+            1075,
+            1440,
+            1148,
+            1745
+          ]
+        },
+        {
+          "text": "Kaguyahime",
+          "rect": [
+            1145,
+            1440,
+            1218,
+            1745
+          ]
+        },
+        {
+          "text": "Cinderella",
+          "rect": [
+            1210,
+            1440,
+            1285,
+            1745
+          ]
+        },
+        {
+          "text": "Riley",
+          "rect": [
+            1275,
+            1440,
+            1345,
+            1745
+          ]
+        },
+        {
+          "text": "Ellie",
+          "rect": [
+            820,
+            1748,
+            885,
+            1995
+          ]
+        },
+        {
+          "text": "Jack",
+          "rect": [
+            880,
+            1748,
+            945,
+            1995
+          ]
+        },
+        {
+          "text": "Juu",
+          "rect": [
+            945,
+            1748,
+            1010,
+            1995
+          ]
+        },
+        {
+          "text": "Clara",
+          "rect": [
+            1010,
+            1748,
+            1075,
+            1995
+          ]
+        },
+        {
+          "text": "???",
+          "rect": [
+            1075,
+            1748,
+            1148,
+            1995
+          ]
+        },
+        {
+          "text": "Shira",
+          "rect": [
+            1145,
+            1748,
+            1218,
+            1995
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.02
+    },
+    {
+      "id": "MSF_EN_HEROINE_ROOM_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 222,
+      "cl3_inner_name": "kyoten_heroineroom_f.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "5fc97e0deede947bab42c6afcf5a0ebeb7fdc7edaa7f46e99953b5da16131349",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 54,
+      "gap": -1,
+      "space_width": 16,
+      "clear_mode": "transparent",
+      "glyph_cells": [
+        {
+          "source": "Mary's Room",
+          "rect": [
+            30,
+            35,
+            495,
+            118
+          ]
+        },
+        {
+          "source": "Charlotte's Room",
+          "rect": [
+            30,
+            180,
+            610,
+            242
+          ]
+        },
+        {
+          "source": "Alice's Room",
+          "rect": [
+            30,
+            313,
+            505,
+            385
+          ]
+        },
+        {
+          "source": "Otsuu's Room",
+          "rect": [
+            30,
+            455,
+            540,
+            525
+          ]
+        },
+        {
+          "source": "Rapunzel's Room",
+          "rect": [
+            30,
+            890,
+            590,
+            965
+          ]
+        },
+        {
+          "source": "Gretel's Room",
+          "rect": [
+            30,
+            1022,
+            590,
+            1092
+          ]
+        },
+        {
+          "source": "Hameln's Room",
+          "rect": [
+            30,
+            1153,
+            580,
+            1225
+          ]
+        },
+        {
+          "source": "Kaguya's Room",
+          "rect": [
+            30,
+            1854,
+            585,
+            1942
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU'S ROOM",
+          "to": "Tsuu's Room",
+          "rect": [
+            20,
+            445,
+            620,
+            535
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID'S ROOM",
+          "to": "Ningyohime's Room",
+          "rect": [
+            20,
+            555,
+            620,
+            720
+          ]
+        },
+        {
+          "from": "OTSUU'S ROOM",
+          "to": "Tsuu's Room",
+          "rect": [
+            20,
+            725,
+            620,
+            815
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY'S ROOM",
+          "to": "Nemurihime's Room",
+          "rect": [
+            20,
+            1260,
+            620,
+            1405
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD'S ROOM",
+          "to": "Akazukin's Room",
+          "rect": [
+            20,
+            1410,
+            620,
+            1545
+          ]
+        },
+        {
+          "from": "THUMBELINA'S ROOM",
+          "to": "Oyayubihime's Room",
+          "rect": [
+            20,
+            1545,
+            620,
+            1685
+          ]
+        },
+        {
+          "from": "SNOW WHITE'S ROOM",
+          "to": "Shirayukihime's Room",
+          "rect": [
+            20,
+            1685,
+            620,
+            1840
+          ]
+        },
+        {
+          "from": "KAGUYA'S ROOM",
+          "to": "Kaguyahime's Room",
+          "rect": [
+            20,
+            1840,
+            620,
+            1960
+          ]
+        }
+      ],
+      "synthesize_chars": [
+        "N",
+        "S",
+        "T",
+        "b",
+        "k"
+      ],
+      "synthetic_outline_rgba": [
+        170,
+        0,
+        25,
+        255
+      ],
+      "mask_dilate": 9,
+      "typography_preset": "r32c3_room_pink_fsf",
+      "font_nominal_size": 50,
+      "rows": [
+        {
+          "text": "Mary's Room",
+          "rect": [
+            20,
+            10,
+            620,
+            165
+          ]
+        },
+        {
+          "text": "Charlotte's Room",
+          "rect": [
+            20,
+            165,
+            620,
+            330
+          ]
+        },
+        {
+          "text": "Alice's Room",
+          "rect": [
+            20,
+            325,
+            620,
+            445
+          ]
+        },
+        {
+          "text": "Tsuu's Room",
+          "rect": [
+            20,
+            445,
+            620,
+            535
+          ]
+        },
+        {
+          "text": "Ningyohime's Room",
+          "rect": [
+            20,
+            535,
+            620,
+            720
+          ]
+        },
+        {
+          "text": "Tsuu's Room",
+          "rect": [
+            20,
+            720,
+            620,
+            820
+          ]
+        },
+        {
+          "text": "Rapunzel's Room",
+          "rect": [
+            20,
+            850,
+            620,
+            1015
+          ]
+        },
+        {
+          "text": "Gretel's Room",
+          "rect": [
+            20,
+            1010,
+            620,
+            1160
+          ]
+        },
+        {
+          "text": "Hameln's Room",
+          "rect": [
+            20,
+            1150,
+            620,
+            1265
+          ]
+        },
+        {
+          "text": "Nemurihime's Room",
+          "rect": [
+            20,
+            1260,
+            620,
+            1405
+          ]
+        },
+        {
+          "text": "Akazukin's Room",
+          "rect": [
+            20,
+            1410,
+            620,
+            1545
+          ]
+        },
+        {
+          "text": "Oyayubihime's Room",
+          "rect": [
+            20,
+            1545,
+            620,
+            1685
+          ]
+        },
+        {
+          "text": "Shirayukihime's Room",
+          "rect": [
+            20,
+            1685,
+            620,
+            1840
+          ]
+        },
+        {
+          "text": "Kaguyahime's Room",
+          "rect": [
+            20,
+            1840,
+            620,
+            1970
+          ]
+        },
+        {
+          "text": "Cinderella's Room",
+          "rect": [
+            650,
+            395,
+            1260,
+            525
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.0
+    },
+    {
+      "id": "MS2_BONUS_CHARACTER_SELECT_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1335,
+      "cl3_inner_name": "Bonus_Character_CharacterSelect.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "4f0a5e8fb9f01b96590ed14226e8c33c44f9c993f3faa0ca6135168ea2bae34b",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "white",
+      "target_height": 50,
+      "gap": -2,
+      "space_width": 16,
+      "clear_mode": "transparent",
+      "synthesize_z": true,
+      "glyph_rects": [
+        {
+          "char": "J",
+          "rect": [
+            490,
+            1140,
+            514,
+            1223
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            516,
+            1140,
+            567,
+            1223
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            567,
+            1140,
+            610,
+            1223
+          ]
+        },
+        {
+          "char": "K",
+          "rect": [
+            615,
+            1140,
+            658,
+            1223
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            788,
+            1138,
+            839,
+            1220
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            840,
+            1138,
+            879,
+            1220
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            879,
+            1138,
+            894,
+            1220
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            899,
+            1138,
+            942,
+            1220
+          ]
+        },
+        {
+          "char": "E",
+          "rect": [
+            947,
+            1138,
+            987,
+            1220
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            447,
+            1474,
+            489,
+            1564
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            488,
+            1474,
+            538,
+            1564
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            536,
+            1474,
+            582,
+            1564
+          ]
+        },
+        {
+          "char": "E",
+          "rect": [
+            583,
+            1474,
+            623,
+            1564
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            620,
+            1474,
+            660,
+            1564
+          ]
+        },
+        {
+          "char": "N",
+          "rect": [
+            657,
+            1474,
+            700,
+            1564
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            1109,
+            1479,
+            1152,
+            1559
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1153,
+            1479,
+            1204,
+            1559
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1204,
+            1479,
+            1250,
+            1559
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1251,
+            1479,
+            1294,
+            1559
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            1717,
+            1478,
+            1759,
+            1562
+          ]
+        },
+        {
+          "char": "L",
+          "rect": [
+            1764,
+            1478,
+            1804,
+            1562
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1801,
+            1478,
+            1851,
+            1562
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1852,
+            1478,
+            1898,
+            1562
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1895,
+            1478,
+            1946,
+            1562
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            445,
+            1644,
+            491,
+            1734
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            492,
+            1644,
+            507,
+            1734
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            509,
+            1644,
+            552,
+            1734
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            554,
+            1644,
+            597,
+            1734
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            598,
+            1644,
+            613,
+            1734
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            615,
+            1644,
+            661,
+            1734
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            658,
+            1644,
+            701,
+            1734
+          ]
+        },
+        {
+          "char": "C",
+          "rect": [
+            784,
+            1647,
+            826,
+            1730
+          ]
+        },
+        {
+          "char": "H",
+          "rect": [
+            829,
+            1647,
+            871,
+            1730
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            873,
+            1647,
+            888,
+            1730
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            886,
+            1647,
+            938,
+            1730
+          ]
+        },
+        {
+          "char": "K",
+          "rect": [
+            935,
+            1647,
+            978,
+            1730
+          ]
+        },
+        {
+          "char": "I",
+          "rect": [
+            975,
+            1647,
+            990,
+            1730
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            1381,
+            1643,
+            1426,
+            1735
+          ]
+        },
+        {
+          "char": "A",
+          "rect": [
+            1424,
+            1643,
+            1475,
+            1735
+          ]
+        },
+        {
+          "char": "M",
+          "rect": [
+            1473,
+            1643,
+            1519,
+            1735
+          ]
+        },
+        {
+          "char": "O",
+          "rect": [
+            1520,
+            1643,
+            1563,
+            1735
+          ]
+        },
+        {
+          "char": "R",
+          "rect": [
+            1564,
+            1643,
+            1610,
+            1735
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1607,
+            1643,
+            1650,
+            1735
+          ]
+        },
+        {
+          "char": "O",
+          "rect": [
+            1718,
+            1646,
+            1760,
+            1732
+          ]
+        },
+        {
+          "char": "T",
+          "rect": [
+            1760,
+            1646,
+            1802,
+            1732
+          ]
+        },
+        {
+          "char": "S",
+          "rect": [
+            1804,
+            1646,
+            1846,
+            1732
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1851,
+            1646,
+            1894,
+            1732
+          ]
+        },
+        {
+          "char": "U",
+          "rect": [
+            1898,
+            1646,
+            1941,
+            1732
+          ]
+        },
+        {
+          "char": "G",
+          "rect": [
+            763,
+            1317,
+            805,
+            1403
+          ]
+        },
+        {
+          "char": "B",
+          "rect": [
+            442,
+            1330,
+            486,
+            1410
+          ]
+        },
+        {
+          "char": "Y",
+          "rect": [
+            640,
+            1330,
+            688,
+            1410
+          ]
+        }
+      ],
+      "glyph_cells": [],
+      "replacements": [
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            1025,
+            1100,
+            1370,
+            1233
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1340,
+            1100,
+            1680,
+            1232
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1670,
+            1100,
+            1990,
+            1232
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            405,
+            1265,
+            725,
+            1418
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            1665,
+            1280,
+            1990,
+            1405
+          ]
+        },
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            1680,
+            1625,
+            1980,
+            1740
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            1620,
+            1775,
+            2000,
+            1930
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_white_oblique_small",
+      "font_nominal_size": 48,
+      "rows": [
+        {
+          "text": "JACK",
+          "rect": [
+            455,
+            1110,
+            705,
+            1238
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            740,
+            1110,
+            1010,
+            1238
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            1020,
+            1110,
+            1360,
+            1238
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            1350,
+            1110,
+            1680,
+            1238
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1670,
+            1110,
+            1995,
+            1238
+          ]
+        },
+        {
+          "text": "KADOWAKI\nTOWA",
+          "rect": [
+            60,
+            1330,
+            405,
+            1510
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            405,
+            1260,
+            730,
+            1425
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            735,
+            1260,
+            1040,
+            1425
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            1040,
+            1260,
+            1365,
+            1425
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1360,
+            1260,
+            1675,
+            1425
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            1670,
+            1260,
+            1995,
+            1425
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            420,
+            1440,
+            720,
+            1585
+          ]
+        },
+        {
+          "text": "PROFESSOR\nTOOJIMA",
+          "rect": [
+            735,
+            1440,
+            1070,
+            1585
+          ]
+        },
+        {
+          "text": "HARU",
+          "rect": [
+            1080,
+            1440,
+            1330,
+            1585
+          ]
+        },
+        {
+          "text": "UESHIMA MIKO",
+          "rect": [
+            1340,
+            1440,
+            1680,
+            1585
+          ]
+        },
+        {
+          "text": "CLARA",
+          "rect": [
+            1690,
+            1440,
+            1985,
+            1585
+          ]
+        },
+        {
+          "text": "MICHIRU",
+          "rect": [
+            420,
+            1615,
+            715,
+            1750
+          ]
+        },
+        {
+          "text": "CHIAKI",
+          "rect": [
+            760,
+            1615,
+            1020,
+            1750
+          ]
+        },
+        {
+          "text": "HIKARI",
+          "rect": [
+            1070,
+            1615,
+            1330,
+            1750
+          ]
+        },
+        {
+          "text": "MAMORU",
+          "rect": [
+            1340,
+            1615,
+            1680,
+            1750
+          ]
+        },
+        {
+          "text": "TSUU",
+          "rect": [
+            1680,
+            1615,
+            1980,
+            1750
+          ]
+        },
+        {
+          "text": "WANDERING\nMERCHANT",
+          "rect": [
+            410,
+            1765,
+            720,
+            1950
+          ]
+        },
+        {
+          "text": "ORDER\nFOLLOWER",
+          "rect": [
+            735,
+            1765,
+            1035,
+            1950
+          ]
+        },
+        {
+          "text": "LIBERATOR",
+          "rect": [
+            1060,
+            1765,
+            1335,
+            1950
+          ]
+        },
+        {
+          "text": "RESEARCHER",
+          "rect": [
+            1340,
+            1765,
+            1680,
+            1950
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            1670,
+            1765,
+            1995,
+            1950
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.1,
+      "r32c3_preserve_source_subtitles": true
+    },
+    {
+      "id": "MSF_EN_REN_BONUS_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 48,
+      "cl3_inner_name": "ren_bonus_character.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "source_variants": [
+        {
+          "tid_sha256": "8cc0a7ca15187410135bdaae6fdd291c3f63c24bc795b244ebc373bb0d89972f",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "face_mode": "gray",
+      "mask_dilate": 3,
+      "gap": 1,
+      "space_width": 10,
+      "descenders": "gpyqj",
+      "clear_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "synthesize_capital_n": true,
+      "glyph_cells": [
+        {
+          "source": "Otsuu",
+          "rect": [
+            1048,
+            24,
+            1172,
+            72
+          ]
+        },
+        {
+          "source": "Thumbelina",
+          "rect": [
+            1287,
+            15,
+            1516,
+            76
+          ]
+        },
+        {
+          "source": "Little Mermaid",
+          "rect": [
+            986,
+            87,
+            1241,
+            160
+          ]
+        },
+        {
+          "source": "Snow White",
+          "rect": [
+            1295,
+            94,
+            1517,
+            158
+          ]
+        },
+        {
+          "source": "Hameln",
+          "rect": [
+            1029,
+            176,
+            1183,
+            235
+          ]
+        },
+        {
+          "source": "Sleeping Beauty",
+          "rect": [
+            1258,
+            172,
+            1553,
+            243
+          ]
+        },
+        {
+          "source": "Gretel",
+          "rect": [
+            1046,
+            255,
+            1172,
+            313
+          ]
+        },
+        {
+          "source": "Cinderella",
+          "rect": [
+            1303,
+            253,
+            1497,
+            317
+          ]
+        },
+        {
+          "source": "Rapunzel",
+          "rect": [
+            1021,
+            331,
+            1200,
+            400
+          ]
+        },
+        {
+          "source": "Red Riding Hood",
+          "rect": [
+            1252,
+            326,
+            1553,
+            403
+          ]
+        },
+        {
+          "source": "Kaguya",
+          "rect": [
+            1032,
+            424,
+            1178,
+            479
+          ]
+        },
+        {
+          "source": "Alice",
+          "rect": [
+            1351,
+            420,
+            1456,
+            472
+          ]
+        },
+        {
+          "source": "Jack",
+          "rect": [
+            1648,
+            17,
+            1745,
+            72
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "Otsuu",
+          "to": "Tsuu",
+          "rect": [
+            1000,
+            0,
+            1235,
+            85
+          ]
+        },
+        {
+          "from": "Little Mermaid",
+          "to": "Ningyohime",
+          "rect": [
+            970,
+            80,
+            1260,
+            165
+          ]
+        },
+        {
+          "from": "Kaguya",
+          "to": "Kaguyahime",
+          "rect": [
+            1000,
+            410,
+            1230,
+            495
+          ]
+        },
+        {
+          "from": "Thumbelina",
+          "to": "Oyayubihime",
+          "rect": [
+            1250,
+            0,
+            1570,
+            85
+          ]
+        },
+        {
+          "from": "Snow White",
+          "to": "Shirayukihime",
+          "rect": [
+            1250,
+            80,
+            1570,
+            165
+          ]
+        },
+        {
+          "from": "Sleeping Beauty",
+          "to": "Nemurihime",
+          "rect": [
+            1240,
+            165,
+            1570,
+            250
+          ]
+        },
+        {
+          "from": "Red Riding Hood",
+          "to": "Akazukin",
+          "rect": [
+            1240,
+            320,
+            1570,
+            410
+          ]
+        }
+      ],
+      "typography_preset": "r32c3_ren_gray",
+      "clear_mode": "transparent",
+      "font_nominal_size": 40,
+      "rows": [
+        {
+          "text": "Tsuu",
+          "rect": [
+            930,
+            0,
+            1260,
+            80
+          ]
+        },
+        {
+          "text": "Oyayubihime",
+          "rect": [
+            1260,
+            0,
+            1580,
+            80
+          ]
+        },
+        {
+          "text": "Ningyohime",
+          "rect": [
+            930,
+            80,
+            1260,
+            160
+          ]
+        },
+        {
+          "text": "Shirayukihime",
+          "rect": [
+            1260,
+            80,
+            1580,
+            160
+          ]
+        },
+        {
+          "text": "Hameln",
+          "rect": [
+            930,
+            160,
+            1260,
+            245
+          ]
+        },
+        {
+          "text": "Nemurihime",
+          "rect": [
+            1260,
+            160,
+            1580,
+            245
+          ]
+        },
+        {
+          "text": "Gretel",
+          "rect": [
+            930,
+            245,
+            1260,
+            325
+          ]
+        },
+        {
+          "text": "Cinderella",
+          "rect": [
+            1260,
+            245,
+            1580,
+            325
+          ]
+        },
+        {
+          "text": "Rapunzel",
+          "rect": [
+            930,
+            325,
+            1260,
+            405
+          ]
+        },
+        {
+          "text": "Akazukin",
+          "rect": [
+            1260,
+            325,
+            1580,
+            405
+          ]
+        },
+        {
+          "text": "Kaguyahime",
+          "rect": [
+            930,
+            405,
+            1260,
+            485
+          ]
+        },
+        {
+          "text": "Alice",
+          "rect": [
+            1260,
+            405,
+            1580,
+            485
+          ]
+        }
+      ],
+      "clear_margin": 0,
+      "supersample": 4,
+      "distress_strength": 0.0
+    },
+    {
+      "id": "MS2_HEROINE_ROOM_BANNERS",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "grouped": true,
+      "renderer": "ms2_heroine_room_banners_font_v2",
+      "mask_dilate": 11,
+      "gap": -6,
+      "space_width": 24,
+      "horizontal_scale": 0.8,
+      "top_horizontal_scale": 0.94,
+      "targets": [
+        {
+          "gdat_index": 1829,
+          "inner_name": "HeroineRoom_title01.tid",
+          "tid_sha256": "b44a3ec93c9c62c9c776ec79668a0e64db4ec0a5ae2c5801409a26e4e39d54ae",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1830,
+          "inner_name": "HeroineRoom_title02.tid",
+          "tid_sha256": "c2ea143f0fe4a93414c65b4b4a56e16e495fd972502b3b9347c2fdf06fce7748",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1831,
+          "inner_name": "HeroineRoom_title03.tid",
+          "tid_sha256": "5b90d938d1bf1dce4043314d9fe7c2549d86ffe2573c356a6361e5793856f90d",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1832,
+          "inner_name": "HeroineRoom_title04.tid",
+          "tid_sha256": "f7f30147b165e6462d7bc5280f439e341437cd06101819e278e533a386a57f71",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1833,
+          "inner_name": "HeroineRoom_title05.tid",
+          "tid_sha256": "1007f746423d1104bd265479e3adb4099af5df9535f80ea6a320e5a24377a385",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1834,
+          "inner_name": "HeroineRoom_title06.tid",
+          "tid_sha256": "b690e332fc859d89d4a9c14ca78338e7d3bb33205091edc4065cb9c7f40fdfe1",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1835,
+          "inner_name": "HeroineRoom_title07.tid",
+          "tid_sha256": "f59039818986b375709f65d30fd7f2869decd87a71ec9522eacfc9577e654a93",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1836,
+          "inner_name": "HeroineRoom_title08.tid",
+          "tid_sha256": "b1404c0abbe3613f3a3630c5fc6b57de221bb2b2e693df1d229ecc8da8a8f72d",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1837,
+          "inner_name": "HeroineRoom_title09.tid",
+          "tid_sha256": "d8ab3a7863a6e45de8f19f0ef2bf51879cc6a0631d3f20b29720a051533835d6",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1838,
+          "inner_name": "HeroineRoom_title10.tid",
+          "tid_sha256": "5c4b171f20807b41188921cc8717ddc7c6b7aa88542b79fb954636ac85511c80",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        },
+        {
+          "gdat_index": 1839,
+          "inner_name": "HeroineRoom_title11.tid",
+          "tid_sha256": "9fcdea9a5a219905d664e6dbbfc5809b045f725b664943c221e301eb1bafa64c",
+          "width": 1024,
+          "height": 256,
+          "format": "DXT5"
+        }
+      ],
+      "glyph_sources": [
+        {
+          "inner_name": "HeroineRoom_title01.tid",
+          "source": "ALICE'S",
+          "rect": [
+            35,
+            10,
+            430,
+            120
+          ]
+        },
+        {
+          "inner_name": "HeroineRoom_title03.tid",
+          "source": "THUMBELINA'S",
+          "rect": [
+            15,
+            10,
+            640,
+            120
+          ]
+        },
+        {
+          "inner_name": "HeroineRoom_title07.tid",
+          "source": "RAPUNZEL'S",
+          "rect": [
+            15,
+            10,
+            560,
+            120
+          ]
+        },
+        {
+          "inner_name": "HeroineRoom_title09.tid",
+          "source": "KAGUYA'S",
+          "rect": [
+            35,
+            10,
+            530,
+            120
+          ]
+        },
+        {
+          "inner_name": "HeroineRoom_title02.tid",
+          "source": "HOOD'S",
+          "rect": [
+            80,
+            85,
+            430,
+            180
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "gdat_index": 1829,
+          "inner_name": "HeroineRoom_title01.tid",
+          "parts": [
+            {
+              "text": "ALICE'S",
+              "rect": [
+                35,
+                10,
+                430,
+                120
+              ],
+              "height": 86
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1830,
+          "inner_name": "HeroineRoom_title02.tid",
+          "parts": [
+            {
+              "text": "AKAZUKIN'S",
+              "rect": [
+                15,
+                10,
+                560,
+                120
+              ],
+              "height": 86
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1831,
+          "inner_name": "HeroineRoom_title03.tid",
+          "parts": [
+            {
+              "text": "OYAYUBIHIME'S",
+              "rect": [
+                12,
+                10,
+                650,
+                120
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1832,
+          "inner_name": "HeroineRoom_title04.tid",
+          "parts": [
+            {
+              "text": "SHIRAYUKIHIME'S",
+              "rect": [
+                10,
+                10,
+                700,
+                120
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1833,
+          "inner_name": "HeroineRoom_title05.tid",
+          "parts": [
+            {
+              "text": "NEMURIHIME'S",
+              "rect": [
+                18,
+                10,
+                640,
+                120
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1834,
+          "inner_name": "HeroineRoom_title06.tid",
+          "parts": [
+            {
+              "text": "GRETEL'S",
+              "rect": [
+                35,
+                10,
+                470,
+                120
+              ],
+              "height": 86
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1835,
+          "inner_name": "HeroineRoom_title07.tid",
+          "parts": [
+            {
+              "text": "RAPUNZEL'S",
+              "rect": [
+                15,
+                10,
+                560,
+                120
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1836,
+          "inner_name": "HeroineRoom_title08.tid",
+          "parts": [
+            {
+              "text": "CINDERELLA'S",
+              "rect": [
+                14,
+                10,
+                705,
+                120
+              ],
+              "height": 86
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1837,
+          "inner_name": "HeroineRoom_title09.tid",
+          "parts": [
+            {
+              "text": "KAGUYAHIME'S",
+              "rect": [
+                10,
+                10,
+                650,
+                120
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1838,
+          "inner_name": "HeroineRoom_title10.tid",
+          "parts": [
+            {
+              "text": "HAMELN'S",
+              "rect": [
+                35,
+                10,
+                470,
+                120
+              ],
+              "height": 86
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                410,
+                82,
+                665,
+                176
+              ],
+              "height": 82
+            }
+          ]
+        },
+        {
+          "gdat_index": 1839,
+          "inner_name": "HeroineRoom_title11.tid",
+          "parts": [
+            {
+              "text": "TSUU AND",
+              "rect": [
+                22,
+                18,
+                370,
+                92
+              ],
+              "height": 68
+            },
+            {
+              "text": "NINGYOHIME'S",
+              "rect": [
+                36,
+                82,
+                530,
+                172
+              ],
+              "height": 84
+            },
+            {
+              "text": "ROOM",
+              "rect": [
+                452,
+                94,
+                690,
+                190
+              ],
+              "height": 90
+            }
+          ]
+        }
+      ],
+      "typography_preset": "heroine_room_banner_neofara",
+      "changed_gdat_indices": [
+        1829,
+        1830,
+        1831,
+        1832,
+        1833,
+        1834,
+        1835,
+        1836,
+        1837,
+        1838,
+        1839
+      ],
+      "supersample": 4,
+      "inner_black_outline": 5,
+      "outer_pink_outline": 5
+    },
+    {
+      "id": "MS1_INCLUDED_RESIDENCE_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1883,
+      "cl3_inner_name": "menu_kyojuu.tid",
+      "renderer": "ms1_residence_names_raster_v2",
+      "source_variants": [
+        {
+          "tid_sha256": "e5a0c241a1d515745377473f1e3bea3a583d5756673f829d215eaa1c9f394eab",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "normal_background_asset": "first_game_residence/normal_bg.png",
+      "selected_background_asset": "first_game_residence/selected_bg.png",
+      "normal_typography_preset": "first_game_residence_normal",
+      "selected_typography_preset": "first_game_residence_selected",
+      "normal_rects": [
+        [
+          4,
+          180,
+          484,
+          260
+        ],
+        [
+          4,
+          264,
+          484,
+          344
+        ],
+        [
+          4,
+          348,
+          484,
+          428
+        ],
+        [
+          4,
+          432,
+          484,
+          512
+        ],
+        [
+          4,
+          516,
+          484,
+          596
+        ],
+        [
+          4,
+          600,
+          484,
+          680
+        ],
+        [
+          4,
+          684,
+          484,
+          764
+        ],
+        [
+          4,
+          768,
+          484,
+          848
+        ],
+        [
+          4,
+          852,
+          484,
+          932
+        ],
+        [
+          4,
+          936,
+          484,
+          1016
+        ],
+        [
+          4,
+          1020,
+          484,
+          1100
+        ],
+        [
+          4,
+          1272,
+          484,
+          1352
+        ],
+        [
+          4,
+          1104,
+          484,
+          1184
+        ],
+        [
+          4,
+          1188,
+          484,
+          1268
+        ]
+      ],
+      "selected_rects": [
+        [
+          488,
+          180,
+          1000,
+          260
+        ],
+        [
+          488,
+          264,
+          1000,
+          344
+        ],
+        [
+          488,
+          348,
+          1000,
+          428
+        ],
+        [
+          488,
+          432,
+          1000,
+          512
+        ],
+        [
+          488,
+          516,
+          1000,
+          596
+        ],
+        [
+          488,
+          600,
+          1000,
+          680
+        ],
+        [
+          488,
+          684,
+          1000,
+          764
+        ],
+        [
+          488,
+          768,
+          1000,
+          848
+        ],
+        [
+          488,
+          852,
+          1000,
+          932
+        ],
+        [
+          488,
+          936,
+          1000,
+          1016
+        ],
+        [
+          488,
+          1020,
+          1000,
+          1100
+        ],
+        [
+          488,
+          1272,
+          1000,
+          1352
+        ],
+        [
+          488,
+          1104,
+          1000,
+          1184
+        ],
+        [
+          488,
+          1188,
+          1000,
+          1268
+        ]
+      ],
+      "rows": [
+        {
+          "text": "JACK'S ROOM"
+        },
+        {
+          "text": "ALICE'S ROOM"
+        },
+        {
+          "text": "AKAZUKIN'S ROOM"
+        },
+        {
+          "text": "OYAYUBIHIME'S ROOM"
+        },
+        {
+          "text": "SHIRAYUKIHIME'S ROOM"
+        },
+        {
+          "text": "NEMURIHIME'S ROOM"
+        },
+        {
+          "text": "GRETEL'S ROOM"
+        },
+        {
+          "text": "RAPUNZEL'S ROOM"
+        },
+        {
+          "text": "CINDERELLA'S ROOM"
+        },
+        {
+          "text": "KAGUYAHIME'S ROOM"
+        },
+        {
+          "text": "HAMELN'S ROOM"
+        },
+        {
+          "text": "TSUU AND NINGYOHIME'S ROOM"
+        },
+        {
+          "text": "EXIT LIVING QUARTERS"
+        },
+        {
+          "text": "HALLWAY"
+        }
+      ],
+      "source_rows": [
+        "JACK'S ROOM",
+        "ALICE'S ROOM",
+        "RED RIDING HOOD'S ROOM",
+        "THUMBELINA'S ROOM",
+        "SNOW WHITE'S ROOM",
+        "SLEEPING BEAUTY'S ROOM",
+        "GRETEL'S ROOM",
+        "RAPUNZEL'S ROOM",
+        "CINDERELLA'S ROOM",
+        "KAGUYA'S ROOM",
+        "HAMELN'S ROOM",
+        "OTSUU & LITTLE MERMAID'S ROOM",
+        "EXIT LIVING QUARTERS",
+        "HALLWAY"
+      ],
+      "mask_dilate": 5,
+      "expected_changed_rows": 6,
+      "normal_target_height": 30,
+      "normal_gap": -3,
+      "normal_space_width": 8,
+      "normal_face_origin": [
+        30,
+        24
+      ],
+      "selected_target_height": 29,
+      "selected_gap": -2,
+      "selected_space_width": 8,
+      "selected_face_origin": [
+        62,
+        24
+      ]
+    },
+    {
+      "id": "MS2_LIVING_QUARTERS_SELECTOR",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1858,
+      "cl3_inner_name": "menu_kyoju.tid",
+      "renderer": "ms2_room_selector_font_v4",
+      "source_variants": [
+        {
+          "tid_sha256": "7c06055bc8864a2e0dbc10e64af8e63ff8f224d66e0e8ac56479dfa1ac0a9979",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5"
+        }
+      ],
+      "normal_x_range": [
+        10,
+        385
+      ],
+      "selected_x_range": [
+        420,
+        890
+      ],
+      "row_rects": [
+        [
+          0,
+          73
+        ],
+        [
+          77,
+          150
+        ],
+        [
+          153,
+          226
+        ],
+        [
+          230,
+          303
+        ],
+        [
+          307,
+          380
+        ],
+        [
+          384,
+          457
+        ],
+        [
+          461,
+          534
+        ],
+        [
+          538,
+          611
+        ],
+        [
+          615,
+          688
+        ],
+        [
+          692,
+          765
+        ],
+        [
+          769,
+          842
+        ],
+        [
+          846,
+          919
+        ],
+        [
+          923,
+          996
+        ]
+      ],
+      "rows": [
+        {
+          "text": "TSUU'S ROOM"
+        },
+        {
+          "text": "NINGYOHIME'S ROOM"
+        },
+        {
+          "text": "HAMELN'S ROOM"
+        },
+        {
+          "text": "GRETEL'S ROOM"
+        },
+        {
+          "text": "RAPUNZEL'S ROOM"
+        },
+        {
+          "text": "KAGUYAHIME'S ROOM"
+        },
+        {
+          "text": "OYAYUBIHIME'S ROOM"
+        },
+        {
+          "text": "SHIRAYUKIHIME'S ROOM"
+        },
+        {
+          "text": "NEMURIHIME'S ROOM"
+        },
+        {
+          "text": "CINDERELLA'S ROOM"
+        },
+        {
+          "text": "AKAZUKIN'S ROOM"
+        },
+        {
+          "text": "ALICE'S ROOM"
+        },
+        {
+          "text": "EXIT LIVING QUARTERS"
+        }
+      ],
+      "selected_background_asset": "room_selector/selected_bg.png",
+      "normal_typography_preset": "living_quarters_normal",
+      "selected_typography_preset": "living_quarters_selected"
+    },
+    {
+      "id": "MS2_CAMP_TOP_LEGACY_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1448,
+      "cl3_inner_name": "camp_top.tid",
+      "renderer": "ms2_camp_top_legacy_names_font_v2",
+      "source_variants": [
+        {
+          "tid_sha256": "196169c577b99f73cf621e813566e793ee11576f0ea8a2b42b780439b9a1928a",
+          "width": 2048,
+          "height": 4096,
+          "format": "BC7"
+        }
+      ],
+      "typography_preset": "camp_top_legacy_neofara",
+      "rows": [
+        {
+          "from": "OTSUU",
+          "text": "TSUU",
+          "rect": [
+            1835,
+            2352,
+            1882,
+            2466
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "text": "NINGYOHIME",
+          "rect": [
+            1910,
+            2275,
+            1978,
+            2540
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MS2_CAMP_TOP2_CHARACTER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1463,
+      "cl3_inner_name": "camp_top_2.tid",
+      "renderer": "ms2_camp_top2_character_names_font_v3",
+      "source_variants": [
+        {
+          "tid_sha256": "6cac6e1c439db75ac43084e3452fb959c11984030b178f7b6a23c2ba445d8f39",
+          "width": 2048,
+          "height": 2048,
+          "format": "DXT5",
+          "tid_magic": "TID91"
+        }
+      ],
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            1422,
+            808,
+            1466,
+            1112
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            1467,
+            808,
+            1521,
+            1112
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            1522,
+            808,
+            1562,
+            1112
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            1563,
+            808,
+            1603,
+            1112
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            1604,
+            808,
+            1645,
+            1112
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            1646,
+            808,
+            1684,
+            1112
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            1685,
+            808,
+            1727,
+            1112
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1728,
+            808,
+            1768,
+            1112
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            1769,
+            808,
+            1810,
+            1112
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            1811,
+            808,
+            1853,
+            1112
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1854,
+            808,
+            1891,
+            1112
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            1892,
+            808,
+            1928,
+            1112
+          ]
+        },
+        {
+          "text": "MAMORU & HANSEL",
+          "rect": [
+            1929,
+            808,
+            1981,
+            1112
+          ]
+        },
+        {
+          "text": "TSUU & JACK",
+          "rect": [
+            1982,
+            808,
+            2034,
+            1112
+          ]
+        }
+      ],
+      "typography_preset": "camp_top2_vertical_neofara",
+      "clear_band": [
+        1420,
+        816,
+        2036,
+        1112
+      ],
+      "switch_native_policy": "canonical_whole_words_v2"
+    },
+    {
+      "id": "MS2_PARTY_FORMATION_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1438,
+      "cl3_inner_name": "camp_hensei.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "typography_preset": "party_formation_pink",
+      "source_variants": [
+        {
+          "tid_sha256": "5eac8fae322a0d260941fb89cf735b4bfa44184c0822eb2d37430c21a2c8599e",
+          "width": 2048,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "rows": [
+        {
+          "text": "ALICE",
+          "rect": [
+            962,
+            1066,
+            1062,
+            1103
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            1126,
+            1066,
+            1294,
+            1103
+          ]
+        },
+        {
+          "text": "TSUU",
+          "rect": [
+            1330,
+            1066,
+            1441,
+            1102
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            1489,
+            1066,
+            1621,
+            1103
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            1651,
+            1066,
+            1773,
+            1103
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            1805,
+            1066,
+            2041,
+            1103
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            1086,
+            1134,
+            1286,
+            1171
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            1371,
+            1134,
+            1568,
+            1171
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            1611,
+            1134,
+            1742,
+            1177
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            1810,
+            1134,
+            2004,
+            1171
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            906,
+            1314,
+            1175,
+            1357
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            905,
+            1381,
+            1181,
+            1418
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            1330,
+            1066,
+            1441,
+            1102
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            1805,
+            1066,
+            2041,
+            1103
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            1086,
+            1134,
+            1286,
+            1171
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            1611,
+            1134,
+            1742,
+            1177
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            1810,
+            1134,
+            2004,
+            1171
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            906,
+            1314,
+            1175,
+            1357
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            905,
+            1381,
+            1181,
+            1418
+          ]
+        }
+      ],
+      "clear_margin": 6
+    },
+    {
+      "id": "MS2_EQUIPMENT_HEADER_NAMES",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1468,
+      "cl3_inner_name": "commonBE.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "typography_preset": "equipment_header_chiaro",
+      "source_variants": [
+        {
+          "tid_sha256": "d540e4d718490eb990313830782662aed075650eb56c19266d4c8f3965dcd7f3",
+          "width": 4096,
+          "height": 4096,
+          "format": "BC7"
+        }
+      ],
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            3654,
+            73,
+            3783,
+            114
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            3570,
+            130,
+            3868,
+            173
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            3643,
+            188,
+            3794,
+            229
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            3651,
+            247,
+            3787,
+            289
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            3626,
+            304,
+            3812,
+            347
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            3608,
+            362,
+            3833,
+            404
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            3602,
+            420,
+            3836,
+            461
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            3601,
+            479,
+            3837,
+            520
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            3560,
+            536,
+            3879,
+            578
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            3607,
+            594,
+            3832,
+            637
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            3564,
+            653,
+            3874,
+            695
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            3664,
+            710,
+            3772,
+            752
+          ]
+        },
+        {
+          "text": "JACK",
+          "rect": [
+            3668,
+            768,
+            3766,
+            815
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            3654,
+            73,
+            3783,
+            114
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            3570,
+            130,
+            3868,
+            173
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            3608,
+            362,
+            3833,
+            404
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            3602,
+            420,
+            3836,
+            461
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            3601,
+            479,
+            3837,
+            520
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            3560,
+            536,
+            3879,
+            578
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            3564,
+            653,
+            3874,
+            695
+          ]
+        }
+      ],
+      "clear_margin": 4
+    },
+    {
+      "id": "MSF_EQUIPMENT_HEADER_NAMES",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 74,
+      "gdat_index": 8,
+      "cl3_inner_name": "commonBE.tid",
+      "renderer": "ms2_name_family_font_v1",
+      "typography_preset": "equipment_header_chiaro",
+      "source_variants": [
+        {
+          "tid_sha256": "e8ac0ad32138bb600d29bb2f895103c5c17d9fe7f0688af0c879336a7b3fa070",
+          "width": 4096,
+          "height": 4096,
+          "format": "DXT5"
+        }
+      ],
+      "rows": [
+        {
+          "text": "TSUU",
+          "rect": [
+            3654,
+            73,
+            3783,
+            114
+          ]
+        },
+        {
+          "text": "NINGYOHIME",
+          "rect": [
+            3570,
+            130,
+            3868,
+            173
+          ]
+        },
+        {
+          "text": "HAMELN",
+          "rect": [
+            3643,
+            188,
+            3794,
+            229
+          ]
+        },
+        {
+          "text": "GRETEL",
+          "rect": [
+            3651,
+            247,
+            3787,
+            289
+          ]
+        },
+        {
+          "text": "RAPUNZEL",
+          "rect": [
+            3626,
+            304,
+            3812,
+            347
+          ]
+        },
+        {
+          "text": "KAGUYAHIME",
+          "rect": [
+            3608,
+            362,
+            3833,
+            404
+          ]
+        },
+        {
+          "text": "OYAYUBIHIME",
+          "rect": [
+            3602,
+            420,
+            3836,
+            461
+          ]
+        },
+        {
+          "text": "SHIRAYUKIHIME",
+          "rect": [
+            3601,
+            479,
+            3837,
+            520
+          ]
+        },
+        {
+          "text": "NEMURIHIME",
+          "rect": [
+            3560,
+            536,
+            3879,
+            578
+          ]
+        },
+        {
+          "text": "CINDERELLA",
+          "rect": [
+            3607,
+            594,
+            3832,
+            637
+          ]
+        },
+        {
+          "text": "AKAZUKIN",
+          "rect": [
+            3564,
+            653,
+            3874,
+            695
+          ]
+        },
+        {
+          "text": "ALICE",
+          "rect": [
+            3664,
+            710,
+            3772,
+            752
+          ]
+        },
+        {
+          "text": "JACK",
+          "rect": [
+            3668,
+            768,
+            3766,
+            815
+          ]
+        }
+      ],
+      "replacements": [
+        {
+          "from": "OTSUU",
+          "to": "TSUU",
+          "rect": [
+            3654,
+            73,
+            3783,
+            114
+          ]
+        },
+        {
+          "from": "LITTLE MERMAID",
+          "to": "NINGYOHIME",
+          "rect": [
+            3570,
+            130,
+            3868,
+            173
+          ]
+        },
+        {
+          "from": "KAGUYA",
+          "to": "KAGUYAHIME",
+          "rect": [
+            3608,
+            362,
+            3833,
+            404
+          ]
+        },
+        {
+          "from": "THUMBELINA",
+          "to": "OYAYUBIHIME",
+          "rect": [
+            3602,
+            420,
+            3836,
+            461
+          ]
+        },
+        {
+          "from": "SNOW WHITE",
+          "to": "SHIRAYUKIHIME",
+          "rect": [
+            3601,
+            479,
+            3837,
+            520
+          ]
+        },
+        {
+          "from": "SLEEPING BEAUTY",
+          "to": "NEMURIHIME",
+          "rect": [
+            3560,
+            536,
+            3879,
+            578
+          ]
+        },
+        {
+          "from": "RED RIDING HOOD",
+          "to": "AKAZUKIN",
+          "rect": [
+            3564,
+            653,
+            3874,
+            695
+          ]
+        }
+      ],
+      "clear_margin": 4
+    },
+    {
+      "id": "MS2_TITLE_MOD_FOOTER_MAIN",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1821,
+      "cl3_inner_name": "titlemenu.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "101c81d0e9953dfea166ed01852e3f4f50c20f575f59d1f990be41f40c9e2311",
+          "width": 2048,
+          "height": 4096,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "title_copyright_footer_chiaro_v2",
+      "typography_preset": "title_footer_chiaro",
+      "copyright_sprite_name": "copyright",
+      "copyright_rect": [
+        50,
+        2544,
+        900,
+        2634
+      ],
+      "legal_scale": 0.62,
+      "footer_nominal_size": 28,
+      "footer_min_size": 18
+    },
+    {
+      "id": "MS2_TITLE_MOD_FOOTER_BE",
+      "enabled": true,
+      "dataset": "MS2_PC_LOCALIZED",
+      "archive": 55,
+      "gdat_index": 1822,
+      "cl3_inner_name": "TitleBE.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "44cd6d66ec412412b650b431120c4c04390cb8574d357905bd39b5ac54d66462",
+          "width": 2048,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "title_copyright_footer_chiaro_v2",
+      "typography_preset": "title_footer_chiaro",
+      "copyright_sprite_name": "09_copyright",
+      "copyright_rect": [
+        1312,
+        1660,
+        2040,
+        1732
+      ],
+      "legal_scale": 0.6,
+      "footer_nominal_size": 26,
+      "footer_min_size": 17
+    },
+    {
+      "id": "MSF_TITLE_MOD_FOOTER",
+      "enabled": true,
+      "dataset": "MSF_PC_LOCALIZED",
+      "archive": 73,
+      "gdat_index": 220,
+      "cl3_inner_name": "title_f.tid",
+      "source_variants": [
+        {
+          "tid_sha256": "4cfbfb005ba44299615259ece0485ffa56c4a427c06b82917ed21e12b441d7fd",
+          "width": 2048,
+          "height": 2048,
+          "format": "BC7"
+        }
+      ],
+      "renderer": "title_copyright_footer_chiaro_v2",
+      "typography_preset": "title_footer_chiaro",
+      "copyright_sprite_name": "2_Copyright",
+      "copyright_rect": [
+        374,
+        1796,
+        1230,
+        1886
+      ],
+      "legal_scale": 0.62,
+      "footer_nominal_size": 28,
+      "footer_min_size": 18
+    }
+  ]
+}

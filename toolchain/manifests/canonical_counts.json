@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "expected_changed_fields_by_dataset": {
+    "MS2_PC_LOCALIZED": 22728,
+    "MSF_PC_LOCALIZED": 38304,
+    "MSF_PC_SYSTEM": 4657
+  },
+  "expected_mapped_fields_by_dataset": {
+    "MS2_PC_LOCALIZED": 84120,
+    "MSF_PC_LOCALIZED": 118550,
+    "MSF_PC_SYSTEM": 15233
+  },
+  "translation_corpora": {
+    "MS2_STORY.jsonl": {
+      "records": 29279,
+      "fields": 58375,
+      "exact_jp_fields": 58375,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 18143
+    },
+    "MS2_SYSTEM_BIN_055.jsonl": {
+      "records": 1788,
+      "fields": 1788,
+      "exact_jp_fields": 1788,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 321
+    },
+    "MS2_SYSTEM_ENC_061.jsonl": {
+      "records": 23699,
+      "fields": 23699,
+      "exact_jp_fields": 23697,
+      "source_absent_jp_fields": 2,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 4039
+    },
+    "MSF_ARCHIVE_088.jsonl": {
+      "records": 2445,
+      "fields": 4890,
+      "exact_jp_fields": 4890,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 1646
+    },
+    "MSF_STORY.jsonl": {
+      "records": 48847,
+      "fields": 97060,
+      "exact_jp_fields": 97060,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 32697
+    },
+    "MSF_SYSTEM_ENC_055.jsonl": {
+      "records": 348,
+      "fields": 348,
+      "exact_jp_fields": 347,
+      "source_absent_jp_fields": 1,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 111
+    },
+    "MSF_SYSTEM_ENC_072.jsonl": {
+      "records": 19963,
+      "fields": 19963,
+      "exact_jp_fields": 19677,
+      "source_absent_jp_fields": 286,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 5368
+    },
+    "MSF_SYSTEM_ENC_088.jsonl": {
+      "records": 9995,
+      "fields": 9995,
+      "exact_jp_fields": 9853,
+      "source_absent_jp_fields": 142,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 2900
+    },
+    "MSF_SYSTEM_GDAT0.jsonl": {
+      "records": 1527,
+      "fields": 1527,
+      "exact_jp_fields": 1527,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 239
+    },
+    "MS2_SYSTEM_ENC_052.jsonl": {
+      "records": 258,
+      "fields": 258,
+      "exact_jp_fields": 258,
+      "source_absent_jp_fields": 0,
+      "pending_jp_fields": 0,
+      "changed_EN_fields": 225
+    }
+  }
+}

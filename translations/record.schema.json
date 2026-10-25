@@ -1,12 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Mary Skelter Fidelity Working Story Record",
+  "title": "Mary Skelter Fidelity Public Translation Record",
   "type": "object",
   "required": [
     "id",
     "game",
     "scope",
-    "review_status",
     "fields"
   ],
   "properties": {
@@ -20,12 +19,6 @@
       ]
     },
     "scope": {
-      "const": "story"
-    },
-    "review_status": {
-      "type": "string"
-    },
-    "notes": {
       "type": "string"
     },
     "source": {
@@ -60,12 +53,6 @@
           "EN": {
             "type": "string"
           },
-          "status": {
-            "type": "string"
-          },
-          "notes": {
-            "type": "string"
-          },
           "target_dataset": {
             "type": "string"
           },
@@ -81,8 +68,10 @@
           "mapping_status": {
             "type": "string"
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
-  }
+  },
+  "additionalProperties": false
 }

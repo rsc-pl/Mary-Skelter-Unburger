@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "platform": "linux-amd64",
+  "archive_sha256": "823a3dc9628aa5960dc02b62064ca496fab1ea47b5db6dda206c75f876759202",
+  "pieces": [
+    {
+      "file": "linux-amd64.part001",
+      "sha256": "c82bc9a8371989d86a15adaf05c4448e199ffb262aeffedab1e2fc718fc6a8fa",
+      "size": 83886080
+    },
+    {
+      "file": "linux-amd64.part002",
+      "sha256": "5dcb6048307862b160c72659bbaa6791a78c0afdd04c79a8cab0ef5623ed8a8f",
+      "size": 83886080
+    },
+    {
+      "file": "linux-amd64.part003",
+      "sha256": "ade100111ca77c66b80de26061080fa283058e489c011b7a7054eec44891121c",
+      "size": 83886080
+    },
+    {
+      "file": "linux-amd64.part004",
+      "sha256": "65b0fa289c967c4c9489595119ba1a2c37bf4851a239fb534e15af12e6768217",
+      "size": 59810727
+    }
+  ]
+}
