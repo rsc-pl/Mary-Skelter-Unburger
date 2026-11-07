@@ -2554,26 +2554,31 @@ def render_ms1_residence_names_font_v1(original_im, spec: dict):
 
 
 def render_ms2_camp_top2_character_names_font_v3(original_im, spec: dict):
-    """Build-time font renderer for the TID91 equipment/status CharacterName layer."""
-    from PIL import Image
-    out=original_im.copy(); preset=_ui_preset(spec['typography_preset'])
-    band=tuple(map(int,spec['clear_band']))
-    x0,y0,x1,y1=band
-    _clear_rgba_rect_with_bleed(out,band)
-    allow=[band]
-    rows=spec['rows']; lane_w=(x1-x0)//len(rows)
-    if lane_w*len(rows)!=(x1-x0):
-        die(f'{spec["id"]}: clear band width must divide evenly by row count')
-    for i,item in enumerate(rows):
-        rx0=x0+i*lane_w; rx1=rx0+lane_w
-        # Render horizontally on an exact (height x lane-width) canvas, then do
-        # a lossless 90-degree pixel transpose. Equal lanes guarantee uniform
-        # spacing and the full-band clear removes every old vertical-name remnant.
-        horiz=_make_centered_ui_label((y1-y0,lane_w),item['text'],preset,bleed_radius=8)
-        rot=horiz.transpose(Image.Transpose.ROTATE_90)
-        out.alpha_composite(rot,(rx0,y0))
-    _assert_diff_inside_rects(original_im,out,allow,spec['id'])
-    return out
+    """Use the same accepted whole-word atlas renderer for PC as for Switch.
+
+    Both platforms' pristine camp_top_2.tid share the source TID SHA.
+    Retain the legacy renderer ID in the manifest/API for existing caller guards;
+    the actual pixel recipe comes from the single Switch-accepted v2 source.
+    """
+    import importlib.util
+    from types import SimpleNamespace
+
+    if spec.get('id') != 'MS2_CAMP_TOP2_CHARACTER_NAMES' or spec.get('switch_native_policy') != 'canonical_whole_words_v2':
+        die('MS2 camp_top2: missing canonical whole-word policy')
+    helper_path = Path(__file__).resolve().with_name('camp_top2_wholewords_v2.py')
+    if not helper_path.is_file():
+        die(f'MS2 camp_top2: missing canonical renderer {helper_path}')
+    module_spec = importlib.util.spec_from_file_location('ms2_camp_top2_wholewords_v2', helper_path)
+    if module_spec is None or module_spec.loader is None:
+        die(f'MS2 camp_top2: cannot load {helper_path}')
+    helper = importlib.util.module_from_spec(module_spec)
+    module_spec.loader.exec_module(helper)
+    rendered, changes, changed_pixels, evidence = helper.render_accepted_switch_name_atlas(
+        original_im, {'assets': [spec]},
+        SimpleNamespace(_resolve_ui_font_path=_resolve_ui_font_path))
+    if len(changes) != 8 or evidence['canonical_cap_height'] != 25 or changed_pixels <= 0:
+        die('MS2 camp_top2: whole-word result failed source-native QA')
+    return rendered
 
 
 def _assert_diff_inside_rects(original_im, rendered_im, rects, asset_id: str):
