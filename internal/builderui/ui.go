@@ -53,6 +53,11 @@ func Run(o Options) error {
 	}
 	idx := 0
 	for {
+		var err error
+		o, err = refreshReleaseVersion(o)
+		if err != nil {
+			return err
+		}
 		chosen, quit, err := chooseTTY(o, actions, idx)
 		if err != nil {
 			return err
@@ -61,6 +66,12 @@ func Run(o Options) error {
 			return nil
 		}
 		idx = chosen
+		// Read again after menu selection. version.txt may have changed while
+		// the menu was open; an old menu version must not name new releases.
+		o, err = refreshReleaseVersion(o)
+		if err != nil {
+			return err
+		}
 		clear()
 		renderHeader(o)
 		fmt.Println(boxTop(actions[chosen].Name))
@@ -157,6 +168,11 @@ func renderReadiness(s maintainer.Status) {
 func runPlain(o Options, actions []action) error {
 	in := bufio.NewScanner(os.Stdin)
 	for {
+		var err error
+		o, err = refreshReleaseVersion(o)
+		if err != nil {
+			return err
+		}
 		fmt.Printf("MARY SKELTER UNBURGER — MAINTAINER BUILDER  v%s\n\n", o.Version)
 		for i, a := range actions {
 			fmt.Printf("%2d. %s\n", i+1, a.Name)
@@ -172,6 +188,10 @@ func runPlain(o Options, actions []action) error {
 		}
 		if n == len(actions) {
 			return nil
+		}
+		o, err = refreshReleaseVersion(o)
+		if err != nil {
+			return err
 		}
 		if err := actions[n-1].Run(o); err != nil {
 			fmt.Printf("ERROR: %v\n", err)
@@ -287,6 +307,11 @@ func prepareAssets(o Options) error {
 }
 func buildContainer(o Options) error { return maintainer.BuildContainer(o.Root, os.Stdout) }
 func buildRelease(o Options) error {
+	var err error
+	o, err = refreshReleaseVersion(o)
+	if err != nil {
+		return err
+	}
 	overwrite, proceed, err := confirmReleaseReplacement(o, true, false, false)
 	if err != nil || !proceed {
 		return err
@@ -408,6 +433,11 @@ func switchIntegratedWizard(o Options) error {
 	if !confirmSwitchCandidate(in, "Build the combined translated candidate for both games?") {
 		return nil
 	}
+	o, err = refreshReleaseVersion(o)
+	if err != nil {
+		return err
+	}
+	opts.Options.Version = o.Version
 	overwrite, proceed, err := confirmReleaseReplacement(o, false, true, true)
 	if err != nil || !proceed {
 		return err
@@ -485,13 +515,25 @@ func fullAllVersionsWizard(o Options) error {
 	if !chooseBuildActionWithReadiness("Full PC + Switch release", "Build PC and two integrated Switch candidates, with automatically verified graphics reuse.", false, o.Root) {
 		return nil
 	}
+	// The menu may have been open while version.txt was edited. Resolve the
+	// destination version from disk before any lengthy PC build starts.
+	o, err = refreshReleaseVersion(o)
+	if err != nil {
+		return err
+	}
 	overwrite, proceed, err := confirmReleaseReplacement(o, true, true, true)
 	if err != nil || !proceed {
+		return err
+	}
+	if err := requireCurrentReleaseVersion(o); err != nil {
 		return err
 	}
 	fmt.Println(green("✓ Starting complete PC + Switch workflow; graphic reuse is automatic and input-verified."))
 	err = maintainer.WithReleaseReplacement(o.Root, o.Version, true, true, true, overwrite, func() error {
 		if err := maintainer.RunAll(o.Root, false, "", os.Stdout, os.Stderr); err != nil {
+			return err
+		}
+		if err := requireCurrentReleaseVersion(o); err != nil {
 			return err
 		}
 		result, err := switchrelease.BuildIntegratedCandidate(switchrelease.IntegratedOptions{
@@ -549,6 +591,11 @@ func fullWizard(o Options) error {
 	}
 	if !yesNo("Proceed with verification and the complete PC release workflow?", false) {
 		return nil
+	}
+	var err error
+	o, err = refreshReleaseVersion(o)
+	if err != nil {
+		return err
 	}
 	overwrite, proceed, err := confirmReleaseReplacement(o, true, false, false)
 	if err != nil || !proceed {

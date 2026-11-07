@@ -112,3 +112,35 @@ func TestReleaseReplacementRefusesSymlinkAndDoesNotCallBuild(t *testing.T) {
 		t.Fatalf("symlink was accepted, err=%v", err)
 	}
 }
+
+func TestPriorVersionZIPsDoNotBlockNewRelease(t *testing.T) {
+	root := t.TempDir()
+	out := filepath.Join(root, ".local", "release", "packages")
+	if err := os.MkdirAll(out, 0755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(root, "version.txt"), []byte("0.4.3\n"), 0644); err != nil {
+		t.Fatal(err)
+	}
+	old := "Mary-Skelter-2-Finale-UNBURGER-PC-v0.4.2.zip"
+	if err := os.WriteFile(filepath.Join(out, old), []byte("prior release"), 0644); err != nil {
+		t.Fatal(err)
+	}
+	called := false
+	err := WithReleaseReplacement(root, "", true, false, false, false, func() error {
+		called = true
+		for _, suffix := range []string{".zip", ".zip.sha256"} {
+			if err := os.WriteFile(filepath.Join(out, "Mary-Skelter-2-Finale-UNBURGER-PC-v0.4.3"+suffix), []byte("current release"), 0644); err != nil {
+				return err
+			}
+		}
+		return nil
+	})
+	if err != nil || !called {
+		t.Fatalf("older ZIP blocked new version: called=%v err=%v", called, err)
+	}
+	b, err := os.ReadFile(filepath.Join(out, old))
+	if err != nil || string(b) != "prior release" {
+		t.Fatalf("older ZIP changed: %q %v", b, err)
+	}
+}
