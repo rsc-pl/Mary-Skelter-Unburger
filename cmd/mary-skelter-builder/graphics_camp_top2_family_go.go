@@ -1,9 +1,9 @@
 package main
 
-// candidate complete MS2 camp_top_2 name-family rendering in pure Go.
+// Complete MS2 camp_top_2 name-family rendering experiment in pure Go.
 // The entire source-proven band is alpha-cleared before all 14 upright source
 // strings are rendered horizontally and transposed 90 degrees, matching the
-// accepted family layout. Nothing here writes to an installed game.
+// original atlas geometry. Nothing here writes to an installed game.
 
 import (
 	"bytes"

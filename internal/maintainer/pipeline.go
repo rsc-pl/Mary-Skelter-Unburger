@@ -147,7 +147,7 @@ func copyFile(src, dst string) error {
 }
 
 // prepareSourceRecords stages all three canonical record inputs before changing
-// .local/build/source_records. A missing/corrupt source or an unexpected owner
+// .local/build/source_records. A missing/corrupt source or an unexpected user
 // file in the destination must never wipe the previously usable record set.
 // The only removable files are the three known generated JSONL records.
 func prepareSourceRecords(root string, c CachedSources) error {
@@ -409,7 +409,7 @@ func activateDistTransactional(root, stage string, fault func() error) error {
 	if !stageInfo.IsDir() || stageInfo.Mode()&os.ModeSymlink != 0 {
 		return fmt.Errorf("refuse invalid dist publication stage %s", stage)
 	}
-	// An unfinished old legacy dist.previous may be owner recovery material.
+	// An unfinished old legacy dist.previous may be user recovery material.
 	// Never unlink, rewrite, or reuse it.
 	old := filepath.Join(build, "dist.previous")
 	if _, e := os.Lstat(old); e == nil {
@@ -511,7 +511,7 @@ func preflightRebuildDependencies(root string) error {
 }
 
 func Rebuild(root string, stdout, stderr io.Writer) error {
-	// Preflight does not modify source records, output trees or owner masters.
+	// Preflight does not modify source records, output trees or user masters.
 	if err := preflightRebuildDependencies(root); err != nil {
 		return err
 	}
@@ -563,7 +563,7 @@ func rebuildLocked(root string, stdout, stderr io.Writer) error {
 		}
 	}
 	// legacy: former generated output directories are moved to a bounded rollback
-	// stage; neither owner scratch nor previous successful outputs are deleted
+	// stage; neither user scratch nor previous successful outputs are deleted
 	// until a fully verified new bundle has been published.
 	return withGeneratedOutputTransaction(root, func() error {
 		if err := os.MkdirAll(filepath.Join(build, "rebuilt"), 0o755); err != nil {

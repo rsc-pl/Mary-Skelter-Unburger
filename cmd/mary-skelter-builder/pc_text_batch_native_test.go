@@ -152,14 +152,14 @@ func TestNativePCTextBatchFaultRollsBackFirstPublishedOutput(t *testing.T) {
 }
 func TestNativePCTextBatchRejectsExistingOutputAndDuplicateDestination(t *testing.T) {
 	f := makeBatchFixture(t)
-	if err := os.WriteFile(f.Outputs[1], []byte("PRIVATE-OWNER-FILE"), 0600); err != nil {
+	if err := os.WriteFile(f.Outputs[1], []byte("PRIVATE-user-FILE"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	if err := executeNativePCTextBatch([]string{"--manifest", f.Manifest}, &bytes.Buffer{}); err == nil {
 		t.Fatal("allowed existing user output")
 	}
-	if b, err := os.ReadFile(f.Outputs[1]); err != nil || string(b) != "PRIVATE-OWNER-FILE" {
-		t.Fatal("changed existing owner file", err)
+	if b, err := os.ReadFile(f.Outputs[1]); err != nil || string(b) != "PRIVATE-user-FILE" {
+		t.Fatal("changed existing user file", err)
 	}
 	if _, err := os.Lstat(f.Outputs[0]); !os.IsNotExist(err) {
 		t.Fatal("partial first output created")

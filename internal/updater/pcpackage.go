@@ -110,7 +110,7 @@ func PackagePCRelease(sourceDir, packageDir, version string) (string, string, er
 		return "", "", err
 	}
 	// Hardlink publication never replaces existing files. If publishing the SHA
-	// fails, roll back only our ZIP, not unrelated owner files.
+	// fails, roll back only our ZIP, not unrelated user files.
 	if err := os.Link(temp, final); err != nil {
 		return "", "", err
 	}

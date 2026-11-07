@@ -1,7 +1,7 @@
 package main
 
 // legacy research-only: exact-source 15-plate native Go compositor.  The
-// legacy owner-provisionally-accepted background algorithm remains unchanged.
+// existing background algorithm remains unchanged.
 // This file deliberately does not encode TIDs, rewrite GDATs or patch games.
 import (
 	"crypto/sha256"
@@ -49,13 +49,13 @@ type battleFont struct {
 	SHA  string `json:"reference_sha256"`
 }
 type battleLetterAsset struct {
-	ID          string          `json:"id"`
-	Renderer    string          `json:"renderer"`
-	Typography  string          `json:"typography_preset"`
+	ID          string      `json:"id"`
+	Renderer    string      `json:"renderer"`
+	Typography  string      `json:"typography_preset"`
 	Rows        []battleRow `json:"rows"`
-	TextBox     []int           `json:"text_box"`
-	FinalScale  float64         `json:"final_scale"`
-	Supersample int             `json:"supersample"`
+	TextBox     []int       `json:"text_box"`
+	FinalScale  float64     `json:"final_scale"`
+	Supersample int         `json:"supersample"`
 }
 type battleLetterSummary struct {
 	SourceSHA              string   `json:"source_sha256"`
@@ -291,7 +291,7 @@ func battleCleanCells(rgba []byte, rows []battleRow) ([][]byte, int, error) {
 }
 
 func battleRender(root string, reportDir string, originalTID []byte) (battleLetterSummary, []byte, error) {
-	sum := battleLetterSummary{SourceSHA: battleSHA, Rows: 15, NoChangedOutside15Rows: true, NextGate: "RESEARCH/HOLD: no BC7 encode or GDAT; consolidated owner runtime later"}
+	sum := battleLetterSummary{SourceSHA: battleSHA, Rows: 15, NoChangedOutside15Rows: true, NextGate: "RESEARCH/HOLD: no BC7 encode or GDAT; separate in-game runtime validation required"}
 	raw := originalTID
 	sha := sha256.Sum256(raw)
 	if hex.EncodeToString(sha[:]) != battleSHA {
@@ -440,7 +440,7 @@ func battleRender(root string, reportDir string, originalTID []byte) (battleLett
 		if e = os.MkdirAll(reportDir, 0700); e != nil {
 			return sum, nil, e
 		}
-		// Contact sheet is for source/owner visual QA only, NEVER a TID.
+		// Contact sheet is for visual comparison only, NEVER a TID.
 		contact := image.NewNRGBA(image.Rect(0, 0, 4*bw, 4*bh))
 		for i, row := range asset.Rows {
 			xx, yy := i%4*bw, i/4*bh

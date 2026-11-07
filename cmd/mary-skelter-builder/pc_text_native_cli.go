@@ -1,7 +1,7 @@
 package main
 
 // Explicit opt-in native text GDAT writer. Production `rebuild` remains on the
-// established legacy backend until owner source archives pass complete QA.
+// established legacy backend until source archives pass complete QA.
 
 import (
 	"bytes"

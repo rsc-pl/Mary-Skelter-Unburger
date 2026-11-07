@@ -640,15 +640,15 @@ def build(project: Path, ms2_master: Path, finale_master: Path, outzip: Path):
                 "runtime_gate": [
                     "MS2: title/footer, battle/result names, camp/job UI, Heroine Room list/banners, included-MS1 residence labels, equipment headers",
                     "Finale: title/footer, battle names, Bonus character labels/grid, camp/Heroine Room/ren-bonus labels, equipment headers",
-                    "accepted JP-voice/logo-skip behavior remains healthy in both latest-update builds",
+                    "Japanese-voice and logo-skip behavior remains intact in both game builds",
                     "save/DLC/menu behavior does not regress",
                 ],
             }
             (root / "R32C3_BUILD_REPORT.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             (root / "README_TEST.txt").write_text(
-                "R32C3 full Switch graphics-port candidate with typography/compositing repairs for Mary Skelter 2 + Finale.\n\n"
-                "The six PC MS2_DLC_JOB_LABELS targets are intentionally NOT part of this standalone-Western-Switch build: R31C1 found none in the user's complete standalone MS2 Switch content set, and the Western standalone Switch DLC catalogue contains only Jailbreak Support Goods, Mary Skelter Game Item, Blood Maidens' Swimsuits, and Death end re;Quest Job Attire 1/2. The six store-exclusive MS2 Job Set I classes are a later Finale Grand Finale Bundle payload, not standalone Western MS2 Switch DLC.\n\n"
-                "R32C3 maps and modifies 40 applicable Switch source textures. MS2 camp_top_2.tid at 074/g133 uses owner-runtime-approved eight whole-word canonical English replacements (six source names pixel-identical). The complete Heroine Room banner family is rerendered consistently. Every mapped Switch texture is native DXT5. All untouched GDAT entries and CL3 members are byte-identical.\n\n"
+                "Switch graphics compatibility test package for Mary Skelter 2 + Finale.\n\n"
+                "The six PC MS2_DLC_JOB_LABELS targets are excluded from the standalone Western Switch build: this content set does not contain those assets. The compatible Switch DLC catalogue contains Jailbreak Support Goods, Mary Skelter Game Item, Blood Maidens' Swimsuits, and Death end re;Quest Job Attire 1/2. The six store-exclusive MS2 Job Set I classes are a later Finale Grand Finale Bundle payload, not standalone Western MS2 Switch DLC.\n\n"
+                "This build modifies 40 mapped Switch source textures. MS2 camp_top_2.tid at 074/g133 applies eight canonical whole-word English replacements (six source names remain pixel-identical). The complete Heroine Room banner family is rerendered consistently. Every mapped Switch texture is native DXT5. All untouched GDAT entries and CL3 members are byte-identical.\n\n"
                 "Use ONLY the 2_EMULATOR_EDEN directory for the runtime smoke test.\n",
                 encoding="utf-8",
             )

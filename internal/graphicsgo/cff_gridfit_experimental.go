@@ -1,7 +1,7 @@
 package graphicsgo
 
 // This is an isolated, opt-in CFF1 stem-grid-fit pilot. It is NOT Adobe/FreeType
-// hinting, and is intentionally disconnected from the accepted text/graphic
+// hinting, and is intentionally disconnected from the production text/graphic
 // builders. It rejects masks changing the active stems until contour segments
 // can be associated with their Type2 hint mask state. All coordinates here are
 // in font units, with Y increasing upward.

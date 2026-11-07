@@ -1,7 +1,7 @@
 package maintainer
 
 // Opt-in native PC text dataset publisher. The legacy full rebuild remains the
-// default until decoded-semantic and runtime checks on the owner's actual
+// default until decoded-semantic and runtime checks on the provided
 // pristine master DATs establish equivalence. No Python subprocess is used.
 
 import (

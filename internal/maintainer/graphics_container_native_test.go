@@ -117,15 +117,15 @@ func TestNativeGraphicsContainerAndNoClobber(t *testing.T) {
 					t.Fatal("output symlink replaced")
 				}
 			}
-			if e := os.WriteFile(out, []byte("OWNER"), 0600); e != nil {
+			if e := os.WriteFile(out, []byte("user"), 0600); e != nil {
 				t.Fatal(e)
 			}
 			if _, e = PatchGraphicsTIDGoFile(src, out, hash, 1, "sample.tid", replacement); e == nil {
 				t.Fatal("manual file overwritten")
 			}
 			current, _ := os.ReadFile(out)
-			if string(current) != "OWNER" {
-				t.Fatal("owner data changed")
+			if string(current) != "user" {
+				t.Fatal("user data changed")
 			}
 		})
 	}
@@ -156,7 +156,7 @@ func TestNativeGraphicsContainerUnknownBILZTailRejected(t *testing.T) {
 	}
 }
 
-func TestLegacyGraphicsContainerNeverOverwritesOwnerFile(t *testing.T) {
+func TestLegacyGraphicsContainerNeverOverwritesUserFile(t *testing.T) {
 	original, _, replacement := nativeContainerFixture(t, false)
 	d := t.TempDir()
 	src := filepath.Join(d, "src.gdat")
@@ -168,10 +168,10 @@ func TestLegacyGraphicsContainerNeverOverwritesOwnerFile(t *testing.T) {
 		t.Fatal(e)
 	}
 	if _, e := PatchGraphicsTIDFile(d, src, out, 1, "sample.tid", replacement); e == nil {
-		t.Fatal("legacy path overwrote owner output")
+		t.Fatal("legacy path overwrote user output")
 	}
 	if got, _ := os.ReadFile(out); string(got) != "ORIGINAL-USER-DATA" {
-		t.Fatal("legacy path corrupted owner file")
+		t.Fatal("legacy path corrupted user file")
 	}
 	if _, e := PatchGraphicsTIDFile(d, src, src, 1, "sample.tid", replacement); e == nil {
 		t.Fatal("legacy path overwrote its input")

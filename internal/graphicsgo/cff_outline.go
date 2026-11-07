@@ -3,7 +3,7 @@ package graphicsgo
 // CFF1 Type2 CharString interpreter for non-CID and CID-keyed OpenType fonts.
 // All coordinates are expressed in font units with Y upward. Unsupported
 // operators/features fail closed. This is an exploratory renderer, not an
-// accepted Pillow/FreeType replacement.
+// production-compatible Pillow/FreeType replacement.
 import (
 	"encoding/binary"
 	"fmt"
@@ -379,7 +379,7 @@ type cffBuilder struct {
 	current      GlyphContour
 	p            cffPt
 	stemCount    int
-	hintRecorder *cffHintRecorder // nil for the previously accepted unhinted path
+	hintRecorder *cffHintRecorder // nil for the existing unhinted path
 	stack        []float64
 	commandCount int
 }

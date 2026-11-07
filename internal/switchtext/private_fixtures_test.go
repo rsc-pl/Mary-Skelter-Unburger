@@ -14,7 +14,7 @@ func privateFixturePath(t *testing.T, key string) string {
 		t.Fatal(e)
 	}
 	if _, statErr := os.Stat(filepath.Join(root, ".local", "internal", "private_asset_locations.json")); os.IsNotExist(statErr) {
-		t.Skip("requires owner-local, SHA-pinned original game fixture; independent public tests still run")
+		t.Skip("requires user-local, SHA-pinned original game fixture; independent public tests still run")
 	} else if statErr != nil {
 		t.Fatal(statErr)
 	}

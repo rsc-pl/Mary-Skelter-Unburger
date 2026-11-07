@@ -31,12 +31,12 @@ func TestRepoHygieneNativeCleanAndAdverse(t *testing.T) {
 	if err := CheckRepoHygieneNative(root); err != nil {
 		t.Fatalf("private files should be ignored: %v", err)
 	}
-	writeHygieneFile(t, root, "README.md", []byte("# Finished public README written by the owner\n"))
+	writeHygieneFile(t, root, "README.md", []byte("# Published project README\n"))
 	writeHygieneFile(t, root, "graphics/untracked.png", []byte{1, 2})
 	writeHygieneFile(t, root, "scripts/graphics/capture_name_assets.py", []byte("research"))
 	writeHygieneFile(t, root, "scripts/test.go", []byte("package p\n// "+".local/"+"docs"+" is private\n"))
 	writeHygieneFile(t, root, "install-Mary-Skelter-UNBURGER-legacy-Cumulative-RECOVERY.sh", []byte("#!/bin/sh\n"))
-	writeHygieneFile(t, root, "third_party.zip", []byte("untracked private owner archive"))
+	writeHygieneFile(t, root, "third_party.zip", []byte("untracked private user archive"))
 	err := CheckRepoHygieneNative(root)
 	if err == nil {
 		t.Fatal("adverse root unexpectedly accepted")
@@ -126,7 +126,7 @@ func TestRepoHygieneRejectsPublicPublishingMemo(t *testing.T) {
 	root := t.TempDir()
 	writeHygieneFile(t, root, "README.md", []byte("# Public project\n"))
 	writeHygieneFile(t, root, "toolchain/PUBLISH.md", []byte("maintainer secrets and notes"))
-	if err := CheckRepoHygieneNative(root); err == nil || !strings.Contains(err.Error(), "owner-only publishing instructions") {
+	if err := CheckRepoHygieneNative(root); err == nil || !strings.Contains(err.Error(), "private publishing instructions") {
 		t.Fatalf("publishing memo accepted: %v", err)
 	}
 }

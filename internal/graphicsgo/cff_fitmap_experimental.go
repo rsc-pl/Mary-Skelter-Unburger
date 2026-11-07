@@ -1,7 +1,7 @@
 package graphicsgo
 
 // Experimental complete edge-positioning research, detached from all
-// production texture builders. This implements accepted-source edge provenance,
+// production texture builders. This implements reference-source edge positions,
 // the two directional FreeType CFF stem-position passes, and a transactional
 // first-use history update. It does NOT hint Type2 drawing operations or
 // establish glyph/RGBA parity with FreeType.

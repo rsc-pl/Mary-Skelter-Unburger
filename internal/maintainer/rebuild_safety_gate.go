@@ -46,11 +46,11 @@ func withExclusiveRebuild(root string, work func() error) (result error) {
 	// Never interpret an existing lock as ours; it may be the only crash clue.
 	if err = os.Mkdir(lock, 0700); err != nil {
 		if errors.Is(err, os.ErrExist) {
-			return fmt.Errorf("REFUSE concurrent/interrupted build: lock %s exists; inspect the owner note and recovery slots before any manual action", lock)
+			return fmt.Errorf("REFUSE concurrent/interrupted build: lock %s exists; inspect the user note and recovery slots before any manual action", lock)
 		}
 		return err
 	}
-	note := fmt.Sprintf("Mary Skelter rebuild lock\nPID: %d\nUTC: %s\n\nIf this process is still running, do not start another builder.\nIf it crashed, inspect every .rebuild-transaction-* and .dist-publish-* under .local/build and the old/new dist before removing this lock manually.\nNever delete owner data or transaction folders without a verified recovery plan.\n", os.Getpid(), time.Now().UTC().Format(time.RFC3339Nano))
+	note := fmt.Sprintf("Mary Skelter rebuild lock\nPID: %d\nUTC: %s\n\nIf this process is still running, do not start another builder.\nIf it crashed, inspect every .rebuild-transaction-* and .dist-publish-* under .local/build and the old/new dist before removing this lock manually.\nNever delete user data or transaction folders without a verified recovery plan.\n", os.Getpid(), time.Now().UTC().Format(time.RFC3339Nano))
 	notePath := filepath.Join(lock, rebuildLockNoteName)
 	if err = os.WriteFile(notePath, []byte(note), 0600); err != nil {
 		// Only our just-created empty directory can be removed here.

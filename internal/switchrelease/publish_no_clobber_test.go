@@ -65,8 +65,8 @@ func TestSwitchReleaseSymlinkRaceDoesNotOverwriteTarget(t *testing.T) {
 	if err := os.Mkdir(stage, 0700); err != nil {
 		t.Fatal(err)
 	}
-	original := filepath.Join(dir, "owner-important.txt")
-	const content = "owner file stays untouched"
+	original := filepath.Join(dir, "user-important.txt")
+	const content = "user file stays untouched"
 	if err := os.WriteFile(original, []byte(content), 0600); err != nil {
 		t.Fatal(err)
 	}

@@ -1,7 +1,7 @@
 package graphicsgo
 
 // Native implementations of Pillow's grayscale MaxFilter and its RGBA outline
-// recipe used by the accepted R32C3 graphics builder. Only this specific path
+// recipe used by the existing R32C3 graphics builder. Only this specific path
 // is claimed: this is not a general font stroker or an antialias parity gate.
 import (
 	"fmt"

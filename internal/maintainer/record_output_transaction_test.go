@@ -90,17 +90,17 @@ func TestLateInputErrorKeepsWholeGeneration(t *testing.T) {
 }
 func TestUnknownOutputAndSymlinkRefused(t *testing.T) {
 	root, records, manifest := recordGenerationFixture(t)
-	sentinel := filepath.Join(records, "owner.txt")
+	sentinel := filepath.Join(records, "user.txt")
 	if err := os.WriteFile(sentinel, []byte("must survive"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	if _, err := BuildRecords(root, nil); err == nil || !strings.Contains(err.Error(), "unknown") {
-		t.Fatalf("unknown owner file not blocked: %v", err)
+		t.Fatalf("unknown user file not blocked: %v", err)
 	}
 	assertPreviousRecords(t, records, manifest)
 	b, _ := os.ReadFile(sentinel)
 	if string(b) != "must survive" {
-		t.Fatal("owner file altered")
+		t.Fatal("user file altered")
 	}
 	if err := os.Remove(sentinel); err != nil {
 		t.Fatal(err)
@@ -108,7 +108,7 @@ func TestUnknownOutputAndSymlinkRefused(t *testing.T) {
 	if err := os.Remove(manifest); err != nil {
 		t.Fatal(err)
 	}
-	target := filepath.Join(root, "owner-secret")
+	target := filepath.Join(root, "user-secret")
 	if err := os.WriteFile(target, []byte("secret"), 0600); err != nil {
 		t.Fatal(err)
 	}

@@ -10,7 +10,7 @@ import (
 
 // TestSmokePinnedRuntimeWhenInstalled exercises the exact published runtime.
 // Source-only distributions intentionally omit its immutable binary payload.
-// An explicit test root allows isolated source QA to check the owner's
+// An explicit test root allows isolated source QA to check the user's
 // separately installed runtime without copying it into the source snapshot.
 func TestSmokePinnedRuntimeWhenInstalled(t *testing.T) {
 	root, err := filepath.Abs(filepath.Join("..", ".."))

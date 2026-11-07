@@ -3,7 +3,7 @@ package main
 // legacy: source-pinned MS2 white job menu, BC7; original 12 rows include
 // overlapping rectangular clear areas. Render all rows first, clear their union
 // once, reject *actual ink collisions*, and composite in a second pass.
-// No changes to accepted game output or public production pipeline.
+// No changes to game output or public production pipeline.
 import (
 	"encoding/json"
 	"errors"

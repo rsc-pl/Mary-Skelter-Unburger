@@ -405,7 +405,7 @@ def main() -> None:
         '# Movie audio source/cache reproducibility\n\n'
         'This is maintainer/build documentation, not an end-user installation step.\n\n'
         'MS2: preserve `masterWindows/MOVIE_EN`; `MOVIE_EN_SUB` is the known English-dub movie set in the '
-        'project owner\'s inspected PC installation and is audited as a purge target together with `Voice_EN.bra`. '
+        'project user\'s inspected PC installation and is audited as a purge target together with `Voice_EN.bra`. '
         'Do not require `MOVIE_JP` and do not create MS2 movie-audio release objects.\n\n'
         'Finale: use an owned Steam install and temporarily select Japanese so Steam downloads '
         '`masterWindows/MOVIE_JP`. Run `scripts/prepare_movie_audio_assets.sh`; it caches Finale MOVIE_EN/MOVIE_JP, '

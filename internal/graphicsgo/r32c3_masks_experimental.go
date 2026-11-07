@@ -1,7 +1,7 @@
 package graphicsgo
 
 // Native Latin R32C3 face/inner/outer mask construction, research-only.
-// The baseline and canvas follow _draw_mask in the accepted Python recipe.
+// The baseline and canvas follow _draw_mask in the reference Python recipe.
 // Font hinting, full OpenType shaping and FreeType's vector stroker remain
 // unresolved; the radial mask stroker here is deliberately not claimed exact.
 

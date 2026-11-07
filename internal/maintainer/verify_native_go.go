@@ -11,7 +11,7 @@ import (
 // directly invokes Python scripts, even if a native gate fails. Individual
 // historical Go test cases may still invoke independent Python QA oracles. Quick mode is source-independent
 // and deliberately does NOT claim game-source/archive parity. Full mode requires
-// the owner's canonical pristine source cache and checks the translation bridge.
+// the canonical pristine source cache and checks the translation bridge.
 // Historical Python regression suites are not claimed to have Go equivalents.
 func VerifyNativeGo(root string, quick bool, stdout, stderr io.Writer) error {
 	log := func(format string, args ...any) {

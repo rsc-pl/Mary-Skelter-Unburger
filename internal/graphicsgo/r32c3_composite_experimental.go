@@ -7,7 +7,7 @@ import (
 	"math"
 )
 
-// R32C3CompositeSpec describes the RGBA-stage parameters of the accepted
+// R32C3CompositeSpec describes the RGBA-stage parameters of the reference
 // Python R32C3 renderer. All mask inputs have already been rasterized and warped
 // at Factor times final resolution. This is a research-only stage, not a font
 // renderer or a production graphics-family builder.

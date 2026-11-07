@@ -534,7 +534,7 @@ func renderHeader(o Options, mode string) {
 func patchStages() []tui.StageRow {
 	return []tui.StageRow{
 		{Title: "Scan managed game files", Detail: "Verify exact versions, owned game installations and available patch assets.", Safety: "Read only. Unsupported builds stop before changes."},
-		{Title: "Review optional cleanup", Detail: "Inspect verified English voice files to remove only with owner confirmation.", Safety: "Cleanup can be skipped; never delete unrecognized private files."},
+		{Title: "Review optional cleanup", Detail: "Inspect verified English voice files to remove only after user confirmation.", Safety: "Cleanup can be skipped; never delete unrecognized private files."},
 		{Title: "Apply patch transaction", Detail: "Install or repair the selected Mary Skelter PC games using rollback protection.", Safety: "Restore prior state if a managed write fails."},
 		{Title: "Optional voice cleanup", Detail: "Remove only selected, exact verified English-dub files.", Safety: "Keep source archives and unrelated files."},
 		{Title: "Receipt and final summary", Detail: "Record installed files, movie status, warnings and backup path.", Safety: "Report unresolved soft failures rather than claiming full success."},

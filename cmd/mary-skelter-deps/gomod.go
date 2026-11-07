@@ -257,7 +257,7 @@ func goRestore(root string) error {
 		}
 	}
 	if e != nil {
-		return fmt.Errorf("missing Git-committed Go bundle; owner must run pack-go before publishing: %w", e)
+		return fmt.Errorf("missing Git-committed Go bundle; user must run pack-go before publishing: %w", e)
 	}
 	if e = goVerifyArchive(root, m); e != nil {
 		return e

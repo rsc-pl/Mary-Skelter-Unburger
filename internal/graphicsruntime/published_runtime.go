@@ -2,7 +2,7 @@ package graphicsruntime
 
 // Public Python runtimes are installed ONCE into toolchain/python-runtime and
 // are delivered independently of the source distribution. Their manifests
-// must match the exact, owner-assembled CPython 3.13.15 / Pillow 12.3.0 /
+// must match the exact, user-assembled CPython 3.13.15 / Pillow 12.3.0 /
 // NumPy 2.3.5 vendor outputs before the Go production graphics builder runs.
 import (
 	"crypto/sha256"

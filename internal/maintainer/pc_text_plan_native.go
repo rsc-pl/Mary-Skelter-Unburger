@@ -2,7 +2,7 @@ package maintainer
 
 // Native PC text change planning. This deliberately does not write game archives:
 // the compressed-file writer is not promoted until real pristine-PC master
-// archives can be compared against the accepted Python rebuild. The planner is
+// archives can be compared against the reference Python rebuild. The planner is
 // the first production-ready input validation boundary for that port.
 
 import (

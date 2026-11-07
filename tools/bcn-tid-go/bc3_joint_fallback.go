@@ -3,7 +3,7 @@ package main
 // BC3 joint endpoint fallback: strictly a candidate producer, never a bypass
 // for the independent DXT5 decoder or per-pixel composited quality limits.
 // Invoked only on blocks rejected by the existing BC3 encoders. No alterations
-// to accepted typography, atlas source pixels, or unchanged compressed blocks.
+// to reference typography, atlas source pixels, or unchanged compressed blocks.
 
 import (
 	"encoding/binary"

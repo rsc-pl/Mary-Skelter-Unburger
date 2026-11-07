@@ -28,7 +28,7 @@ def _mask_text(text: str, font: ImageFont.FreeTypeFont, stroke: int, pad: int):
 def _fit_mask_pair(text, face_name, preset, font_loader, f, rect_size):
     """Find a fitting face and horizontal scale, honoring the declared scale floor.
 
-    First preserve the exact existing R32C3 fit (for already accepted labels).
+    First preserve the exact existing R32C3 fit (for existing label geometry).
     Only if that fails, use the preset's pre-existing min_horizontal_scale.
     This mirrors the older PC UI font fitting policy: do not shorten names,
     go below the declared floor, or silently bypass the slot's height limit.
@@ -145,7 +145,7 @@ def render_label(size, text, preset: dict, font_loader: Callable, *, factor=4,
     if w<10 or h<10: raise ValueError(f'R32C3 impossible text slot {size!r}')
     face_name=preset.get('font_face','neofara')
     font,bb,pad,raw_size,fit_sx=_fit_mask_pair(text,face_name,preset,font_loader,factor,(w,h))
-    # Never mutate the accepted family preset: only this one label may need
+    # Never mutate the configured family preset: only this one label may need
     # the permitted horizontal squeeze (all glyph layers share one transform).
     render_preset=preset if fit_sx == float(preset.get('horizontal_scale',1.0)) else dict(preset,horizontal_scale=fit_sx)
     inner_width=int(preset.get('r32c3_inner_width',0))*factor
@@ -291,7 +291,7 @@ def _ms2_title_cleanup(src,spec):
                     op[xx,yy]=(0,0,0,0)
         out.paste(patch,(cx0,cy0))
         up=2 if row['text']=='KADOWAKI\nTOWA' else 8
-        # Identical positioning and fitting geometry to the accepted V17.
+        # Identical positioning and fitting geometry to the existing V17.
         gx0=max(0,x0-6);gy0=max(0,y0-4)
         gx1=min(src.width,x1+6);gy1=min(src.height,y1)
         render_box=(gx0,max(0,gy0-up),gx1,max(max(0,gy0-up)+1,gy1-up))

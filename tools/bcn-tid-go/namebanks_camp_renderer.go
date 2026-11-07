@@ -1,7 +1,7 @@
 package main
 
 // Source-pinned, private legacy MS2 Camp gold compositor. Research only until
-// full DXT5 encode, GDAT transaction and owner runtime approval. Every one of
+// full DXT5 encode, GDAT transaction and in-game validation. Every one of
 // twelve character-name slots is rerendered for bank-wide style consistency.
 import (
 	"bytes"
@@ -61,7 +61,7 @@ func loadCamp(root string) (familyAsset, []byte, bonusWhitePreset, error) {
 		return empty, nil, bonusWhitePreset{}, e
 	}
 	var cfg struct {
-		Fonts   map[string]familyFont          `json:"fonts"`
+		Fonts   map[string]familyFont       `json:"fonts"`
 		Presets map[string]bonusWhitePreset `json:"presets"`
 	}
 	if e = json.Unmarshal(b, &cfg); e != nil {

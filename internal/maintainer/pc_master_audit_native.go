@@ -1,6 +1,6 @@
 package maintainer
 
-// Native, read-only audit of owner-supplied pristine PC DATs. Unlike
+// Native, read-only audit of user-supplied pristine PC DATs. Unlike
 // EnsureSourceCache this does not copy masters or generate derived records.
 // It checks the canonical translation+graphics archive union and whole-file
 // SHA-256 in a bounded-memory stream. It is provenance only, not text parity.
@@ -37,7 +37,7 @@ type PCMasterAuditReport struct {
 }
 
 // auditPCMasterSpecs is separately exercised on tiny synthetic archives. It
-// never logs owner paths or reads an archive into memory, and it does not
+// never logs user paths or reads an archive into memory, and it does not
 // follow symlinks at the archive file boundary.
 func auditPCMasterSpecs(files []sourceSpecFile, ms2, finale string) PCMasterAuditReport {
 	r := PCMasterAuditReport{Schema: 1, Status: "INCOMPLETE", Scope: "pristine-original-PC-DAT-SHA-only; NO semantic-rebuild-or-runtime-parity"}

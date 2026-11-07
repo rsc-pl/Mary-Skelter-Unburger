@@ -63,19 +63,19 @@ func TestRecordStageMissingLateInputLeavesOld(t *testing.T) {
 	}
 	assertSourceRecords(t, out, "OLD_")
 }
-func TestRecordStageRejectsUnexpectedOwnerFileAndSymlinks(t *testing.T) {
+func TestRecordStageRejectsUnexpectedUserFileAndSymlinks(t *testing.T) {
 	root, c, out := sourceRecordFixture(t)
-	sentinel := filepath.Join(out, "owner.private")
+	sentinel := filepath.Join(out, "user.private")
 	if err := os.WriteFile(sentinel, []byte("preserve"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	err := prepareSourceRecords(root, c)
 	if err == nil || !strings.Contains(err.Error(), "noncanonical") {
-		t.Fatalf("unknown owner file accepted: %v", err)
+		t.Fatalf("unknown user file accepted: %v", err)
 	}
 	b, _ := os.ReadFile(sentinel)
 	if string(b) != "preserve" {
-		t.Fatal("owner file changed")
+		t.Fatal("user file changed")
 	}
 	assertSourceRecords(t, out, "OLD_")
 	if err := os.Remove(sentinel); err != nil {
@@ -99,12 +99,12 @@ func TestRecordStageRejectsLinkedDestinationWithoutFollowing(t *testing.T) {
 	if err := os.RemoveAll(out); err != nil {
 		t.Fatal(err)
 	}
-	outside := filepath.Join(root, "owner-data")
+	outside := filepath.Join(root, "user-data")
 	if err := os.MkdirAll(outside, 0700); err != nil {
 		t.Fatal(err)
 	}
 	s := filepath.Join(outside, "keep")
-	if err := os.WriteFile(s, []byte("owner"), 0600); err != nil {
+	if err := os.WriteFile(s, []byte("user"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	if err := os.Symlink(outside, out); err != nil {
@@ -114,8 +114,8 @@ func TestRecordStageRejectsLinkedDestinationWithoutFollowing(t *testing.T) {
 		t.Fatal("linked output accepted")
 	}
 	b, _ := os.ReadFile(s)
-	if string(b) != "owner" {
-		t.Fatal("linked owner data changed")
+	if string(b) != "user" {
+		t.Fatal("linked user data changed")
 	}
 }
 func TestRecordStageSimulatedPublishFailureRestoresPrior(t *testing.T) {

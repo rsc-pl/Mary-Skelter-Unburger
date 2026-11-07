@@ -1,4 +1,4 @@
-// Package switchrelease orchestrates the accepted latest-update Switch graphics
+// Package switchrelease orchestrates latest-update Switch graphics
 // builder and produces clean, versioned Atmosphere/Eden release ZIPs. No source
 // ROM, extracted cache, proprietary keys, or maintainer previews are packed.
 package switchrelease
@@ -27,7 +27,7 @@ var versionPattern = regexp.MustCompile(`^[0-9][A-Za-z0-9._-]*$`)
 var gdatPattern = regexp.MustCompile(`^GxArchivedFile[0-9]{3}\.dat$`)
 var games = []string{"ms2", "finale"}
 
-// Source map values are the accepted, source-bound R31C1 fingerprints.
+// Source map values are source-bound R31C1 fingerprints.
 type Mapping struct {
 	Phase           string `json:"phase"`
 	ApplicableCount int    `json:"applicable_source_target_count"`
@@ -383,7 +383,7 @@ func Build(o Options) ([]Result, error) {
 		return zero, err
 	}
 	if !o.Candidate {
-		return zero, errors.New("R32C3 V18 visual/runtime QA is pending: pass --candidate to explicitly build a test release")
+		return zero, errors.New("R32C3 V18 requires in-game graphics verification: pass --candidate to build a test release")
 	}
 	ms2 := ResolveMaster(o.Root, "ms2", o.MS2Master)
 	finale := ResolveMaster(o.Root, "finale", o.FinaleMaster)

@@ -22,7 +22,7 @@ func TestOverlayUsesLinksAndNeverTouchesHistoricalDirectory(t *testing.T) {
 	if e := os.Mkdir(old, 0700); e != nil {
 		t.Fatal(e)
 	}
-	if e := os.WriteFile(filepath.Join(old, "owner-saved.txt"), []byte("do not delete"), 0600); e != nil {
+	if e := os.WriteFile(filepath.Join(old, "user-saved.txt"), []byte("do not delete"), 0600); e != nil {
 		t.Fatal(e)
 	}
 	sourceData := bytes.Repeat([]byte("src!"), 1024)
@@ -76,7 +76,7 @@ func TestOverlayUsesLinksAndNeverTouchesHistoricalDirectory(t *testing.T) {
 	if e := os.RemoveAll(view); e != nil {
 		t.Fatal(e)
 	}
-	if b, e := os.ReadFile(filepath.Join(old, "owner-saved.txt")); e != nil || string(b) != "do not delete" {
+	if b, e := os.ReadFile(filepath.Join(old, "user-saved.txt")); e != nil || string(b) != "do not delete" {
 		t.Fatalf("legacy directory changed: %v", e)
 	}
 	if b, e := os.ReadFile(filepath.Join(rebuilt, "GxArchivedFile053.dat")); e != nil || !bytes.Equal(b, editedData) {

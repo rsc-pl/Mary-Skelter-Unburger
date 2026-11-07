@@ -11,7 +11,7 @@ import (
 func TestNameBankPreflightRejectsLateConflictsBeforeRendering(t *testing.T) {
 	d := t.TempDir()
 	dst := filepath.Join(d, "output.gdat")
-	if err := os.WriteFile(dst, []byte("OWNER FILE"), 0600); err != nil {
+	if err := os.WriteFile(dst, []byte("user FILE"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	m := NameFamilyManifest{Version: 1, ProjectRoot: d, Jobs: []NameFamilyJob{
@@ -32,8 +32,8 @@ func TestNameBankPreflightRejectsLateConflictsBeforeRendering(t *testing.T) {
 		t.Fatalf("renderer invoked before preflight: %d", calls)
 	}
 	content, _ := os.ReadFile(dst)
-	if string(content) != "OWNER FILE" {
-		t.Fatal("owner file changed")
+	if string(content) != "user FILE" {
+		t.Fatal("user file changed")
 	}
 	if _, e := os.Lstat(filepath.Join(d, "first.gdat")); !os.IsNotExist(e) {
 		t.Fatal("partial output on preflight rejection")

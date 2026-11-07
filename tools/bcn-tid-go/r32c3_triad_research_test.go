@@ -31,7 +31,7 @@ func TestThreeFamiliesCanonicalSources(t *testing.T) {
 				t.Fatal("rows lost")
 			}
 			if len(cfg.Font) != 0 {
-				t.Fatal("preflight unexpectedly loaded owner font")
+				t.Fatal("preflight unexpectedly loaded user font")
 			}
 			// The source renderer must NOT fall back to an unpinned substitute font.
 			if _, err := renderR32C3Triad(root, id, nil); err == nil {
@@ -43,7 +43,7 @@ func TestThreeFamiliesCanonicalSources(t *testing.T) {
 func TestRejectUnlistedAndMutatedGeometry(t *testing.T) {
 	root := triadFixtureRoot(t)
 	if _, e := loadR32C3Triad(root, "MS2_RESULT_NAMES", false); e == nil {
-		t.Fatal("owner-frozen Result exposed in experimental renderer")
+		t.Fatal("pinned Result exposed in experimental renderer")
 	}
 	temp := t.TempDir()
 	if e := os.MkdirAll(filepath.Join(temp, "graphics"), 0755); e != nil {
@@ -139,16 +139,16 @@ func TestAtomicPublishRollback(t *testing.T) {
 			t.Fatalf("source staging removed: %v", err)
 		}
 	}
-	// Late owner file collision must never be overwritten.
-	if err := os.WriteFile(staged[2].out, []byte("owner"), 0600); err != nil {
+	// Late user file collision must never be overwritten.
+	if err := os.WriteFile(staged[2].out, []byte("user"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	if _, err := publishTriad(staged, nil); err == nil {
-		t.Fatal("existing owner output overwritten")
+		t.Fatal("existing user output overwritten")
 	}
-	owner, err := os.ReadFile(staged[2].out)
-	if err != nil || string(owner) != "owner" {
-		t.Fatal("owner output damaged")
+	user, err := os.ReadFile(staged[2].out)
+	if err != nil || string(user) != "user" {
+		t.Fatal("user output damaged")
 	}
 	for _, s := range staged[:2] {
 		if _, err := os.Lstat(s.out); !os.IsNotExist(err) {

@@ -11,7 +11,7 @@ import (
 	"maryskelter-unburger/internal/maintainer"
 )
 
-// Read-only owner-side source audit. The JSON contains only public archive
+// Read-only local source audit. The JSON contains only public archive
 // identifiers and checksums; neither private archive bytes nor user paths.
 func runPCMasterAuditNative(root string, args []string, stdout io.Writer) error {
 	fs := flag.NewFlagSet("pc-master-audit-go", flag.ContinueOnError)

@@ -1,9 +1,8 @@
 package main
 
-// legacy: Three owner-reviewed pink Go atlas renderers. The owner accepted minor
-// cosmetic Python/Go/DXT5 differences at ordinary viewing size after seeing
-// comparisons. Approval is tied to the *exact* RGBA targets below, the pinned
-// pristine TIDs/font and geometry. It does not relax unrelated family guards.
+// Three pink Go atlas renderers with exact-source RGBA output constraints.
+// Minor rasterization differences do not relax the pinned target hashes,
+// original TID/font requirements or per-family geometry guards.
 import (
 	"crypto/sha256"
 	"encoding/hex"
@@ -64,33 +63,33 @@ type pinkPreset struct {
 }
 type pinkConfig struct {
 	Presets map[string]pinkPreset `json:"presets"`
-	Fonts   map[string]familyFont     `json:"fonts"`
+	Fonts   map[string]familyFont `json:"fonts"`
 }
-type pinkApproval struct {
+type pinkPinnedTarget struct {
 	width, height, labels int
 	source, target        string
 	preset                string
 }
 
-func pinkApprovalFor(id string) (pinkApproval, bool) {
+func pinkPinnedTargetFor(id string) (pinkPinnedTarget, bool) {
 	switch id {
 	case pink24ID:
-		return pinkApproval{2048, 512, 9, "687a6b6bd576b686784c8325ebfe6334312c8629b879a2b97ebf4fbcd54991d3", "b860758e8c0f8523a5b833e98fa2d115363a2d1fa9012f3409a16eeb82375559", "pink_block_small_neofara"}, true
+		return pinkPinnedTarget{2048, 512, 9, "687a6b6bd576b686784c8325ebfe6334312c8629b879a2b97ebf4fbcd54991d3", "b860758e8c0f8523a5b833e98fa2d115363a2d1fa9012f3409a16eeb82375559", "pink_block_small_neofara"}, true
 	case pinkMiddleID:
-		return pinkApproval{1024, 1024, 9, "f0171ef248287210ec12c2e73d9e4a282e33cce53e06b51211c9ba41ebbccaad", "57c142e188550d9261854c2e31d2e9b4961bbb8e3d1fbf13214eee49ff0434b6", "pink_block_small_neofara"}, true
+		return pinkPinnedTarget{1024, 1024, 9, "f0171ef248287210ec12c2e73d9e4a282e33cce53e06b51211c9ba41ebbccaad", "57c142e188550d9261854c2e31d2e9b4961bbb8e3d1fbf13214eee49ff0434b6", "pink_block_small_neofara"}, true
 	case pinkSkillID:
-		return pinkApproval{1024, 1024, 3, "3a57a59b004c92181f2c7210100a557aa51bbb91cd4d9d6508ddea6512fdc738", "c133a411c876d7688d40b95193788fe8ecf59f1b5d4db98c4c304397397b737f", "pink_block_large_neofara"}, true
+		return pinkPinnedTarget{1024, 1024, 3, "3a57a59b004c92181f2c7210100a557aa51bbb91cd4d9d6508ddea6512fdc738", "c133a411c876d7688d40b95193788fe8ecf59f1b5d4db98c4c304397397b737f", "pink_block_large_neofara"}, true
 	}
-	return pinkApproval{}, false
+	return pinkPinnedTarget{}, false
 }
 func pinkColor(v []uint8) color.NRGBA { return color.NRGBA{R: v[0], G: v[1], B: v[2], A: v[3]} }
 func pinkBytesHash(b []byte) string   { h := sha256.Sum256(b); return hex.EncodeToString(h[:]) }
 
 func loadPinkAtlas(root, id string) (familyAsset, []byte, pinkAsset, pinkPreset, error) {
 	var zero familyAsset
-	approval, ok := pinkApprovalFor(id)
+	approval, ok := pinkPinnedTargetFor(id)
 	if !ok {
-		return zero, nil, pinkAsset{}, pinkPreset{}, errors.New("family not owner approved")
+		return zero, nil, pinkAsset{}, pinkPreset{}, errors.New("family is not in the pinned atlas allowlist")
 	}
 	blob, err := os.ReadFile(filepath.Join(root, "graphics", "manifest.json"))
 	if err != nil {
@@ -113,7 +112,7 @@ func loadPinkAtlas(root, id string) (familyAsset, []byte, pinkAsset, pinkPreset,
 	if count != 1 || asset.Renderer != "font_atlas_v2" || asset.Archive != 55 || asset.Inner == "" || asset.Typography != approval.preset || len(asset.Source) != 1 || len(asset.Replacements) != approval.labels || asset.Source[0].SHA != approval.source || asset.Source[0].Width != approval.width || asset.Source[0].Height != approval.height || asset.Source[0].Format != "DXT5" || asset.Index < 0 {
 		return zero, nil, pinkAsset{}, pinkPreset{}, errors.New("legacy source or layout manifest drift")
 	}
-	// Exact record mapping: no alternate atlas can inherit this approval.
+	// Exact record mapping: each atlas must match its own pinned source tuple.
 	expectedIndex := 1453
 	expectedInner := "jobname_24px.tid"
 	if id == pinkMiddleID {
@@ -170,7 +169,7 @@ func loadPinkAtlas(root, id string) (familyAsset, []byte, pinkAsset, pinkPreset,
 }
 
 func renderPinkAtlas(tid, font []byte, a pinkAsset, p pinkPreset) ([]byte, error) {
-	approval, ok := pinkApprovalFor(a.ID)
+	approval, ok := pinkPinnedTargetFor(a.ID)
 	if !ok || pinkBytesHash(tid) != approval.source {
 		return nil, errors.New("wrong pristine pink atlas TID")
 	}
@@ -237,7 +236,7 @@ func renderPinkAtlas(tid, font []byte, a pinkAsset, p pinkPreset) ([]byte, error
 		}
 	}
 	if pinkBytesHash(out) != approval.target {
-		return nil, fmt.Errorf("legacy owner-approved RGBA target differs from frozen comparative QA for %s", a.ID)
+		return nil, fmt.Errorf("RGBA target differs from the pinned expected output for %s", a.ID)
 	}
 	return out, nil
 }

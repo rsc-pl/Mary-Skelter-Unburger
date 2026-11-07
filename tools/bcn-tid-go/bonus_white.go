@@ -1,7 +1,7 @@
 package main
 
 // legacy: third original-source-pinned full family. No private source is embedded
-// in a release binary: source TID and font are loaded from owner worktree with
+// in a release binary: source TID and font are loaded from the local worktree with
 // exact sha256 checks. Draw labels using the canonical R32C3 layered styling,
 // fail closed on changed manifest/preset, and never write to the source GDAT.
 import (

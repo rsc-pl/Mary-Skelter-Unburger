@@ -2,7 +2,7 @@ package maintainer
 
 // Experimental, source-pinned PC GDAT text writer. This connects 's typed
 // edit plan to existing native game-format writers. It is deliberately NOT
-// wired into the production pipeline until actual owner PC DAT/output parity
+// wired into the production pipeline until actual PC DAT/output parity
 // and BILZ canonical compression have been independently verified.
 
 import (

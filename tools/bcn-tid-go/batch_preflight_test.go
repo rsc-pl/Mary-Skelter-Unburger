@@ -11,7 +11,7 @@ import (
 func TestBatchRejectsExistingOutputBeforeExpensiveSourceProcessing(t *testing.T) {
 	dir := t.TempDir()
 	out := filepath.Join(dir, "already.dat")
-	sentinel := []byte("OWNER OUTPUT MUST STAY UNTOUCHED")
+	sentinel := []byte("user OUTPUT MUST STAY UNTOUCHED")
 	if err := os.WriteFile(out, sentinel, 0600); err != nil {
 		t.Fatal(err)
 	}
@@ -27,7 +27,7 @@ func TestBatchRejectsExistingOutputBeforeExpensiveSourceProcessing(t *testing.T)
 	}
 	after, _ := os.ReadFile(out)
 	if string(after) != string(sentinel) {
-		t.Fatal("owner output was changed")
+		t.Fatal("user output was changed")
 	}
 }
 func TestBatchPreflightAcrossAllJobs(t *testing.T) {
@@ -68,6 +68,6 @@ func TestBatchRejectsDanglingSymlinkDestination(t *testing.T) {
 	_ = os.WriteFile(manifest, raw, 0600)
 	_, err := RunSourceFamilyBatch(manifest)
 	if err == nil || !strings.Contains(err.Error(), "output already exists") {
-		t.Fatalf("dangling owner symlink not protected: %v", err)
+		t.Fatalf("dangling user symlink not protected: %v", err)
 	}
 }

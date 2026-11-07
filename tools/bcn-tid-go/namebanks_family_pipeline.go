@@ -2,7 +2,7 @@ package main
 
 // Three source-locked name-bank compositors to native RGBA -> changed-block
 // BC7/BC3 -> one GDAT transaction. Research-only until all full-font
-// outputs pass the source-specific guard and owner pristine DAT is available.
+// outputs pass the source-specific guard and a pristine DAT is available.
 import (
 	"bytes"
 	"encoding/json"

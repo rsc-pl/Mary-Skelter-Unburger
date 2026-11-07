@@ -333,7 +333,7 @@ func runSwitchRelease(root string, args []string) {
 	out := fs.String("out-dir", "", "release ZIP output directory")
 	vers := fs.String("version", "", "output version (default: version.txt)")
 	platform := fs.String("platform", "both", "both, atmosphere or eden")
-	candidate := fs.Bool("candidate", false, "explicitly allow V18 not yet visually/runtime accepted")
+	candidate := fs.Bool("candidate", false, "allow a V18 build for pending in-game graphics verification")
 	python := fs.String("python", "python3", "canonical Switch graphics builder Python interpreter")
 	_ = fs.Parse(args)
 	if fs.NArg() != 0 {

@@ -4,7 +4,7 @@ package maintainer
 // families to real, user-supplied PC masterWindows archives. It is explicitly
 // opt-in until a real full-master/game QA is available. No Python or Go toolchain
 // is invoked at runtime: a separately compiled bcn-tid-go binary is required.
-// Original archives, accepted production output and canonical translations are
+// Original archives, production output and canonical translations are
 // never modified by this operation.
 
 import (
@@ -68,7 +68,7 @@ var nativeProvenPCFamilyIDs = []string{
 	"MS2_JOB_CLASS_24PX", "MS2_JOB_CLASS_MIDDLE", "MS2_KESSIKI_SKILL_LABELS",
 }
 
-// These two source-pinned banks are visually accepted/provisional but not yet
+// These two source-pinned banks are provisionally configured but not yet
 // counted among the 17 production-proven families. Never enable by default.
 var nativeDeferredPCFamilyIDs = []string{"MS2_RESULT_NAMES", "MS2_BATTLE_NAMES"}
 

@@ -114,7 +114,7 @@ func lanczosPass(src *image.Alpha, dstW, dstH int, horizontal bool) (*image.Alph
 // equivalence to Image.Resampling.LANCZOS from Pillow is tested on independent
 // deterministic oracles. Coordinates are local to the supplied image rectangle.
 // The current implementation is deliberately not used for RGBA/premultiplied
-// colors or in the accepted Mary Skelter production graphics builder.
+// colors or in the Mary Skelter production graphics builder.
 func ResizeLanczosAlpha(src *image.Alpha, dstW, dstH int) (*image.Alpha, error) {
 	if err := validateAlpha(src); err != nil {
 		return nil, err

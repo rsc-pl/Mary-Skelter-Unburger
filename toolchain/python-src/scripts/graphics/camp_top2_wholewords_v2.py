@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""MS2 Switch canonical runtime-accepted renderer: eight complete word renders for localized camp_top_2 names.
+"""MS2 Switch renderer: eight complete word renders for localized camp_top_2 names.
 
 Source g133 is the geometric/typographic reference; eight Western names are localized.
 All words use a single SHA-pinned font, calibrated to six preserved original names.
-No alternate translation tree or individual-glyph compositing. Runtime visually accepted by owner on the Western update in Eden.
+No alternate translation tree or individual-glyph compositing. The original atlas retains six names pixel-identically.
 """
 from __future__ import annotations
 import argparse
@@ -23,7 +23,7 @@ SHA_TID = '6cac6e1c439db75ac43084e3452fb959c11984030b178f7b6a23c2ba445d8f39'
 SHA_CL3 = 'aba38d41a5cb97fe80088332ae3fd11d7385206eb41a1db3b2b236aea1debf20'
 IDX = 133
 Y0,Y1 = 808,1112
-# Historical source words are identity checks, NOT a second editable EN translation tree.
+# Source words are identity checks, not a second editable English translation table.
 # Actual desired EN labels come exclusively from graphics/manifest.json (PC canonical).
 SOURCE = [
  ('OTSUU',1450,1475), ('LITTLE MERMAID',1490,1515), ('HAMELN',1530,1555),

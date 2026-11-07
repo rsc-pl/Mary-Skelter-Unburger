@@ -1,6 +1,6 @@
 package main
 
-// Owner-reviewed Result and provisional Battle can be included in the same
+// The Result and provisional Battle name banks can be included in the same
 // native straight-RGBA/GDAT transaction as other Go atlas families. This is
 // intentionally opt-in. Camp must NOT enter this path until its complete
 // strict BC3 source render passes. No alternative styling is introduced here.
@@ -78,7 +78,7 @@ func renderDeferredNameBank(root, id string, originalGDAT []byte) (deferredNameB
 	var fontSHA string
 	if id == "MS2_RESULT_NAMES" {
 		// loadResult checks the pinned original preset/font SHA; it does
-		// not change the owner-frozen legacy recipe in renderPinnedFamily.
+		// not change the pinned legacy recipe in renderPinnedFamily.
 		_, _, font, err := loadResult(root)
 		if err != nil {
 			return source, "", nil, err

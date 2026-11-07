@@ -81,7 +81,7 @@ func parseRGBAManifest(raw []byte) (GDATRGBAManifest, error) {
 // preflightRGBABatchPaths rejects conflicts across the *entire* batch before
 // the first potentially expensive render/encode. In particular, an output of
 // job 0 may never alias a later input or the raw RGBA file of another job.
-// A dangling output symlink is still an existing owner path and is refused.
+// A dangling output symlink is still an existing user path and is refused.
 func preflightRGBABatchPaths(base string, m GDATRGBAManifest) ([][2]string, error) {
 	paths := make([][2]string, len(m.Jobs))
 	inputs := map[string]bool{}

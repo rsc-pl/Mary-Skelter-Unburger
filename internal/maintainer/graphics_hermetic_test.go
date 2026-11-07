@@ -23,7 +23,7 @@ func TestMissingPublishedPythonFailsBeforeGraphicsWrites(t *testing.T) {
 	t.Setenv("MS_BUNDLED_GRAPHICS_PYTHON", "")
 	err := BuildGraphics(root, CachedSources{}, nil, nil)
 	if err == nil || !strings.Contains(err.Error(), "required public Python runtime") {
-		t.Fatalf("missing public runtime accepted: %v", err)
+		t.Fatalf("missing public runtime was not rejected: %v", err)
 	}
 	if _, e := os.Lstat(filepath.Join(root, ".local", "build")); !os.IsNotExist(e) {
 		t.Fatalf("graphics wrote scratch despite missing runtime: %v", e)

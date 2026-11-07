@@ -2,7 +2,7 @@ package graphicsgo
 
 // Unhinted R32C3 Latin text geometry, RESEARCH ONLY. This is an independently
 // testable Go-only candidate, NOT a FreeType textbbox replacement. The
-// accepted Python renderer uses hinted Pillow/FreeType ink and layout metrics.
+// reference Python renderer uses hinted Pillow/FreeType ink and layout metrics.
 // Pair adjustments use the existing GPOS/kern subset; GSUB and complex script
 // shaping are intentionally rejected instead of inventing substitute glyphs.
 

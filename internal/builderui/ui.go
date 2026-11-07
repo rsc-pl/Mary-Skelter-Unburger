@@ -449,7 +449,7 @@ func switchReleaseWizard(o Options) error {
 			return fmt.Errorf("Switch sources not ready")
 		}
 	}
-	fmt.Println("R32C3 V18 graphics still await final visual/runtime approval.")
+	fmt.Println("R32C3 V18 graphics still require in-game visual verification.")
 	fmt.Println("Switch translated text is NOT yet integrated: these ZIPs contain graphics + IPS only.")
 	if !yesNo("Build a candidate Switch release ZIP anyway?", false) {
 		return nil
@@ -512,7 +512,7 @@ func fullAllVersionsWizard(o Options) error {
 	return nil
 }
 
-// releaseStages describes actions, not previously cached artifacts or owner
+// releaseStages describes actions, not previously cached artifacts or user
 // runtime acceptance. Both games share source validation and staging.
 func releaseStages() []tui.StageRow {
 	return []tui.StageRow{

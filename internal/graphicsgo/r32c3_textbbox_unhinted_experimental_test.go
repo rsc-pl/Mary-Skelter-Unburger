@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-// Synthetic outlines and pair metrics are independent of private owner fonts.
+// Synthetic outlines and pair metrics are independent of private user fonts.
 // This tests native high-res geometry, not FreeType hinting parity.
 func TestR32C3UnhintedTextBBoxSyntheticTTFAndCFF(t *testing.T) {
 	for _, cff := range []bool{false, true} {

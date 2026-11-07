@@ -196,14 +196,14 @@ func TestGraphicsBatchRejectsChangedSourceWithoutPublishing(t *testing.T) {
 }
 func TestGraphicsBatchNoClobberAndBadInputs(t *testing.T) {
 	man, outs := makeGraphicsManifest(t)
-	if err := os.WriteFile(outs[1], []byte("OWNER"), 0600); err != nil {
+	if err := os.WriteFile(outs[1], []byte("user"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	if err := executeNativeGraphicsBatch([]string{"--manifest", man}, &bytes.Buffer{}); err == nil {
 		t.Fatal("accepted existing output")
 	}
 	b, _ := os.ReadFile(outs[1])
-	if string(b) != "OWNER" {
+	if string(b) != "user" {
 		t.Fatal("existing output changed")
 	}
 	if _, err := os.Stat(outs[0]); !os.IsNotExist(err) {

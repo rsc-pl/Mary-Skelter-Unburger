@@ -95,14 +95,14 @@ func TestRebuildOutputSuccessReplacesGeneratedOnly(t *testing.T) {
 		t.Fatalf("manifest damaged")
 	}
 }
-func TestRebuildOutputRetainsUnknownOwnerContentAndRefusesSymlinks(t *testing.T) {
+func TestRebuildOutputRetainsUnknownUserContentAndRefusesSymlinks(t *testing.T) {
 	for _, poison := range []string{"unknown", "symlink", "linked-parent"} {
 		t.Run(poison, func(t *testing.T) {
 			root, build := outputTransactionFixture(t)
 			old := snapshotOldGeneratedOutputs(t, build)
 			switch poison {
 			case "unknown":
-				writeTestOutput(t, filepath.Join(build, "reports", "owner-notes.txt"), "owner")
+				writeTestOutput(t, filepath.Join(build, "reports", "user-notes.txt"), "user")
 			case "symlink":
 				if e := os.Symlink(filepath.Join(root, "secret"), filepath.Join(build, "graphics", "link")); e != nil {
 					t.Fatal(e)
@@ -121,9 +121,9 @@ func TestRebuildOutputRetainsUnknownOwnerContentAndRefusesSymlinks(t *testing.T)
 				if e != nil || !executed {
 					t.Fatalf("failed safe preservation: %v", e)
 				}
-				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "reports", "owner-notes.txt"))
-				if len(retained) != 1 || readTestOutput(t, retained[0]) != "owner" {
-					t.Fatalf("owner bytes lost: %v", retained)
+				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "reports", "user-notes.txt"))
+				if len(retained) != 1 || readTestOutput(t, retained[0]) != "user" {
+					t.Fatalf("user bytes lost: %v", retained)
 				}
 				return
 			}
@@ -161,27 +161,27 @@ func TestDistPublishFaultRestoresPriorAndProtectsRecoverySlot(t *testing.T) {
 	if _, e := os.Stat(stage); !os.IsNotExist(e) {
 		t.Fatalf("stage still present %v", e)
 	}
-	writeTestOutput(t, filepath.Join(build, "dist.previous", "KEEP"), "owner-recovery")
+	writeTestOutput(t, filepath.Join(build, "dist.previous", "KEEP"), "user-recovery")
 	writeTestOutput(t, newPath, "another bundle")
 	if e := activateDist(root, stage); e == nil {
 		t.Fatal("accepted existing recovery slot")
 	}
-	if got := readTestOutput(t, filepath.Join(build, "dist.previous", "KEEP")); got != "owner-recovery" {
-		t.Fatal("owner backup altered")
+	if got := readTestOutput(t, filepath.Join(build, "dist.previous", "KEEP")); got != "user-recovery" {
+		t.Fatal("user backup altered")
 	}
 	if got := readTestOutput(t, old); got != "new bundle" {
 		t.Fatal("current dist altered")
 	}
 }
-func TestDistPublishRefusesUntrackedOwnerFile(t *testing.T) {
+func TestDistPublishRefusesUntrackedUserFile(t *testing.T) {
 	root, build := outputTransactionFixture(t)
-	writeTestOutput(t, filepath.Join(root, ".local", "dist", "owner.notes"), "private")
+	writeTestOutput(t, filepath.Join(root, ".local", "dist", "user.notes"), "private")
 	stage := filepath.Join(build, "dist.staging", "MS2_EN_FIDELITY_PATCH", "INSTALL.txt")
 	writeTestOutput(t, stage, "new")
 	if e := activateDist(root, filepath.Join(build, "dist.staging")); e == nil {
-		t.Fatal("owner dist unknown overwritten")
+		t.Fatal("user dist unknown overwritten")
 	}
-	if got := readTestOutput(t, filepath.Join(root, ".local", "dist", "owner.notes")); got != "private" {
+	if got := readTestOutput(t, filepath.Join(root, ".local", "dist", "user.notes")); got != "private" {
 		t.Fatal("unknown modified")
 	}
 }
@@ -227,14 +227,14 @@ func TestRebuildOutputPreservesUnknownExtractAndRejectsLinks(t *testing.T) {
 			if err := os.MkdirAll(dir, 0700); err != nil {
 				t.Fatal(err)
 			}
-			path := filepath.Join(dir, "_go_diff_owner.jsonl")
+			path := filepath.Join(dir, "_go_diff_user.jsonl")
 			if kind == "symlink" {
 				path = filepath.Join(dir, "_go_diff_rebuilt.jsonl")
-				if err := os.Symlink(filepath.Join(root, "owner"), path); err != nil {
+				if err := os.Symlink(filepath.Join(root, "user"), path); err != nil {
 					t.Fatal(err)
 				}
 			} else {
-				writeTestOutput(t, path, "owner note")
+				writeTestOutput(t, path, "user note")
 			}
 			executed := false
 			err := withGeneratedOutputTransaction(root, func() error { executed = true; return nil })
@@ -242,9 +242,9 @@ func TestRebuildOutputPreservesUnknownExtractAndRejectsLinks(t *testing.T) {
 				if err != nil || !executed {
 					t.Fatalf("did not preserve unknown: %v", err)
 				}
-				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "rebuilt", "MS2_PC_LOCALIZED", "masterWindows", "_go_diff_owner.jsonl"))
-				if len(retained) != 1 || readTestOutput(t, retained[0]) != "owner note" {
-					t.Fatalf("missing retained owner bytes: %v", retained)
+				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "rebuilt", "MS2_PC_LOCALIZED", "masterWindows", "_go_diff_user.jsonl"))
+				if len(retained) != 1 || readTestOutput(t, retained[0]) != "user note" {
+					t.Fatalf("missing retained user bytes: %v", retained)
 				}
 			} else if err == nil || executed {
 				t.Fatalf("accepted symlink: %v", err)
@@ -311,11 +311,11 @@ func TestRebuildOutputDatasetUnknownRetainedAndSymlinksRefused(t *testing.T) {
 			path := filepath.Join(dir, "_go_diff_other.jsonl")
 			if mode == "linked" {
 				path = filepath.Join(dir, "_go_diff_rebuilt.jsonl")
-				if err := os.Symlink(filepath.Join(root, "owner-data"), path); err != nil {
+				if err := os.Symlink(filepath.Join(root, "user-data"), path); err != nil {
 					t.Fatal(err)
 				}
 			} else {
-				writeTestOutput(t, path, "OWNER CONTENT")
+				writeTestOutput(t, path, "user CONTENT")
 			}
 			called := false
 			err := withGeneratedOutputTransaction(root, func() error { called = true; return nil })
@@ -324,7 +324,7 @@ func TestRebuildOutputDatasetUnknownRetainedAndSymlinksRefused(t *testing.T) {
 					t.Fatalf("unexpected preservation failure: %v", err)
 				}
 				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "rebuilt", "MS2_PC_LOCALIZED", "_go_diff_other.jsonl"))
-				if len(retained) != 1 || readTestOutput(t, retained[0]) != "OWNER CONTENT" {
+				if len(retained) != 1 || readTestOutput(t, retained[0]) != "user CONTENT" {
 					t.Fatalf("lost unknown content: %v", retained)
 				}
 			} else {
@@ -339,14 +339,14 @@ func TestRebuildOutputDatasetUnknownRetainedAndSymlinksRefused(t *testing.T) {
 	}
 }
 
-// Historical _go_verify_overlay directories are owner-retained master views,
+// Historical _go_verify_overlay directories are user-retained master views,
 // sometimes made of hardlinks or symlinks to multi-GiB pristine DATs. A new
 // build must never discard them alongside disposable rebuilt scratch.
 func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) {
 	root, build := outputTransactionFixture(t)
 	old := snapshotOldGeneratedOutputs(t, build)
 	master := filepath.Join(root, "source-dat", "GxArchivedFile052.dat")
-	writeTestOutput(t, master, "pristine-owner-dat")
+	writeTestOutput(t, master, "pristine-user-dat")
 	for _, dataset := range []string{"MS2_PC_LOCALIZED", "MSF_PC_LOCALIZED"} {
 		view := filepath.Join(build, "rebuilt", dataset, "_go_verify_overlay")
 		if err := os.MkdirAll(view, 0700); err != nil {
@@ -358,7 +358,7 @@ func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) 
 		if err := os.Symlink(master, filepath.Join(view, "GxArchivedFile053.dat")); err != nil {
 			t.Fatal(err)
 		}
-		writeTestOutput(t, filepath.Join(view, "owner-note.bin"), "keep every byte")
+		writeTestOutput(t, filepath.Join(view, "user-note.bin"), "keep every byte")
 	}
 	if err := withGeneratedOutputTransaction(root, func() error {
 		writeTestOutput(t, filepath.Join(build, "rebuilt", "MS2_PC_LOCALIZED", "masterWindows", "GxArchivedFile055.dat"), "new-DAT")
@@ -372,7 +372,7 @@ func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) 
 		}
 	}
 	for _, dataset := range []string{"MS2_PC_LOCALIZED", "MSF_PC_LOCALIZED"} {
-		if got := readTestOutput(t, filepath.Join(build, "rebuilt", dataset, "_go_verify_overlay", "owner-note.bin")); got != "keep every byte" {
+		if got := readTestOutput(t, filepath.Join(build, "rebuilt", dataset, "_go_verify_overlay", "user-note.bin")); got != "keep every byte" {
 			t.Fatal(got)
 		}
 	}
@@ -406,7 +406,7 @@ func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) 
 		if err != nil || fi.Mode()&os.ModeSymlink == 0 {
 			t.Fatal("historic symlink not preserved")
 		}
-		if got := readTestOutput(t, filepath.Join(view, "owner-note.bin")); got != "keep every byte" {
+		if got := readTestOutput(t, filepath.Join(view, "user-note.bin")); got != "keep every byte" {
 			t.Fatal(got)
 		}
 		if _, err := os.Lstat(filepath.Join(build, "rebuilt", dataset, "_go_verify_overlay")); !os.IsNotExist(err) {
@@ -416,7 +416,7 @@ func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) 
 	if got := readTestOutput(t, filepath.Join(build, "rebuilt", "MS2_PC_LOCALIZED", "masterWindows", "GxArchivedFile055.dat")); got != "new-DAT" {
 		t.Fatal(got)
 	}
-	if got := readTestOutput(t, master); got != "pristine-owner-dat" {
+	if got := readTestOutput(t, master); got != "pristine-user-dat" {
 		t.Fatal("source DAT changed")
 	}
 	if err := withGeneratedOutputTransaction(root, func() error {
@@ -425,7 +425,7 @@ func TestRebuildPreservesHistoricalVerificationOverlayWithoutCopy(t *testing.T) 
 	}); err != nil {
 		t.Fatal(err)
 	}
-	if got := readTestOutput(t, filepath.Join(places[0], "rebuilt", "MS2_PC_LOCALIZED", "_go_verify_overlay", "owner-note.bin")); got != "keep every byte" {
+	if got := readTestOutput(t, filepath.Join(places[0], "rebuilt", "MS2_PC_LOCALIZED", "_go_verify_overlay", "user-note.bin")); got != "keep every byte" {
 		t.Fatal("preserved bytes lost on subsequent build")
 	}
 }
@@ -441,7 +441,7 @@ func TestRebuildHistoricalVerificationOverlayRootSymlinkAndUnknownRefused(t *tes
 					t.Fatal(err)
 				}
 			} else {
-				writeTestOutput(t, filepath.Join(dataset, "owner-extra", "file.dat"), "owner")
+				writeTestOutput(t, filepath.Join(dataset, "user-extra", "file.dat"), "user")
 			}
 			called := false
 			err := withGeneratedOutputTransaction(root, func() error { called = true; return nil })
@@ -458,8 +458,8 @@ func TestRebuildHistoricalVerificationOverlayRootSymlinkAndUnknownRefused(t *tes
 				if err != nil || !called {
 					t.Fatalf("failed to preserve unknown dir: %v", err)
 				}
-				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "rebuilt", "MS2_PC_LOCALIZED", "owner-extra", "file.dat"))
-				if len(retained) != 1 || readTestOutput(t, retained[0]) != "owner" {
+				retained, _ := filepath.Glob(filepath.Join(build, ".preserved-unregistered-output-*", "rebuilt", "MS2_PC_LOCALIZED", "user-extra", "file.dat"))
+				if len(retained) != 1 || readTestOutput(t, retained[0]) != "user" {
 					t.Fatalf("missing retained directory: %v", retained)
 				}
 			}
@@ -478,8 +478,8 @@ func TestRebuildLegacyMixedOutputsPreservedAndRepeatedBuilds(t *testing.T) {
 		"rebuilt/MS2_PC_LOCALIZED/_go_verify_records.jsonl",
 		"rebuilt/MSF_PC_LOCALIZED/_go_a_future_verifier_artifact.jsonl",
 		"rebuilt/MSF_PC_SYSTEM/masterWindows/_unregistered_extra.bin",
-		"rebuilt/MS2_PC_LOCALIZED/owner-owned/dummy.dat",
-		"reports/unknown-owner-report.log",
+		"rebuilt/MS2_PC_LOCALIZED/user-owned/dummy.dat",
+		"reports/unknown-user-report.log",
 		"graphics/user-extras/custom.bin",
 	}
 	for _, rel := range extras {

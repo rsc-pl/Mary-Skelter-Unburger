@@ -10,7 +10,7 @@ import (
 
 // BuildRecords publishes the three generated JSONLs and change manifest as a
 // rollback-protected generation. The original files are retained on every
-// pre-publication failure; unknown/linked owner output is never overwritten.
+// pre-publication failure; unknown/linked user output is never overwritten.
 func BuildRecords(root string, stdout io.Writer) (map[string]recordSummary, error) {
 	return buildRecordsTransactional(root, stdout, nil)
 }
@@ -50,7 +50,7 @@ func buildRecordsTransactional(root string, stdout io.Writer, fault func(string)
 			allow := map[string]bool{"MS2_PC_LOCALIZED.jsonl": true, "MSF_PC_LOCALIZED.jsonl": true, "MSF_PC_SYSTEM.jsonl": true}
 			for _, e := range entries {
 				if !allow[e.Name()] || !e.Type().IsRegular() {
-					return nil, fmt.Errorf("refuse unknown/linked owner file in generated records: %s", e.Name())
+					return nil, fmt.Errorf("refuse unknown/linked user file in generated records: %s", e.Name())
 				}
 			}
 		} else if !st.Mode().IsRegular() {

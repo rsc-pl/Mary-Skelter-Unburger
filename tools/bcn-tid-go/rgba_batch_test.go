@@ -184,8 +184,8 @@ func TestRGBAAllJobPreflightBeforeFirstEncode(t *testing.T) {
 	}
 	// Existing dangling symlinks must be protected, too.
 	m.Jobs[1].Output = "b.out"
-	m.Jobs[0].Output = "owner-link"
-	if e := os.Symlink("missing", filepath.Join(d, "owner-link")); e != nil {
+	m.Jobs[0].Output = "user-link"
+	if e := os.Symlink("missing", filepath.Join(d, "user-link")); e != nil {
 		t.Skip(e)
 	}
 	p = writeRGBAManifest(t, d, m)

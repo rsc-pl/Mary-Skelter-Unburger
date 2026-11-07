@@ -3,7 +3,7 @@ package graphicsgo
 // A source-independent research approximation to vector strokes by subpixel
 // Euclidean distance to the ink silhouette. This is NOT FreeType's outline
 // stroker and does not resolve face AA, hinting or shaping parity. The
-// accepted production renderer must not call it without complete family QA.
+// production renderer must not call it without complete family QA.
 
 import (
 	"image"

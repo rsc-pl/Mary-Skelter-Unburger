@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-// R32C3Warp is the source-order geometry contract from the accepted
+// R32C3Warp describes the source-order geometry from the existing
 // r32c3_typography._warp_mask recipe. These values are preselected by the
 // caller's fit logic; this does not rasterize or shape any font.
 type R32C3Warp struct {
@@ -17,7 +17,7 @@ type R32C3Warp struct {
 }
 
 // WarpR32C3Alpha composes the existing native-Go Pillow-compatible kernels
-// in the exact order used by the legacy accepted R32C3 script:
+// in the exact order used by the reference R32C3 script:
 // LANCZOS resize, BICUBIC affine shear, BICUBIC expanded rotation.
 // This is research-only and deliberately not wired into game builds.
 func WarpR32C3Alpha(src *image.Alpha, p R32C3Warp) (*image.Alpha, error) {

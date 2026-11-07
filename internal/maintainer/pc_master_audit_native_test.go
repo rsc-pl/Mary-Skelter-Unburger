@@ -18,7 +18,7 @@ func TestPCMasterAuditNativeReadOnlyAndAdverse(t *testing.T) {
 			t.Fatal(err)
 		}
 	}
-	data := []byte("owner pristine bytes")
+	data := []byte("user pristine bytes")
 	h := sha256.Sum256(data)
 	sum := hex.EncodeToString(h[:])
 	name := "GxArchivedFile055.dat"

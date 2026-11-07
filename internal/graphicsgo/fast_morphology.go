@@ -2,7 +2,7 @@ package graphicsgo
 
 // legacy RESEARCH ONLY. Efficient but exact byte-equivalent grayscale
 // morphology. Historical /renderers remain byte-frozen; do not
-// silently change their accepted behavior or production backend.
+// silently change their existing behavior or production backend.
 import (
 	"fmt"
 	"image"

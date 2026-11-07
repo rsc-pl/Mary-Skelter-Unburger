@@ -1,7 +1,7 @@
 // Package graphicsgo contains native Go primitives for the Mary Skelter
 // typography pipeline. It also includes research-only TrueType/CFF1 outline parsing, GPOS Latin pair
 // positioning and select Pillow-compatible mask operations. None of these
-// constitute an approved production Pillow replacement.
+// replace the production Pillow rasterizer.
 package graphicsgo
 
 import (

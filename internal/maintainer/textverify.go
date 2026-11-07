@@ -1089,7 +1089,7 @@ func DiffTextDatasetGo(dataset, rebuiltMaster, originalMaster string, archives [
 	// Keep the large extracted comparison records outside rebuilt/masterWindows.
 	// Previously, this function left its two generated JSONLs in that directory,
 	// and the next transactional rebuild refused its *own* prior output.
-	// Use isolated owner-local scratch (same build volume) and remove on return.
+	// Use isolated user-local scratch (same build volume) and remove on return.
 	buildRoot := filepath.Dir(filepath.Dir(filepath.Dir(filepath.Clean(rebuiltMaster))))
 	base, err := os.MkdirTemp(buildRoot, ".text-diff-")
 	if err != nil {

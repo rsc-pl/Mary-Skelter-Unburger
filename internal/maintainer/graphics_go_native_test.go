@@ -29,7 +29,7 @@ func TestNativeGraphicsPatchNoClobberHashGuard(t *testing.T) {
 	if _, err := os.Stat(dest); !os.IsNotExist(err) {
 		t.Fatalf("unexpected destination: %v", err)
 	}
-	if err := os.WriteFile(dest, []byte("OWNER-DATA"), 0o600); err != nil {
+	if err := os.WriteFile(dest, []byte("user-DATA"), 0o600); err != nil {
 		t.Fatal(err)
 	}
 	_, err := PatchGraphicsTIDGoFile(source, dest, sha, 0, "x.tid", []byte("x"))
@@ -37,7 +37,7 @@ func TestNativeGraphicsPatchNoClobberHashGuard(t *testing.T) {
 		t.Fatal("invalid GDAT accepted")
 	}
 	got, _ := os.ReadFile(dest)
-	if !bytes.Equal(got, []byte("OWNER-DATA")) {
-		t.Fatal("existing owner data overwritten")
+	if !bytes.Equal(got, []byte("user-DATA")) {
+		t.Fatal("existing user data overwritten")
 	}
 }

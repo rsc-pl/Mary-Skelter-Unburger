@@ -90,7 +90,7 @@ func TestNativeDatasetTwoArchiveTransactional(t *testing.T) {
 		}
 		onDisk, _ := os.ReadFile(filepath.Join(master, name))
 		if !bytes.Equal(onDisk, srcs[i]) {
-			t.Fatal("owner source mutated")
+			t.Fatal("user source mutated")
 		}
 	}
 	if _, err = RebuildPCTextDatasetNative("MS2_PC_LOCALIZED", master, records, out, report, pins, false); err == nil {
@@ -136,7 +136,7 @@ func TestNativeDatasetFailClosedNoPartial(t *testing.T) {
 			os.Rename(p, p+".real")
 			os.Symlink(p+".real", p)
 		}},
-		{"pre-existing report", func(t *testing.T, _, _, _, _, _, rep string) { t.Helper(); os.WriteFile(rep, []byte("owner"), 0600) }},
+		{"pre-existing report", func(t *testing.T, _, _, _, _, _, rep string) { t.Helper(); os.WriteFile(rep, []byte("user"), 0600) }},
 		{"pre-existing output", func(t *testing.T, _, _, _, _, out, _ string) { t.Helper(); os.Mkdir(out, 0700) }},
 	} {
 		t.Run(tc.name, func(t *testing.T) {
@@ -154,7 +154,7 @@ func TestNativeDatasetFailClosedNoPartial(t *testing.T) {
 			}
 			if tc.name == "pre-existing report" {
 				b, _ := os.ReadFile(report)
-				if string(b) != "owner" {
+				if string(b) != "user" {
 					t.Fatal("overwrote user report")
 				}
 			}

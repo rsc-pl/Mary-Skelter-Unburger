@@ -119,7 +119,7 @@ func battleRGBASet(p []byte, off int, v uint32) {
 	p[off+3] = byte(v)
 }
 func battleRecover(root string, saveDir string) (battleBackgroundSummary, error) {
-	st := battleBackgroundSummary{OriginalSHA: battleSHA, Rows: 15, SeedThreshold: "alpha>20,r>135,g>165,b>180,sum>530", MaskDilationDiameter: 31, DonorDistribution: map[string]int{}, UnchangedOutsideTextZone: true, UnchangedUnmaskedPixels: true, ProductionStatus: "RESEARCH HOLD: no fonts applied, no BC7/GDAT, no owner runtime"}
+	st := battleBackgroundSummary{OriginalSHA: battleSHA, Rows: 15, SeedThreshold: "alpha>20,r>135,g>165,b>180,sum>530", MaskDilationDiameter: 31, DonorDistribution: map[string]int{}, UnchangedOutsideTextZone: true, UnchangedUnmaskedPixels: true, ProductionStatus: "RESEARCH HOLD: no fonts applied, no BC7/GDAT, runtime validation pending"}
 	battleOriginalPath, err := privateassets.Resolve(root, "source-battle-tid")
 	if err != nil {
 		return st, err

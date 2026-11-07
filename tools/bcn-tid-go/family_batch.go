@@ -20,7 +20,7 @@ import (
 )
 
 type familyBatchSpec struct {
-	// Explicit opt-in for owner-reviewed namebanks not yet counted as
+	// Explicit opt-in for provisional name banks not yet counted as
 	// production-proven. Camp is never allowed through this route.
 	EnableDeferredNameBanks bool             `json:"enable_deferred_name_banks,omitempty"`
 	Version                 int              `json:"version"`
@@ -215,7 +215,7 @@ func RunSourceFamilyBatchWithHook(path string, beforePublish func(int) error) (f
 }
 
 // The injectable deferred renderer is used exclusively by source-locked offline
-// integration QA. Public callers always use the pinned unchanged owner styles.
+// integration QA. Public callers always use the pinned rendering styles.
 func runSourceFamilyBatchWithDeferred(path string, beforePublish func(int) error, deferred func(string, string, []byte) (deferredNameBankSource, string, []byte, error)) (familyBatchReport, error) {
 	var result familyBatchReport
 	raw, err := os.ReadFile(path)
@@ -399,7 +399,7 @@ func runSourceFamilyBatchWithDeferred(path string, beforePublish func(int) error
 			}
 			alpha, visible := job.MaxAlpha, job.MaxVisible
 			if family == pink24ID || family == pinkMiddleID || family == pinkSkillID {
-				// Owner-viewed exact targets, not a global encoder relaxation.
+				// Pinned exact targets, not a global encoder relaxation.
 				// Alpha remains strictly bounded. All other families use the manifest guard.
 				if alpha < 18 || visible != 64 {
 					return result, errors.New("legacy reviewed-family expects default 64/64 job guard")
@@ -411,7 +411,7 @@ func runSourceFamilyBatchWithDeferred(path string, beforePublish func(int) error
 				if family == myRoomID {
 					return 1
 				}
-				if approval, ok := pinkApprovalFor(family); ok {
+				if approval, ok := pinkPinnedTargetFor(family); ok {
 					return approval.labels
 				}
 				return len(a.Rows)

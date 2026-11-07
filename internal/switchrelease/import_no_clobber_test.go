@@ -41,7 +41,7 @@ func TestPrivateCacheImportNoClobber(t *testing.T) {
 
 func TestPrivateCacheRejectsSymlinkAndCorruptManifest(t *testing.T) {
 	dir := t.TempDir()
-	original := filepath.Join(dir, "owner-original")
+	original := filepath.Join(dir, "user-original")
 	if err := os.WriteFile(original, []byte("secret"), 0600); err != nil {
 		t.Fatal(err)
 	}

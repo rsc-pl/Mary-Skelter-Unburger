@@ -7,16 +7,16 @@ import (
 	"testing"
 )
 
-// This test protects owner .local/build scratch and cache when the public
+// This test protects user .local/build scratch and cache when the public
 // runtime has not been installed yet or an obsolete override tries to use
 // system Python. No private DAT, source folder, or original font is needed.
-func TestRebuildRejectsMissingRuntimeWithoutTouchingOwnerScratch(t *testing.T) {
+func TestRebuildRejectsMissingRuntimeWithoutTouchingUserScratch(t *testing.T) {
 	root := t.TempDir()
-	sentinel := filepath.Join(root, ".local", "build", "records", "owner.keep")
+	sentinel := filepath.Join(root, ".local", "build", "records", "user.keep")
 	if err := os.MkdirAll(filepath.Dir(sentinel), 0700); err != nil {
 		t.Fatal(err)
 	}
-	if err := os.WriteFile(sentinel, []byte("legacy owner sentinel"), 0600); err != nil {
+	if err := os.WriteFile(sentinel, []byte("legacy user sentinel"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	t.Setenv("MS_BUNDLED_GRAPHICS_PYTHON", "")
@@ -27,8 +27,8 @@ func TestRebuildRejectsMissingRuntimeWithoutTouchingOwnerScratch(t *testing.T) {
 		t.Fatalf("missing runtime did not fail early: %v", err)
 	}
 	got, e := os.ReadFile(sentinel)
-	if e != nil || string(got) != "legacy owner sentinel" {
-		t.Fatalf("owner scratch changed: %q %v", got, e)
+	if e != nil || string(got) != "legacy user sentinel" {
+		t.Fatalf("user scratch changed: %q %v", got, e)
 	}
 	if _, e := os.Lstat(filepath.Join(root, ".local", "source_cache")); !os.IsNotExist(e) {
 		t.Fatalf("source cache touched before runtime gate: %v", e)
@@ -41,7 +41,7 @@ func TestRebuildRejectsLegacyOverridesWithoutTouchingScratch(t *testing.T) {
 	if err := os.MkdirAll(filepath.Dir(s), 0700); err != nil {
 		t.Fatal(err)
 	}
-	if err := os.WriteFile(s, []byte("owner"), 0600); err != nil {
+	if err := os.WriteFile(s, []byte("user"), 0600); err != nil {
 		t.Fatal(err)
 	}
 	t.Setenv("MS_BUNDLED_GRAPHICS_PYTHON", "0")
@@ -53,7 +53,7 @@ func TestRebuildRejectsLegacyOverridesWithoutTouchingScratch(t *testing.T) {
 	if err := preflightRebuildDependencies(root); err == nil || !strings.Contains(err.Error(), "native Go BCn") {
 		t.Fatalf("legacy C mode accepted: %v", err)
 	}
-	if got, err := os.ReadFile(s); err != nil || string(got) != "owner" {
+	if got, err := os.ReadFile(s); err != nil || string(got) != "user" {
 		t.Fatalf("changed scratch: %s %v", got, err)
 	}
 }

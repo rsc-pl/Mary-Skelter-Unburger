@@ -2554,7 +2554,7 @@ def render_ms1_residence_names_font_v1(original_im, spec: dict):
 
 
 def render_ms2_camp_top2_character_names_font_v3(original_im, spec: dict):
-    """Use the same accepted whole-word atlas renderer for PC as for Switch.
+    """Use the same whole-word atlas renderer for PC as for Switch.
 
     Both platforms' pristine camp_top_2.tid share the source TID SHA.
     Retain the legacy renderer ID in the manifest/API for existing caller guards;

@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-// Generated outputs are isolated from the canonical semantic corpus and owner inputs.
+// Generated outputs are isolated from the canonical semantic corpus and user inputs.
 // These four paths are intentionally scratch; nothing else under .local/build
 // may be moved or deleted by this transaction. No concurrent maintainers.
 var generatedOutputDirs = []string{"rebuilt", "reports", "graphics", "dist.staging"}
@@ -32,7 +32,7 @@ func safeBuildParent(root string) (string, error) {
 
 // Only known generated output shapes can be discarded at successful commit.
 // Unrecognized manual files/symlinks fail closed instead of being swept away.
-// scanGeneratedTree separates managed products from unknown legacy/owner data.
+// scanGeneratedTree separates managed products from unknown legacy/user data.
 // Unknown paths are NEVER removed: older builders emitted many unregistered
 // verification extracts, so guessing names is not a safe ownership policy.
 // Direct symlinks remain prohibited; opaque historical overlays are retained.
@@ -66,7 +66,7 @@ func scanGeneratedTree(path, kind string, retainUnknown bool) ([]string, error) 
 		parts := strings.Split(filepath.ToSlash(rel), "/")
 		isDir := de.IsDir()
 		// Old read-only master views may contain multiple GiB of real DAT
-		// hardlinks/symlinks.  They are OWNER DATA, not disposable scratch.
+		// hardlinks/symlinks.  They are user DATA, not disposable scratch.
 		// Preserve an exact legacy overlay directory as an opaque unit;
 		// never walk its children or remove it with the old build generation.
 		if kind == "rebuilt" && len(parts) == 2 &&
@@ -75,7 +75,7 @@ func scanGeneratedTree(path, kind string, retainUnknown bool) ([]string, error) 
 				unknown = append(unknown, rel)
 				return filepath.SkipDir
 			}
-			return fmt.Errorf("unmanaged owner overlay in generated %s: %s", kind, rel)
+			return fmt.Errorf("unmanaged user overlay in generated %s: %s", kind, rel)
 		}
 		ok := false
 		switch kind {
@@ -126,7 +126,7 @@ func scanGeneratedTree(path, kind string, retainUnknown bool) ([]string, error) 
 		}
 		if !ok {
 			if !retainUnknown {
-				return fmt.Errorf("refuse unknown owner content in generated %s: %s", kind, rel)
+				return fmt.Errorf("refuse unknown user content in generated %s: %s", kind, rel)
 			}
 			unknown = append(unknown, rel)
 			if isDir {
@@ -225,12 +225,12 @@ func (tx *rebuildOutputTxn) rollback() error {
 	if len(errs) > 0 {
 		return errors.Join(errs...)
 	}
-	// Aborted new outputs were built in this run, never owner's previous outputs.
+	// Aborted new outputs were built in this run, never user's previous outputs.
 	return os.RemoveAll(tx.stage)
 }
 
 // All previously unregistered outputs, not just a growing list of _go_ names,
-// are owner-retained.  Rename without dereferencing symlinks in an opaque
+// are user-retained.  Rename without dereferencing symlinks in an opaque
 // historical overlay or copying multi-GiB hardlinked DATs. Known generated
 // files are the only things that the successful transaction may delete.
 func (tx *rebuildOutputTxn) preserveUnknownPriorOutputs() error {

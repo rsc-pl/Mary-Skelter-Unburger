@@ -17,13 +17,13 @@ func TestRecoverySlotsRefuseBeforeWrite(t *testing.T) {
 			root, build := outputTransactionFixture(t)
 			old := snapshotOldGeneratedOutputs(t, build)
 			recovery := filepath.Join(build, name)
-			writeTestOutput(t, filepath.Join(recovery, "OWNER-SAVED.txt"), "unique prior recovery")
+			writeTestOutput(t, filepath.Join(recovery, "user-SAVED.txt"), "unique prior recovery")
 			called := false
 			err := withExclusiveRebuild(root, func() error { called = true; return nil })
 			if err == nil || !strings.Contains(err.Error(), recovery) || called {
 				t.Fatalf("failed to refuse recovery %q: %v", recovery, err)
 			}
-			if got := readTestOutput(t, filepath.Join(recovery, "OWNER-SAVED.txt")); got != "unique prior recovery" {
+			if got := readTestOutput(t, filepath.Join(recovery, "user-SAVED.txt")); got != "unique prior recovery" {
 				t.Fatal("recovery data touched")
 			}
 			if got := readTestOutput(t, filepath.Join(build, "rebuilt/MS2_PC_LOCALIZED/masterWindows/GxArchivedFile055.dat")); got != old["rebuilt/MS2_PC_LOCALIZED/masterWindows/GxArchivedFile055.dat"] {
@@ -66,13 +66,13 @@ func TestSingleWriterLockCoversEntireWorkAndReleases(t *testing.T) {
 
 func TestFailureReleasesOwnLockAndPreservesUnknown(t *testing.T) {
 	root, build := outputTransactionFixture(t)
-	writeTestOutput(t, filepath.Join(build, "owner-private.txt"), "unchanged")
+	writeTestOutput(t, filepath.Join(build, "user-private.txt"), "unchanged")
 	err := withExclusiveRebuild(root, func() error { return errors.New("simulated graphics failure") })
 	if err == nil || !strings.Contains(err.Error(), "simulated") {
 		t.Fatalf("lost failure: %v", err)
 	}
-	if got := readTestOutput(t, filepath.Join(build, "owner-private.txt")); got != "unchanged" {
-		t.Fatal("owner data touched")
+	if got := readTestOutput(t, filepath.Join(build, "user-private.txt")); got != "unchanged" {
+		t.Fatal("user data touched")
 	}
 	if _, err := os.Lstat(filepath.Join(build, rebuildLockDir)); !os.IsNotExist(err) {
 		t.Fatalf("lock retained after normal failure: %v", err)
@@ -94,12 +94,12 @@ func TestExistingInterruptedLockRefusesWithoutDeleting(t *testing.T) {
 func TestLockNoteCannotBeSilentlyDiscardedIfAltered(t *testing.T) {
 	root, build := outputTransactionFixture(t)
 	err := withExclusiveRebuild(root, func() error {
-		return os.WriteFile(filepath.Join(build, rebuildLockDir, rebuildLockNoteName), []byte("owner revised"), 0600)
+		return os.WriteFile(filepath.Join(build, rebuildLockDir, rebuildLockNoteName), []byte("user revised"), 0600)
 	})
 	if err == nil || !strings.Contains(err.Error(), "lock changed") {
 		t.Fatalf("silently discarded altered lock: %v", err)
 	}
-	if got := readTestOutput(t, filepath.Join(build, rebuildLockDir, rebuildLockNoteName)); got != "owner revised" {
+	if got := readTestOutput(t, filepath.Join(build, rebuildLockDir, rebuildLockNoteName)); got != "user revised" {
 		t.Fatal("note modified")
 	}
 }

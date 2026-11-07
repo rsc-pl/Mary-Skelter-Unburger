@@ -74,7 +74,7 @@ func TestRejectUnverifiableBeforePublication(t *testing.T) {
 	for i, num := range []int{52, 53} {
 		b, e := os.ReadFile(filepath.Join(master, fmt.Sprintf("GxArchivedFile%03d.dat", num)))
 		if e != nil || !bytes.Equal(b, originals[i]) {
-			t.Fatal("owner DAT modified after strict failure")
+			t.Fatal("user DAT modified after strict failure")
 		}
 	}
 }

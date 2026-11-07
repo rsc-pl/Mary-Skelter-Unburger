@@ -5,7 +5,7 @@ package graphicsgo
 // Input device coordinates are authoritative and are NEVER independently
 // rounded. It does NOT perform Blue capture, first-use edge adjustment,
 // mask evaluation, counter groups, or source-point hinting. Production uses
-// the accepted Pillow renderer, not this experiment.
+// the reference Pillow renderer, not this experiment.
 
 import "math"
 

@@ -1,7 +1,7 @@
 package main
 
-// legacy: physical source + owner-private fonts test. The five actual font binaries
-// are never shipped; test automatically runs only in the owner's private tree.
+// legacy: physical source + user-private fonts test. The five actual font binaries
+// are never shipped; test automatically runs only in the user's private tree.
 import (
 	"crypto/sha256"
 	"encoding/hex"
@@ -11,14 +11,14 @@ import (
 	"testing"
 )
 
-func TestTwoRealR32C3AtlasSourceWithOwnerFonts(t *testing.T) {
+func TestTwoRealR32C3AtlasSourceWithLocalFonts(t *testing.T) {
 	root, err := filepath.Abs("../..")
 	if err != nil {
 		t.Fatal(err)
 	}
 	for _, f := range []string{"third_party/fonts/avionic/AvionicCond-Bold.otf", "third_party/fonts/chiaro/ChiaroStd-B.otf"} {
 		if _, err := os.Stat(filepath.Join(root, f)); os.IsNotExist(err) {
-			t.Skip("owner-private font not in public recovery archive")
+			t.Skip("user-private font not in public recovery archive")
 		}
 	}
 	cases := []struct{ id, source, rgbaSHA string }{

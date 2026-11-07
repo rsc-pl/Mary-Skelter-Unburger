@@ -92,7 +92,7 @@ func TestMappingAndVersion(t *testing.T) {
 	if len(required(m, "ms2")) != 1 || len(required(m, "finale")) != 2 {
 		t.Fatalf("wrong archive count: %+v", m)
 	}
-	// version.txt is an owner-controlled release version, not a fixed test fixture.
+	// version.txt is an editable release version, not a fixed test fixture.
 	// Exercise the same loader with several valid versions in an isolated root.
 	versionRoot := t.TempDir()
 	for _, want := range []string{"0.1.0", "0.4.2", "1.2.3"} {

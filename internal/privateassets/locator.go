@@ -1,4 +1,4 @@
-// Package privateassets resolves optional owner-local verification material
+// Package privateassets resolves optional user-local verification material
 // by stable purpose keys. The private index is data, not a source-code constant.
 package privateassets
 
@@ -27,7 +27,7 @@ type manifest struct {
 	Entries map[string]entry `json:"entries"`
 }
 
-// Resolve requires a relative owner-private path from an on-disk index.
+// Resolve requires a relative user-private path from an on-disk index.
 // Every path component must be real (not a symlink); regular files are
 // verified against the index SHA-256 before they can be used.
 func Resolve(projectRoot, key string) (string, error) {

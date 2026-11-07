@@ -16,7 +16,7 @@ import (
 
 // CheckRepoHygieneNative validates project-authored files and release-facing
 // configurations. Upstream code and the pinned runtime are not authored here.
-// This read-only check never visits owner-private .local or Git metadata.
+// This read-only check never visits private .local or Git metadata.
 func CheckRepoHygieneNative(root string) error {
 	var issues []string
 	report := func(format string, args ...any) { issues = append(issues, fmt.Sprintf(format, args...)) }
@@ -79,7 +79,7 @@ func CheckRepoHygieneNative(root string) error {
 			}
 		}
 		if rel == "toolchain/PUBLISH.md" {
-			report("owner-only publishing instructions must not be tracked: %s", rel)
+			report("private publishing instructions must not be tracked: %s", rel)
 		}
 		if strings.HasSuffix(d.Name(), "_install.sh") || strings.HasPrefix(d.Name(), "install_") {
 			report("obsolete installer must not be stored in public project tree: %s", rel)

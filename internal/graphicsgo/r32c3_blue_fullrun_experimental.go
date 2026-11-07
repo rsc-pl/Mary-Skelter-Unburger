@@ -2,7 +2,7 @@ package graphicsgo
 
 // Offline opt-in whole-label experiment to test whether BlueValues point
 // alignment survives the stroke, warp, shadow, gradient and final Lanczos.
-// Does not alter the accepted production or default research paths.
+// Does not alter the production or default research paths.
 import (
 	"image"
 )

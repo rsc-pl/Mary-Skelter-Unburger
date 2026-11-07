@@ -1,7 +1,7 @@
 package main
 
 // legacy interrupted-recovery laboratory. This is intentionally NOT in
-// renderProvenFamily: it produces *candidates* for source/owner comparison,
+// renderProvenFamily: it produces *candidates* for visual comparison,
 // not an approved product patch. It never writes a game DAT or TID.
 //
 // The earlier rejected draft displaced dark-blue effects too far below the
@@ -125,7 +125,7 @@ func loadResult(root string) (familyAsset, resultPreset, []byte, error) {
 	}
 	var ui struct {
 		Presets map[string]resultPreset `json:"presets"`
-		Fonts   map[string]familyFont       `json:"fonts"`
+		Fonts   map[string]familyFont   `json:"fonts"`
 	}
 	if err := json.Unmarshal(typ, &ui); err != nil {
 		return zero, resultPreset{}, nil, err
