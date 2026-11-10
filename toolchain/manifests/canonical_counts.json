@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "expected_changed_fields_by_dataset": {
-    "MS2_PC_LOCALIZED": 22728,
+    "MS2_PC_LOCALIZED": 22730,
     "MSF_PC_LOCALIZED": 38304,
-    "MSF_PC_SYSTEM": 4657
+    "MSF_PC_SYSTEM": 4654
   },
   "expected_mapped_fields_by_dataset": {
     "MS2_PC_LOCALIZED": 84120,
@@ -33,7 +33,7 @@
       "exact_jp_fields": 23697,
       "source_absent_jp_fields": 2,
       "pending_jp_fields": 0,
-      "changed_EN_fields": 4039
+      "changed_EN_fields": 4041
     },
     "MSF_ARCHIVE_088.jsonl": {
       "records": 2445,
@@ -73,7 +73,7 @@
       "exact_jp_fields": 9853,
       "source_absent_jp_fields": 142,
       "pending_jp_fields": 0,
-      "changed_EN_fields": 2900
+      "changed_EN_fields": 2897
     },
     "MSF_SYSTEM_GDAT0.jsonl": {
       "records": 1527,
